@@ -5,3 +5,12 @@ ROOM 1 Introduction Offensive security
 - Dird
 - Fundamental Offensive Security
 - Konsep Dasar Hack
+- kata kunci offensive adalah >> identifikasi jalan, temukan celah, masuk, exploitasi
+
+<img width="1270" height="729" alt="image" src="https://github.com/user-attachments/assets/18a30f8b-9230-4d69-92d8-9786f1b6cc1c" />
+
+ROOM 2 Introduction Defensive security
+## Penyelesaian
+- logic defensive security
+- how to do step by step to defensive in the system
+- kata kunci defensif adalah >> identifikasi, cleaning, protect
