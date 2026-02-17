@@ -10,11 +10,10 @@ My objective is to become a professional Cyber ​​Security practitioner who u
 
 ## Career Objective
 To develop practical expertise in:
-- Penetration Testing (Red Team)
-- Security Operations & Incident Response (Blue Team)
 - Vulnerability Assessment
 - Web Application Security
 - Network Security Analysis
+- SOC Analyst Tier 2 (Incident Responder/Investigator)
 
 ---
 
