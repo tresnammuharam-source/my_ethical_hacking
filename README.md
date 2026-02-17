@@ -1,12 +1,10 @@
 # Ethical Hacking Journey
 
 ## About Me
-Documenting my hands-on journey in Ethical Hacking, penetration testing, and cyber security fundamentals. Learning, breaking, and securing systems responsibly.
+I am currently Documenting my hands-on journey in Ethical Hacking, penetration testing, and cyber security fundamentals. Learning, breaking, and securing systems responsibly.
+This repository documents my structured learning journey, hands-on labs, write-ups, and technical experiments as I built both offensive and defensive security skills.
 
-I am currently transitioning into Cyber Security with a strong focus on Ethical Hacking, penetration testing, and security analysis.  
-This repository documents my structured learning journey, hands-on labs, write-ups, and technical experiments as I build both offensive and defensive security skills.
-
-My objective is to become a professional Cyber Security practitioner who understands not only how systems are exploited, but also how they are secured.
+My objective is to become a professional Cyber ​​Security practitioner who understands not only how systems are exploited, but also how they are secured.
 
 ---
 
