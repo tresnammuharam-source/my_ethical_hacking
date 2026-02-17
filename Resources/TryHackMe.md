@@ -14,3 +14,9 @@ ROOM 2 Introduction Defensive security
 - logic defensive security
 - how to do step by step to defensive in the system
 - kata kunci defensif adalah >> identifikasi, cleaning, protect
+
+<img width="1215" height="716" alt="image" src="https://github.com/user-attachments/assets/c9f63cc6-ba26-4bd5-9f6e-e75a16841114" />
+
+ROOM 3 Introduction Career Paths
+## Penyelesaian
+- Saya tau apa jurusan dalam cyper security >> Pentesting
