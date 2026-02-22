@@ -43,4 +43,13 @@ ROOM 5 LAN 101
 - LAN itu punya desain alur jalannya, yang disebut topology, beda2 desain beda2 cost, fleksibelity, keamanan dan lainnya
 - didalam LAN ada subnetting pembagian IP dan ada VLAN pembagian jalur switch dalam satu LAN
 - kamu akan tau ARP bekerja, klo ga ada ARP maka IP tidak bisa dikirim di LAN
-- apa itu DHCP sebagai proses penerimaan IP baru. misalnya laptop kamu tidak punya IP, maka tidak bisa internetan. kamu masuk jarinagn wifi pake router maka router yg di dalamnya ada DHCP secara langsung akan membuat IP dengan cara menawarkan IP ke komputer kmu, tawar menawar DHCP ini berlangsung hanya dalam sepersekian detik. 
+- apa itu DHCP sebagai proses penerimaan IP baru. misalnya laptop kamu tidak punya IP, maka tidak bisa internetan. kamu masuk jarinagn wifi pake router maka router yg di dalamnya ada DHCP secara langsung akan membuat IP dengan cara menawarkan IP ke komputer kmu, tawar menawar DHCP ini berlangsung hanya dalam sepersekian detik.
+
+<img width="1147" height="698" alt="image" src="https://github.com/user-attachments/assets/37227d0a-018d-46b6-a266-53887401483f" />
+
+ROOM 6 OSI Model 101 (Open System Interconnection Model)
+## Penyelesaian
+- ini seperti anda melihat peta negara saat perang, anda setiap akan mengirim barang harus tau dulu jalur tahapan yang akan dilalui dan siapa yang ngirim, siapa yang menerima dan siapa yang bisa menerjemahkan.
+- dari OSI Model ini kita mengetahui setiap tahapan pengiriamn data itu menghasilkan input data hingga hasil akhirnya menjadi utuh di ujung
+- kamu akan tahu 7 layer yang biasanya digunakan dalam melihat jalur jaringan
+- dengan kamu ngetehui OSI Model maka kamu seperti tau medan perang, siapa yang akan masuk, dan masuk kemana, dan keluar lewat mana, kamu akan tahu
