@@ -35,7 +35,8 @@ Pesan itu dalam prosesnya harus:
 
 OSI membagi semua proses itu menjadi 7 layer supaya lebih terstruktur.
 
-Layer	Nama	Fungsi Umum
+tahapan OSI disebut dengan Layer:
+
 7	Application :	Interaksi dengan aplikasi (browser, email)
 6	Presentation :	Enkripsi & format data
 5	Session :	Mengatur sesi komunikasi
