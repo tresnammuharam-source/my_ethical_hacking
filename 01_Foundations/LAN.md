@@ -12,20 +12,20 @@ ketua kelompok itu fungsinya menghubungkan komunikasi antara semua anggotanya di
 sedangkan guru adalah yang mengatur alurnya diskusi besar dalam kelas. yang bisa menghubungan pertanyaan dari kelompok 1 ke kelompok 3 dan lainnya. sama seperti router yang fungsinya menghubungkan antar jaringan yang berbeda.
 mainnya di IP address. sesuai permintaan dan pertanyaan dari IP address.
 
-## Dalam Cyber Security
-# Kalau Serangan di LAN
+# Dalam Cyber Security
+## Kalau Serangan di LAN
 Switch relevan:
 - ARP spoofing
 - MAC flooding
 - VLAN hopping
 
-# Kalau Serangan antar jaringan
+## Kalau Serangan antar jaringan
 Router relevan:
 - IP spoofing
 - Routing attack
 - MITM via gateway
 
-# Perbedaan Singkat Super Cepat
+## Perbedaan Singkat Super Cepat
 Switch:
 - Dalam satu jaringan
 - Pakai MAC
