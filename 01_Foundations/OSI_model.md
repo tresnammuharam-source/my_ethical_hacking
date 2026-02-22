@@ -8,13 +8,13 @@ Model OSI terdiri dari tujuh layer (lapisan) yang ditunjukkan pada diagram. Seti
 
 Pada setiap layer yang dilewati oleh data, terdapat proses tertentu yang terjadi, dan potongan informasi tambahan ditambahkan ke data tersebut. Proses ini disebut encapsulation (enkapsulasi). Untuk saat ini, kita hanya perlu memahami bahwa proses tersebut disebut encapsulation dan bagaimana struktur model OSI terlihat dalam diagram tersebut.
 
-7. Application
-6. Presentation
-5. Session
-4. Transport
-3. Network
-2. Data Link
-1. Physical
+- 7 Application
+- 6 Presentation
+- 5 Session
+- 4 Transport
+- 3 Network
+- 2 Data Link
+- 1 Physical
 
 OSI MODEL adalah Kerangka kerja yang menjelaskan bagaimana data bergerak dari satu device ke device lain melalui jaringan.
 
@@ -37,13 +37,13 @@ OSI membagi semua proses itu menjadi 7 layer supaya lebih terstruktur.
 
 tahapan OSI disebut dengan Layer:
 
-7. Application :	Interaksi dengan aplikasi (browser, email)
-6. Presentation :	Enkripsi & format data
-5. Session :	Mengatur sesi komunikasi
-4. Transport	: Mengatur pengiriman (TCP/UDP)
-3. Network :	Routing & IP address
-2. Data Link	: MAC address & switch
-1. Physical	: Kabel, sinyal, listrik
+- 7 Application :	Interaksi dengan aplikasi (browser, email)
+- 6 Presentation :	Enkripsi & format data
+- 5 Session :	Mengatur sesi komunikasi
+- 4 Transport	: Mengatur pengiriman (TCP/UDP)
+- 3 Network :	Routing & IP address
+- 2 Data Link	: MAC address & switch
+- 1 Physical	: Kabel, sinyal, listrik
 
 Encapsulation adalah Proses menambahkan informasi tambahan pada data saat turun dari Layer 7 ke Layer 1.
 
