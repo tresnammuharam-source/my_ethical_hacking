@@ -1,3 +1,15 @@
+# Apa itu Networking?
+simpelnya gini..
+saat kamu di bangku sekolah, kmu duduk bersama teman kmu di satu meja berdua ngemobrol dan tiba2 meja sebelahnya ikut nimbrung ngobrol.
+nah kamu dan teman kamu itu proses jaringan, tranfer data lewat bahasa dari kamu ke teman kamu itu satu jaringan. karena ada di meja yg sama ini disebut dengan private network.
+dikala ada meja lain yang ikut nimbrung ngobrol maka meja lain sebagai suatu jaringan juga. maka jika jaringan2 kecil itu bersatu maka disebut public network.
+datang lah guru yang mengarur agar jaringan tersebut bisa beraturan maka guru tersebut disebut internet protocol yang mengatur standarisasi komunikasi antar jaringan.
+sedangkan kamu disebut dengan IP Address yang punya identitas khusus yang diatur oleh internet protocol.
+saat kamu menggunakan buku kamu untuk menulis, dan teman kamu menggunakan bukunya untuk menulis, buku tersebut punya identitas sebagai punya kamu, identitas itu disebut MAC Address (Media Access Control)
+
+ada guru pelajaran lain di luar lagi liat ke dalam kelas (public network) apakah di dalamnya ada siswa, sedang berisik atau tidak? sedang belajar atau tidak? sedang rame atau tidak? maka guru itu melihat menggunakan ICMP
+ICMP (Internet Control Massage Protocol) ini adalah cara dan alat untuk mengecek apakah di suatu jaringan itu bagus, stabil dan menggunakan perangkat OS apa.
+itu pun klo itu guru pelajaran lain yg melihat isi kelas dari luar, bagaimana yg melihat kelas dari luar itu adalah penculik? maka itu diesebut dengan hacker, yg akan mencuri IP Address atau MAC Address atau berpura2 jadi MAC Address orang lain ("fake spoofed").
 
 # 📡 Apa itu **Ping**?
 
