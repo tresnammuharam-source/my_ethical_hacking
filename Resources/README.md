@@ -1,5 +1,5 @@
 ## Fungsi Folder Recource
-- Penyimpanan Aset Statis: Folder ini biasanya berisi file gambar (ikon, logo, gambar latar), font, file audio, video, atau data konfigurasi.
+- Penyimpanan Aset Statis: Folder ini berisi file gambar (ikon, logo, gambar latar), font, file audio, video, atau data konfigurasi.
 
 - Mengorganisir File Non-Kode: Memisahkan file aset dari kode sumber utama (src atau root) agar struktur proyek lebih rapi dan mudah dikelola.
 
