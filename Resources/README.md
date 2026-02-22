@@ -7,7 +7,7 @@
 
 - Mengubah Data Tanpa Kompilasi Ulang: Menyimpan data di dalam resources memungkinkan pengembang mengubah aset atau konfigurasi (misalnya mengganti gambar ikon) tanpa perlu mengubah kode sumber utama.
 
-<iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=6958820" style='border:none;'></iframe>
+
 
 <img src="https://tryhackme-badges.s3.amazonaws.com/tresna.mochamad.m.png" alt="Your Image Badge" />
 
