@@ -36,5 +36,3 @@ Router:
 - Pakai IP
 - Layer 3
 
-
-Pilih arah mana 🔥
