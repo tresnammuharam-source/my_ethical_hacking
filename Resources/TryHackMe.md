@@ -19,7 +19,10 @@ ROOM 2 Introduction Defensive security
 
 ROOM 3 Introduction Career Paths
 ## Penyelesaian
-- Saya tau apa jurusan dalam cyper security >> Pentesting
+- Saya tau apa jurusan saya dalam cyper security >> Pentesting
+- cyber security dan ethichal hacker sangat erat kaitannya karena bagian dari tim cyber security
+- cyber security adalah sebuah tim dalam menjalankan misi dengan bagiannya masing2 seperti kamu bermain Mobile Legend
+- ada Hyper, ada Roomer, ada Marksman dll, sama di tim cyber security juga, misinya satu, tapi bagian2 melengkapi untuk satu tujuan
 
 <img width="1163" height="722" alt="image" src="https://github.com/user-attachments/assets/a49f752d-72b8-4c1c-90a3-49150a38e3e2" />
 
