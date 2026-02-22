@@ -36,3 +36,108 @@ Router:
 - Pakai IP
 - Layer 3
 
+# VLAN (Virtual Local Area Network)
+
+VLAN berfungsi untuk membagi jaringan dalam subjaringan2 tertentu. ini mainya di tingkat switch. Membagi satu jaringan fisik menjadi beberapa jaringan logis (virtual).
+seperti halnya di sekolah tadi, siswa di kelas yang sedang diskusi kelompok, kelompok tersebut terdiri dari beberapa orang, VLAN itu didalam kelompoknya yang saling komunikasi, dan bisa juga si guru hanya menentukan diskusi antara kelompok 1 dan kelompok 3 maka proses komunikasi tersebut VLAN antara kelompok 1 dan kelompok 3 yang diatur oleh guru sebagai router dan sekaligus yang menentukan VLAN.
+
+VLAN ini untuk menurunkan tingkat resiko, karena mereka berkumunikasi dalam VLAN yang berbeda meski dalan LAN yang sama.
+kenapa VLAN penting?
+Karena:
+✔ Membatasi lateral movement
+✔ Membatasi broadcast attack
+✔ Memisahkan network sensitif
+
+Kalau hacker masuk ke VLAN 10,
+
+dia tidak langsung bisa akses VLAN 20.
+
+Kecuali ada misconfiguration.
+
+# Subnetting
+Subnetting konsepnya hampir sama dengan VLAN namun subnetting membagi2 jaringan dalam tingkat IP.
+Tujuannya:
+- Mengatur IP
+- Mengurangi broadcast
+- Membantu routing
+
+Bayangkan gedung kantor:
+- VLAN = Membagi lantai (HR di lantai 1, IT di lantai 2)
+- Subnet = Memberi nomor ruangan di tiap lantai
+
+Subnets use IP addresses in three different ways:
+- Identify the network address
+- Identify the host address
+- Identify the default gateway
+
+# ARP (Address Resolution Protocol)
+
+ARP berfungsi untuk Menerjemahkan IP Address menjadi MAC Address. tanpa ada ARP maka IP tidak bisa dikirim di LAN.
+
+- Switch bekerja dengan MAC
+- Manusia & aplikasi bekerja dengan IP
+
+misal ada pengantar paket (ketua kelompok) di kirim ke kelas paket tersebut (ARP) harus di kirim ke yg namanya si Udin (IP address) tapi buku catetannya ga atau apet itu harus buku catetan Biologi atau fisika dll (MAC address).
+si orang yg pegang paket di kelas melakukan pengumuman / broadcast ke semua.
+
+wooooyyyy siapa yang IP address 192.168.1.7 maka, dari sekian siswa tersebut akan mengangkat tangan karean dia IP addressnya. "itu saya,,, MAC address saya XXXX. maka dikrimkan paket itu ke IP addressnya.
+
+si ketua kelompok adalah switch. maka switch itu mengirim pake berdasarkan MAC address.
+
+masalahnya ARP tidak punya authentication. siapa pun akan bilang "woy itu punya saya..." maka disebut APR Spoofing (berpura2 jadi device yang dituju)
+
+# DHCP (dynamic Host Control Protocol)
+
+- DHCP adalah sistem otomatis yang memberikan IP address ke perangkat.
+- Tanpa DHCP, setiap perangkat harus diatur IP-nya satu per satu secara manual.
+- Proses DHCP (Disebut DORA)
+
+Bayangkan di kantor ada 200 komputer.
+Kalau tidak ada DHCP → admin harus isi IP satu-satu. Ribet banget.
+
+DHCP Discover >>> DHCP Discover >>> DHCP Request >>> DHCP ACK (Acknowledgment)
+
+Alamat IP bisa diberikan dengan dua cara:
+Secara manual (diisi langsung pada perangkat), atau Secara otomatis dan paling umum menggunakan server DHCP (Dynamic Host Configuration Protocol). Ketika sebuah perangkat terhubung ke jaringan dan belum memiliki alamat IP yang ditentukan secara manual, perangkat tersebut akan mengirimkan permintaan (DHCP Discover) untuk mencari apakah ada server DHCP di jaringan. Server DHCP kemudian membalas dengan menawarkan alamat IP yang bisa digunakan oleh perangkat tersebut (DHCP Offer). Perangkat kemudian mengirimkan balasan bahwa ia ingin menggunakan alamat IP yang ditawarkan tersebut (DHCP Request). Terakhir, server DHCP mengirimkan balasan bahwa proses telah selesai dan perangkat boleh mulai menggunakan alamat IP tersebut (DHCP ACK).
+
+1️⃣ DHCP Discover
+
+Perangkat baru masuk jaringan.
+
+Dia belum punya IP.
+
+Maka dia broadcast ke seluruh jaringan:
+
+"Apakah ada DHCP server di sini?"
+
+Karena belum punya IP, dia pakai alamat khusus 0.0.0.0 dan broadcast ke 255.255.255.255.
+
+2️⃣ DHCP Offer
+
+Server DHCP menjawab:
+
+"Saya ada. Kamu bisa pakai IP ini: 192.168.1.25"
+
+Biasanya juga dikirim:
+
+Subnet mask
+
+Default gateway
+
+DNS server
+
+3️⃣ DHCP Request
+
+Perangkat bilang:
+
+"Oke, saya mau pakai IP itu."
+
+4️⃣ DHCP ACK (Acknowledgment)
+
+Server menjawab:
+
+"Disetujui. Sekarang kamu resmi pakai IP itu."
+
+Selesai ✅
+Perangkat sekarang punya IP dan bisa komunikasi.
+
