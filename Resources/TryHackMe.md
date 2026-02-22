@@ -20,3 +20,13 @@ ROOM 2 Introduction Defensive security
 ROOM 3 Introduction Career Paths
 ## Penyelesaian
 - Saya tau apa jurusan dalam cyper security >> Pentesting
+
+<img width="1163" height="722" alt="image" src="https://github.com/user-attachments/assets/a49f752d-72b8-4c1c-90a3-49150a38e3e2" />
+
+ROOM 4 Networking 101
+## Penyelesaian
+- anda akan mempelajari network atau jaringan, apa itu jaringan?
+- adanya private network dan public network
+- bagaimana IP address bekerja oleh Internet Protocol sebagai standar scripnya
+- bagaimana ICMP (Internet Control Massage Protocol) untuk mengecek koneksi antar jaringan
+- identitas perangkat dengan MAC (Media access control)
