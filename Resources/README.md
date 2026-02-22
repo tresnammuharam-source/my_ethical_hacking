@@ -5,4 +5,8 @@
 
 - Keperluan Konfigurasi & UI: Dalam aplikasi .NET atau mobile (Android), folder ini menyimpan data yang ditampilkan di antarmuka pengguna (UI) seperti string bahasa, pesan kesalahan, atau file layout.
 
-- Mengubah Data Tanpa Kompilasi Ulang: Menyimpan data di dalam resources memungkinkan pengembang mengubah aset atau konfigurasi (misalnya mengganti gambar ikon) tanpa perlu mengubah kode sumber utama. 
+- Mengubah Data Tanpa Kompilasi Ulang: Menyimpan data di dalam resources memungkinkan pengembang mengubah aset atau konfigurasi (misalnya mengganti gambar ikon) tanpa perlu mengubah kode sumber utama.
+
+<iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=6958820" style='border:none;'></iframe>
+
+
