@@ -53,3 +53,12 @@ ROOM 6 OSI Model 101 (Open System Interconnection Model)
 - dari OSI Model ini kita mengetahui setiap tahapan pengiriamn data itu menghasilkan input data hingga hasil akhirnya menjadi utuh di ujung
 - kamu akan tahu 7 layer yang biasanya digunakan dalam melihat jalur jaringan
 - dengan kamu ngetehui OSI Model maka kamu seperti tau medan perang, siapa yang akan masuk, dan masuk kemana, dan keluar lewat mana, kamu akan tahu
+
+<img width="1115" height="713" alt="image" src="https://github.com/user-attachments/assets/ee899d96-2335-4b25-b373-f3c6d5ee1d66" />
+
+ROOM 7 DNS 101 (Domain Name System)
+## Penyelesaian
+- anda akan mengetahui struktur domain pada alamat website / www (wide world web), seperti www.google.com >>> apa itu .com? apa itu google? apakah ada jenis lainnya? bagaimana hirarkinya?
+- mengetahui jalur terbentuknya IP address dari domain yang dihasilkan oleh DNS, bagaimana cara terbentukanya?
+- bagaimana cara mengecek alamat IP di DNS dengan scrip tools yang bisa digunakan
+
