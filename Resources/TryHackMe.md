@@ -89,3 +89,11 @@ ROOM 10 Putting in all together
 - dalam website ada yang web dinamis dan statis
 - dalam pembentukan website ada backend dan frontend. frontend ini dari segi tampilan dan pemuat bahasanya adalah HTML, CSS dan Javascrip (JS). sedangkan backend ini bagian belakang eveloper engginer webnya untuk membentuk struktur web dengan bahasa khususnya seperti PHP, NodeJS, Phyton dan lainnya
 - di sini kamu gabungkan rangkaian tadi bagaimana sebuah web itu bisa tampil
+
+<img width="1074" height="696" alt="image" src="https://github.com/user-attachments/assets/5bba0a62-2b5b-49a8-aee2-f8fe5843eea4" />
+
+ROOM 11 Inside the computer system
+## Penyelesaian
+- Sepertinya sesi ini baru di tryhackme, kenapa? kalo saya check di story2 lain ga ada sesi ini, tentu saja dunia digital terus berkembang maka kemampuan dan materinya pun terus berkembang
+- dalam hal ini kita akan mengetahui isi dari komputer, baik software atau hardware. mungkin banyak yang belajar security tapi orang itu ga tau GPU apa? RAM itu apa wkwk
+- disinilah kamu belajar isi dari komputer alat atau tempat yang akan digunakan sebagai benteng pertahanan data pertama yang kita bisa kontrol
