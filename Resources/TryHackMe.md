@@ -80,3 +80,12 @@ ROOM 9 How Website Work
 - kamu harus tau aman tidaknya scrip web tersebut apakah bisa di hiject atau tidak
 - tapi seru sih, dengan tau scrip di web sourcenya, kita bisa tau bagaimana membentuknya, asal kamu bisa baca HTML, CSS dan Javascrip (JS)
 - layaknya web adalah Jendela, jika kamu sudah tau ini, Jendela itu kamu kamu bisa buka tutup dan tau isi di dalam rumahnya
+
+<img width="871" height="648" alt="image" src="https://github.com/user-attachments/assets/84a966a6-1165-4000-b9ba-d0bc1921585b" />
+
+ROOM 10 Putin together
+## Penyelesaian
+- Sesi ini kamu menyatukan pengetahuna kamu tentang website bekerja dari mulai DNS bekerja, HTTP, isi website hingga suatu website bisa dibuka
+- dalam website ada yang web dinamis dan statis
+- dalam pembentukan website ada backend dan frontend. frontend ini dari segi tampilan dan pemuat bahasanya adalah HTML, CSS dan Javascrip (JS). sedangkan backend ini bagian belakang eveloper engginer webnya untuk membentuk struktur web dengan bahasa khususnya seperti PHP, NodeJS, Phyton dan lainnya
+- di sini kamu gabungkan rangkaian tadi bagaimana sebuah web itu bisa tampil
