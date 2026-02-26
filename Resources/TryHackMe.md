@@ -97,3 +97,11 @@ ROOM 11 Inside the computer system
 - Sepertinya sesi ini baru di tryhackme, kenapa? kalo saya check di story2 lain ga ada sesi ini, tentu saja dunia digital terus berkembang maka kemampuan dan materinya pun terus berkembang
 - dalam hal ini kita akan mengetahui isi dari komputer, baik software atau hardware. mungkin banyak yang belajar security tapi orang itu ga tau GPU apa? RAM itu apa wkwk
 - disinilah kamu belajar isi dari komputer alat atau tempat yang akan digunakan sebagai benteng pertahanan data pertama yang kita bisa kontrol
+
+<img width="1109" height="694" alt="image" src="https://github.com/user-attachments/assets/5da03b76-cbcc-4b50-96ec-13ce14dbb4cb" />
+
+ROOM 12 Computer Type
+## Penyelesaian
+- Ini lebih seperti game, karena memperlihatkan bagaimana type computer, bahkan smartphone adalah sistem komputer
+- bagaimana zaman ini komputer ada di rumah kita, seperti smarth home
+- komputer yang terintegrasi merupakan potensi vulnability atau kerentanan dari suati jaringan komputer
