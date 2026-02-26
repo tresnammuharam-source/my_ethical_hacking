@@ -70,3 +70,13 @@ ROOM 8 HTTP in detail (HyperText Transfer Protocol)
 - kamu akan mengetahui bagaimana jalur pembentuk HTTP dan bagaimana HTTP bekerja
 - URL yang sering kamu buat itu adalah detail penting dari HTTP
 - sering kamu melihat code2 saat web yg kamu tuju tidak bekerja seperti 404 not found, 503, dan lainnya ini kode dari web server untuk menentukan kenapa web tersebut
+
+<img width="1101" height="683" alt="image" src="https://github.com/user-attachments/assets/7e5b44b8-b8a5-45b4-9795-b02ca90feb9b" />
+
+ROOM 9 How Website Work
+## Penyelesaian
+- kamu akan mengetahui struktur website itu dari apa aja >>> HTML, CSS dan Javascrip (JS)
+- kamu akan tau di dalam code web CTRL-U isinya apa aja, dan dari dalam situ informasi apa saja yg bisa diambil dan di manfaatkan
+- kamu harus tau aman tidaknya scrip web tersebut apakah bisa di hiject atau tidak
+- tapi seru sih, dengan tau scrip di web sourcenya, kita bisa tau bagaimana membentuknya, asal kamu bisa baca HTML, CSS dan Javascrip (JS)
+- layaknya web adalah Jendela, jika kamu sudah tau ini, Jendela itu kamu kamu bisa buka tutup dan tau isi di dalam rumahnya
