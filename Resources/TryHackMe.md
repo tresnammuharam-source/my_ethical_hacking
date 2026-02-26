@@ -64,6 +64,9 @@ ROOM 7 DNS 101 (Domain Name System)
 
 <img width="1082" height="679" alt="image" src="https://github.com/user-attachments/assets/018af563-2b25-4df5-a33e-51a4aa1c3022" />
 
-ROOM 8 HTTP in detail
+ROOM 8 HTTP in detail (HyperText Transfer Protocol)
 ## Penyelesaian
-- anda akan mengetah
+- kamu akan mengetahui isi dari HTTP dan bagaimana dengan HTTPS itu seperti rumah yang pake pagar dan ga pake pagar
+- kamu akan mengetahui bagaimana jalur pembentuk HTTP dan bagaimana HTTP bekerja
+- URL yang sering kamu buat itu adalah detail penting dari HTTP
+- sering kamu melihat code2 saat web yg kamu tuju tidak bekerja seperti 404 not found, 503, dan lainnya ini kode dari web server untuk menentukan kenapa web tersebut
