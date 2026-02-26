@@ -12,3 +12,6 @@
 <img src="https://tryhackme-badges.s3.amazonaws.com/tresna.mochamad.m.png" alt="Your Image Badge" />
 
 <img src="https://tryhackme-badges.s3.amazonaws.com/tresna.mochamad.m.png" alt="Your Image Badge" />
+
+<img width="934" height="614" alt="image" src="https://github.com/user-attachments/assets/1707320f-1f5a-47f0-912b-5763ac014277" />
+
