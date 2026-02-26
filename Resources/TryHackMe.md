@@ -81,9 +81,9 @@ ROOM 9 How Website Work
 - tapi seru sih, dengan tau scrip di web sourcenya, kita bisa tau bagaimana membentuknya, asal kamu bisa baca HTML, CSS dan Javascrip (JS)
 - layaknya web adalah Jendela, jika kamu sudah tau ini, Jendela itu kamu kamu bisa buka tutup dan tau isi di dalam rumahnya
 
-<img width="871" height="648" alt="image" src="https://github.com/user-attachments/assets/84a966a6-1165-4000-b9ba-d0bc1921585b" />
+<img width="1098" height="679" alt="image" src="https://github.com/user-attachments/assets/f4ecff7b-1ddf-482e-a2cf-e437a66832b2" />
 
-ROOM 10 Putin together
+ROOM 10 Putting in all together
 ## Penyelesaian
 - Sesi ini kamu menyatukan pengetahuna kamu tentang website bekerja dari mulai DNS bekerja, HTTP, isi website hingga suatu website bisa dibuka
 - dalam website ada yang web dinamis dan statis
