@@ -1,5 +1,6 @@
 # Ethical Hacking Journey
 
+Before protecting a castle, we need to know the layout of the castle: where the treasure room, the food storage, and the commander's quarters are. We need to know who enters and how they enter the castle. Also important is who can enter these rooms and take or put treasure or food, for example.
 ## About Me
 I am currently Documenting my hands-on journey in Ethical Hacking, penetration testing, and cyber security fundamentals. Learning, breaking, and securing systems responsibly.
 This repository documents my structured learning journey, hands-on labs, write-ups, and technical experiments as I built both offensive and defensive security skills.
