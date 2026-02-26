@@ -62,3 +62,8 @@ ROOM 7 DNS 101 (Domain Name System)
 - mengetahui jalur terbentuknya IP address dari domain yang dihasilkan oleh DNS, bagaimana cara terbentukanya?
 - bagaimana cara mengecek alamat IP di DNS dengan scrip tools yang bisa digunakan
 
+<img width="1082" height="679" alt="image" src="https://github.com/user-attachments/assets/018af563-2b25-4df5-a33e-51a4aa1c3022" />
+
+ROOM 8 HTTP in detail
+## Penyelesaian
+- anda akan mengetah
