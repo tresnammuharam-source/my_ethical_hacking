@@ -303,3 +303,305 @@ Bahkan reverse shell pun:
 
 > Target jadi client → connect ke attacker server
 
+
+# 🍕 Analogi Client–Server = Pesan Pizza
+
+## 🎭 Peran
+
+| Dunia IT | Dunia Nyata                                   |
+| -------- | --------------------------------------------- |
+| Client   | Kamu yang pesan pizza                         |
+| Server   | Restoran pizza                                |
+| Request  | Pesanan kamu                                  |
+| Response | Pizza yang dikirim                            |
+| Port     | Nomor telepon restoran                        |
+| Protocol | Cara komunikasi (telepon, WhatsApp, aplikasi) |
+
+---
+
+# 1️⃣ Client Menginisiasi Komunikasi
+
+Dalam dunia IT:
+
+> Client selalu memulai komunikasi.
+
+Dalam analogi:
+Kamu (client) yang:
+
+* Telepon restoran
+* Buka aplikasi
+* Kirim pesan
+
+Restoran tidak tiba-tiba kirim pizza tanpa kamu pesan.
+
+---
+
+# 2️⃣ Request = Pesanan
+
+Kamu bilang:
+
+```id="p1x8vd"
+Saya mau 1 pizza pepperoni ukuran large.
+```
+
+Itu sama seperti:
+
+```id="q2k9az"
+GET /menu
+POST /order
+```
+
+Request berisi:
+
+* Apa yang diminta
+* Detail pesanan
+* Informasi tambahan (alamat, metode bayar)
+
+Dalam HTTP:
+
+* Method
+* Header
+* Body
+
+---
+
+# 3️⃣ Server Memproses Permintaan
+
+Restoran:
+
+* Cek stok
+* Buat pizza
+* Siapkan pengiriman
+
+Server:
+
+* Proses logic
+* Ambil data dari database
+* Generate response
+
+---
+
+# 4️⃣ Response = Pizza Dikirim
+
+Restoran kirim:
+
+```id="z7m4rt"
+Pizza + struk pembayaran
+```
+
+Server kirim:
+
+```id="x6w3nf"
+HTTP 200 OK
+<html>...</html>
+```
+
+Kalau stok habis?
+
+```id="a8v2kl"
+HTTP 404 Not Found
+```
+
+Kalau dapur error?
+
+```id="b3y9pd"
+HTTP 500 Internal Server Error
+```
+
+---
+
+# 5️⃣ Port = Nomor Telepon Restoran
+
+Restoran bisa punya banyak layanan:
+
+* Telepon biasa
+* WhatsApp
+* Aplikasi online
+
+Dalam server:
+
+| Service    | Port |
+| ---------- | ---- |
+| Web        | 80   |
+| Secure Web | 443  |
+| SSH        | 22   |
+| FTP        | 21   |
+
+Kalau kamu salah nomor?
+→ Tidak terhubung.
+
+---
+
+# 6️⃣ Protocol = Cara Berkomunikasi
+
+Kamu bisa pesan lewat:
+
+* Telepon
+* WhatsApp
+* Aplikasi
+
+Dalam IT:
+
+* HTTP
+* HTTPS
+* FTP
+* SSH
+
+Kalau beda protocol?
+→ Tidak bisa saling mengerti.
+
+---
+
+# 7️⃣ TCP Handshake = "Halo, Tersambung?"
+
+Sebelum pesan:
+
+```id="c9n1zw"
+Kamu: Halo?
+Restoran: Halo?
+Kamu: Ya saya mau pesan.
+```
+
+Itu seperti:
+
+```id="h7d2ms"
+SYN
+SYN-ACK
+ACK
+```
+
+Baru setelah itu pesanan disampaikan.
+
+---
+
+# 8️⃣ Stateless vs Stateful (Dalam Analogi)
+
+## 🔹 Stateless
+
+Setiap kali pesan:
+Restoran tidak ingat kamu.
+
+Kamu harus ulang:
+
+* Nama
+* Alamat
+* Nomor HP
+
+Itu seperti HTTP tanpa session.
+
+---
+
+## 🔹 Stateful
+
+Restoran punya sistem member.
+Begitu kamu telepon:
+
+```id="k4r8tp"
+"Oh Pak Tresna, biasa pesan pepperoni ya?"
+```
+
+Itu seperti:
+
+* Cookie
+* Session ID
+
+---
+
+# 9️⃣ Bagaimana Ini Jadi Serangan? (Versi Hacker)
+
+Sekarang kita masuk mindset ethical hacking.
+
+---
+
+## 🎯 1. Brute Force
+
+Orang iseng telepon ribuan kali:
+
+```id="m6x1qr"
+Pesan atas nama A
+Pesan atas nama B
+Pesan atas nama C
+```
+
+Itu seperti brute force login.
+
+---
+
+## 🎯 2. DDoS
+
+Seribu orang telepon bersamaan.
+Restoran tidak bisa angkat semua.
+
+Server overload.
+
+---
+
+## 🎯 3. Man in the Middle
+
+Ada orang menyadap telepon kamu.
+Dia dengar alamat dan detail pesanan.
+
+Kalau tidak HTTPS → data bisa disadap.
+
+---
+
+## 🎯 4. SQL Injection
+
+Kamu bilang:
+
+```id="v2p5lj"
+Nama: ' OR 1=1 --
+```
+
+Kalau sistem restoran bodoh?
+→ Semua data bocor.
+
+---
+
+# 🔟 Reverse Shell dalam Analogi
+
+Biasanya:
+Kamu telepon restoran.
+
+Tapi reverse shell itu seperti:
+
+Restoran tiba-tiba telepon kamu dan bilang:
+
+```id="t8f6yd"
+Sekarang saya ikut instruksi kamu.
+```
+
+Target jadi client.
+Attacker jadi server.
+
+---
+
+# 🔥 Inti Konsep yang TryHackMe Mau Kamu Pahami
+
+1. Client selalu menginisiasi komunikasi
+2. Server menunggu request
+3. Komunikasi menggunakan port dan protocol
+4. Ada request dan response
+5. Ada proses koneksi (handshake)
+6. Semua serangan web berbasis model ini
+
+---
+
+# 🎯 Kenapa Ini Penting Buat Kamu?
+
+Karena kalau kamu:
+
+* Mau exploit web
+* Mau analisa log
+* Mau jadi SOC analyst
+* Mau paham reverse shell
+
+Kamu harus selalu tanya:
+
+> Siapa client?
+> Siapa server?
+> Siapa yang mulai koneksi?
+> Data lewat port berapa?
+> Apakah terenkripsi?
+
+
