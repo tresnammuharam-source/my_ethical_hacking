@@ -62,9 +62,18 @@ ROOM 7 DNS 101 (Domain Name System)
 - mengetahui jalur terbentuknya IP address dari domain yang dihasilkan oleh DNS, bagaimana cara terbentukanya?
 - bagaimana cara mengecek alamat IP di DNS dengan scrip tools yang bisa digunakan
 
+<img width="1102" height="695" alt="image" src="https://github.com/user-attachments/assets/67f064dd-130d-4804-81ff-231f62ecd744" />
+
+ROOM 8 Packet and Frame
+## Penyelesaian
+- Setelah kamu mengetahui apa layer dari jaringan kamu harus tau apa yang bergerak dalam layer2 tersebut
+- packet dan frame bisa disebut benda yang menghantarkan informasi kepada tujuan, bayangkan packet itu seperti kamu kirim paket expedisi lewat sicepat, JNT, JNE dll, pasti ada jalurnya dan alamatnya dan ada isi dari paket kan?
+- packet itu ibarat udh di bungkus beserta detail alamatnya dan masuk dalam jaringan yg sudah diataru. sedangkan frame dari barang yng kamu bawa kamu baru bungkus pribadi, belum detail alamatanya dan mau di serahkan ke kang paket.
+- dari perjalanan packet ini kamu akan menemukan port2 atau stasiun pemberhentian yang harus dilalui oleh paket. ga bungkin kan paket tujuan banduing malah naik stasiun jurusan jogjakarta. wkwk
+
 <img width="1082" height="679" alt="image" src="https://github.com/user-attachments/assets/018af563-2b25-4df5-a33e-51a4aa1c3022" />
 
-ROOM 8 HTTP in detail (HyperText Transfer Protocol)
+ROOM 9 HTTP in detail (HyperText Transfer Protocol)
 ## Penyelesaian
 - kamu akan mengetahui isi dari HTTP dan bagaimana dengan HTTPS itu seperti rumah yang pake pagar dan ga pake pagar
 - kamu akan mengetahui bagaimana jalur pembentuk HTTP dan bagaimana HTTP bekerja
@@ -73,7 +82,7 @@ ROOM 8 HTTP in detail (HyperText Transfer Protocol)
 
 <img width="1101" height="683" alt="image" src="https://github.com/user-attachments/assets/7e5b44b8-b8a5-45b4-9795-b02ca90feb9b" />
 
-ROOM 9 How Website Work
+ROOM 10 How Website Work
 ## Penyelesaian
 - kamu akan mengetahui struktur website itu dari apa aja >>> HTML, CSS dan Javascrip (JS)
 - kamu akan tau di dalam code web CTRL-U isinya apa aja, dan dari dalam situ informasi apa saja yg bisa diambil dan di manfaatkan
@@ -83,7 +92,7 @@ ROOM 9 How Website Work
 
 <img width="1098" height="679" alt="image" src="https://github.com/user-attachments/assets/f4ecff7b-1ddf-482e-a2cf-e437a66832b2" />
 
-ROOM 10 Putting in all together
+ROOM 11 Putting in all together
 ## Penyelesaian
 - Sesi ini kamu menyatukan pengetahuna kamu tentang website bekerja dari mulai DNS bekerja, HTTP, isi website hingga suatu website bisa dibuka
 - dalam website ada yang web dinamis dan statis
@@ -92,7 +101,7 @@ ROOM 10 Putting in all together
 
 <img width="1074" height="696" alt="image" src="https://github.com/user-attachments/assets/5bba0a62-2b5b-49a8-aee2-f8fe5843eea4" />
 
-ROOM 11 Inside the computer system
+ROOM 12 Inside the computer system
 ## Penyelesaian
 - Sepertinya sesi ini baru di tryhackme, kenapa? kalo saya check di story2 lain ga ada sesi ini, tentu saja dunia digital terus berkembang maka kemampuan dan materinya pun terus berkembang
 - dalam hal ini kita akan mengetahui isi dari komputer, baik software atau hardware. mungkin banyak yang belajar security tapi orang itu ga tau GPU apa? RAM itu apa wkwk
@@ -100,7 +109,7 @@ ROOM 11 Inside the computer system
 
 <img width="1109" height="694" alt="image" src="https://github.com/user-attachments/assets/5da03b76-cbcc-4b50-96ec-13ce14dbb4cb" />
 
-ROOM 12 Computer Type
+ROOM 13 Computer Type
 ## Penyelesaian
 - Ini lebih seperti game, karena memperlihatkan bagaimana type computer, bahkan smartphone adalah sistem komputer
 - bagaimana zaman ini komputer ada di rumah kita, seperti smarth home
