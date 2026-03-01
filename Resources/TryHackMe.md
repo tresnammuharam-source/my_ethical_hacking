@@ -122,3 +122,10 @@ ROOM 14 Computer Type
 - Ini lebih seperti game, karena memperlihatkan bagaimana type computer, bahkan smartphone adalah sistem komputer
 - bagaimana zaman ini komputer ada di rumah kita, seperti smarth home
 - komputer yang terintegrasi merupakan potensi vulnability atau kerentanan dari suati jaringan komputer
+
+<img width="1096" height="693" alt="image" src="https://github.com/user-attachments/assets/b3cc12e7-3851-44fc-b198-edf81ae18d8a" />
+
+ROOM 15 Computer Type
+## Penyelesaian
+- Ini lebih seperti game
+
