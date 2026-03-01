@@ -1,5 +1,3 @@
----
-
 # 1️⃣ Apa Itu Packet?
 
 ## 📦 Packet = Unit Data di Layer Network (Layer 3 – IP)
@@ -38,8 +36,6 @@ Destination IP: 8.8.8.8
 Protocol: TCP
 Data: GET /index.html
 ```
-
----
 
 # 2️⃣ Apa Itu Frame?
 
