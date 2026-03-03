@@ -132,7 +132,7 @@ ROOM 15 Computer Type
 
 <img width="1128" height="708" alt="image" src="https://github.com/user-attachments/assets/fcb7395b-8c89-4c0f-b247-d854c1e74a0f" />
 
-ROOM 15 Virtulisation Basic
+ROOM 16 Virtulisation Basic
 ## Penyelesaian
 - Dalam mempelajari ethical hacking kamu akan seperti belajar kimia atau biologi di sekolah, yg mana kita akan diahapi dengan alat2 dan mahluk2 yang aktif dan bisa menyerang pribadi.
 - sama halnya dengan kimia dan biologi mereka punya LAB untuk melakukan reakasa genetik, percobaan cairan A dan cairan B, mengecek virus dan bakteri dan lainnya di ethical hacking kita akan dihadapkan dengan virus dan bakteri virtual, yang artinya ini bisa merusak dan menyebar jika ditangani dengan serius
