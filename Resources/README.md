@@ -12,6 +12,8 @@
 <img src="https://tryhackme-badges.s3.amazonaws.com/tresna.mochamad.m.png" alt="Your Image Badge" />
 <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=6958820" style='border:none;'></iframe>
 
+<img width="655" height="471" alt="image" src="https://github.com/user-attachments/assets/a87c1121-3016-4d1f-aa24-4ae12144013a" />
+
 <img width="934" height="614" alt="image" src="https://github.com/user-attachments/assets/1707320f-1f5a-47f0-912b-5763ac014277" />
 
 <img width="830" height="601" alt="image" src="https://github.com/user-attachments/assets/85aaaeca-2e36-409b-bbeb-81ff94150de0" />
