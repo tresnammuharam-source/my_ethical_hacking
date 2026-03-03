@@ -127,5 +127,15 @@ ROOM 14 Computer Type
 
 ROOM 15 Computer Type
 ## Penyelesaian
-- Ini lebih seperti game
+- di ini kamu mempelajari type-type computer
+- bagaimana komputer itu berinteraksi bagaimana sistem yang akan berjalan di komputer dan lainnya
+
+<img width="1128" height="708" alt="image" src="https://github.com/user-attachments/assets/fcb7395b-8c89-4c0f-b247-d854c1e74a0f" />
+
+ROOM 15 Virtulisation Basic
+## Penyelesaian
+- Dalam mempelajari ethical hacking kamu akan seperti belajar kimia atau biologi di sekolah, yg mana kita akan diahapi dengan alat2 dan mahluk2 yang aktif dan bisa menyerang pribadi.
+- sama halnya dengan kimia dan biologi mereka punya LAB untuk melakukan reakasa genetik, percobaan cairan A dan cairan B, mengecek virus dan bakteri dan lainnya di ethical hacking kita akan dihadapkan dengan virus dan bakteri virtual, yang artinya ini bisa merusak dan menyebar jika ditangani dengan serius
+- maka dari itu kamu memerlukan LAB untuk melakukan percobaan yang aman. LAB itu adalah VIRTUALISATION.
+- kamu ga perlu pake baju APD, masker dan sarungtangan kimia, kamu hanya mempersiapkan komputermu agar aman dan terisolasi dengan sofware Virtual Machine yang bisa mengoprasikan di atas Host komputer kita
 
