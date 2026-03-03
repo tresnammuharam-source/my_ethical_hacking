@@ -139,3 +139,13 @@ ROOM 16 Virtulisation Basic
 - maka dari itu kamu memerlukan LAB untuk melakukan percobaan yang aman. LAB itu adalah VIRTUALISATION.
 - kamu ga perlu pake baju APD, masker dan sarungtangan kimia, kamu hanya mempersiapkan komputermu agar aman dan terisolasi dengan sofware Virtual Machine yang bisa mengoprasikan di atas Host komputer kita
 
+<img width="1145" height="682" alt="image" src="https://github.com/user-attachments/assets/bd5cdfd9-b58d-4a56-b34d-4e2638f433f9" />
+
+ROOM 17 Cloud Computing Fundamentals
+## Penyelesaian
+- Kalo sebelumnya kita belajar virtualisation, itu adalah host locak yang kita bisa running aplikasi secara lokal dan di pake beberapa orang saja, bagaimana klo applikasinya di pake ribuan orang?
+- belajar cloud adalah belajar bagaimana server global untuk menjalankan applikasi tetap berjalan meski server host di rumah kita mati, user tetap bisa memakai aplikasinya
+- dengan belajar cloud ini kita bisa melakukan audit claud dari panduan dan jalur open data dari luar untuk ke publik
+- type cloud seperti IaaS, PaaS dan SaaS seperti kita menyewa tempat = IaaS (kostan), PaaS (apartemen), SaaS (rumah fullfurnish)
+- Cloud ini akan berhubungan dengan cost yang dikeluarkan untuk membuat app kita bisa di akses oleh banyak orang, tapi cost ini menjadi stabil bisa di manager
+- server cloud itu seperti AWS, Google Cloud IMB Cloud dll
