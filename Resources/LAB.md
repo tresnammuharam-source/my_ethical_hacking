@@ -101,3 +101,158 @@ Penyebab laptop bekas sangat efektif untuk lab:
 * **Isolasi Fisik:** Terpisah sepenuhnya dari akun bank, email, dan data kerja di laptop utama.
 * **Eksperimen Bebas:** Anda tidak perlu takut sistem *crash* atau harus *install* ulang OS karena tidak ada data penting di dalamnya.
 * **Fokus:** Laptop tersebut bisa dikonfigurasi khusus hanya untuk *tools* hacking tanpa gangguan aplikasi lain.
+
+Selain serangan fisik menggunakan USB, dunia *Ethical Hacking* sebagian besar berfokus pada **Web Application Penetration Testing**. Ini adalah bidang yang mempelajari bagaimana sebuah website atau aplikasi bisa ditembus melalui internet tanpa harus menyentuh perangkatnya secara fisik.
+
+Berikut adalah hal-hal seru yang bisa Anda pelajari di lab Anda terkait keamanan web:
+
+---
+
+### 1. Mempelajari "The Big Three" (Serangan Web Paling Populer)
+
+Ini adalah dasar yang wajib dikuasai setiap *bug bounty hunter* atau pentester:
+
+* **SQL Injection (SQLi):** Belajar cara "menipu" form login agar Anda bisa masuk tanpa password atau mengunduh seluruh isi database (username & password pengguna) hanya melalui kolom input.
+* **Cross-Site Scripting (XSS):** Belajar menyisipkan kode JavaScript berbahaya ke dalam website orang lain sehingga Anda bisa mencuri *cookie* session milik admin atau mengubah tampilan web tersebut (*deface*).
+* **Broken Access Control:** Mencoba masuk ke fitur yang seharusnya dilarang. Contoh: Mengubah angka di URL dari `web.com/profil/user=10` menjadi `user=11` untuk melihat data pribadi orang lain.
+
+### 2. Belajar Menggunakan Tools Profesional
+
+Di lab Anda, Anda bisa menginstal dan belajar menggunakan "senjata" standar industri:
+
+* **Burp Suite:** Alat paling sakti untuk mencegat (*intercept*) data yang dikirim antara browser Anda dan server, lalu mengubah isinya sebelum sampai ke tujuan.
+* **OWASP ZAP:** Alternatif gratis untuk mencari celah keamanan secara otomatis di sebuah website.
+* **SQLmap:** Tool otomatis untuk mendeteksi dan mengeksploitasi celah SQL Injection.
+
+### 3. Menginstal "Web Sengaja Rentan"
+
+Agar Anda tidak melanggar hukum, Anda bisa menginstal website yang memang sengaja dibuat banyak celahnya untuk latihan:
+
+* **DVWA (Damn Vulnerable Web Application):** Sangat bagus untuk pemula.
+* **OWASP Juice Shop:** Website toko online modern (menggunakan JavaScript) yang penuh dengan tantangan hacking.
+
+### 4. Tantangan "Capture The Flag" (CTF)
+
+Anda bisa bergabung dengan platform belajar yang memberikan lab *online* gratis untuk latihan meretas secara legal:
+
+* **TryHackMe:** Memiliki "ruang" belajar bertahap dari nol.
+* **HackTheBox:** Untuk tingkat yang lebih menantang.
+* **PortSwigger Academy:** Tempat terbaik untuk belajar Burp Suite dan celah web secara gratis dari para ahlinya.
+
+---
+
+### Apa yang Bisa Anda Lakukan Sekarang?
+
+Jika Anda sudah punya **Kali Linux** di laptop, Anda sudah memiliki hampir semua tools di atas secara gratis.
+
+Pilihan yang bagus! Kita akan mulai dengan **DVWA (Damn Vulnerable Web Application)**. Ini adalah standar emas bagi pemula karena tingkat kesulitannya bisa diatur dari *Low* (sangat mudah) sampai *Impossible* (sangat aman).
+
+Cara termudah dan terbersih untuk menginstalnya di lab Anda (Kali Linux/Windows/Mac) adalah menggunakan **Docker**. Dengan Docker, Anda tidak perlu mengacak-acak konfigurasi database asli di laptop Anda.
+
+---
+
+### Langkah 1: Instalasi Docker (Jika belum ada)
+
+Buka terminal di Kali Linux atau Command Prompt Anda, lalu ketik:
+
+```bash
+sudo apt update
+sudo apt install docker.io -y
+sudo systemctl start docker
+sudo systemctl enable docker
+
+```
+
+### Langkah 2: Menjalankan DVWA
+
+Cukup masukkan satu perintah ini, dan Docker akan otomatis mendownload serta menjalankan website "rentan" tersebut:
+
+```bash
+sudo docker run --rm -it -p 80:80 vulnerables/web-dvwa
+
+```
+
+* **-p 80:80**: Artinya website ini akan berjalan di port 80 laptop Anda.
+* **--rm**: Jika Anda mematikan terminal, website ini akan terhapus otomatis (bersih).
+
+---
+
+### Langkah 3: Mengakses Lab
+
+1. Buka browser (Chrome/Firefox).
+2. Ketik di address bar: `http://localhost` atau `http://127.0.0.1`.
+3. **Login Default:**
+* **Username:** `admin`
+* **Password:** `password`
+4. Setelah masuk, klik tombol **"Create / Reset Database"** di bagian bawah agar sistem siap digunakan.
+
+---
+
+### Apa yang Bisa Anda Lakukan di Dalam DVWA?
+
+Di menu sebelah kiri, Anda akan melihat daftar "serangan" yang bisa Anda pelajari. Cobalah urutan ini:
+
+1. **Brute Force:** Coba tebak password user lain menggunakan daftar kata (*wordlist*).
+2. **SQL Injection:** Masukkan perintah `' OR '1'='1` di kolom ID untuk melihat semua data user tanpa izin.
+3. **XSS (Reflected):** Masukkan script `<script>alert('Hacked!')</script>` di kolom nama. Jika muncul jendela pop-up, berarti web tersebut rentan.
+4. **DVWA Security:** Di menu ini, Anda bisa mengubah level dari *Low* ke *Medium*. Anda akan melihat bagaimana kodenya berubah menjadi lebih sulit ditembus.
+
+---
+
+### 💡 Tips Pro:
+
+Gunakan **Burp Suite** (sudah ada di Kali Linux) saat bermain dengan DVWA. Burp Suite memungkinkan Anda melihat data "mentah" yang dikirim browser sebelum sampai ke DVWA. Di sinilah *magic* sesungguhnya dari seorang hacker terjadi.
+
+Mari kita mulai dengan serangan yang paling legendaris: **SQL Injection (SQLi)**. Inti dari serangan ini adalah "menipu" database agar memberikan data yang seharusnya rahasia.
+
+Pastikan DVWA Anda sudah berjalan dan tingkat keamanan (**DVWA Security**) diatur ke **Low**.
+
+---
+
+### Langkah-langkah Serangan SQL Injection
+
+1. **Buka Menu:** Klik pada tab **SQL Injection** di menu sebelah kiri.
+2. **Uji Coba Normal:** Masukkan angka `1` di kolom "User ID" dan klik Submit.
+* **Hasil:** Anda akan melihat `ID: 1`, `First name: admin`, `Surname: admin`. Ini adalah cara kerja normal aplikasi.
+
+
+3. **Mendeteksi Celah:** Masukkan tanda petik satu (`'`) saja.
+* Jika muncul pesan error seperti *"You have an error in your SQL syntax"*, selamat! Itu artinya website tersebut **rentan** karena ia mencoba menjalankan tanda petik tersebut sebagai perintah database.
+
+---
+
+### Eksploitasi: Mengambil Semua Data User
+
+Sekarang kita akan memasukkan perintah "Logic" agar database menampilkan **semua** user, bukan hanya satu.
+
+Masukkan kode ini di kolom User ID:
+`' OR '1'='1`
+
+**Penjelasannya:**
+Di belakang layar, perintah aslinya adalah:
+`SELECT first_name, last_name FROM users WHERE user_id = '$id'`
+
+Karena kita memasukkan `' OR '1'='1`, perintahnya berubah menjadi:
+`SELECT ... WHERE user_id = '' OR '1'='1'`
+
+Karena `'1'='1'` selalu **BENAR (TRUE)**, database akan memberikan **semua nama** yang ada di tabelnya tanpa peduli ID-nya berapa.
+
+---
+
+### Eksploitasi: Mengetahui Versi Database
+Kita bisa menggunakan teknik **UNION** untuk mencuri informasi sistem. Masukkan kode ini:
+`' UNION SELECT 1, @@version #`
+
+* Ini akan menampilkan versi database (misalnya: MySQL atau MariaDB) yang sedang berjalan di server tersebut.
+
+---
+### Cara Hacker Mengambil Password (Hashed)
+Hacker profesional akan mencari tabel bernama `users` dan kolom `password` menggunakan perintah yang lebih kompleks:
+`' UNION SELECT user, password FROM users #`
+
+Hasilnya adalah deretan kode acak (MD5 Hash). Di lab ini, Anda kemudian bisa belajar cara **"Cracking"** kode acak tersebut untuk mendapatkan password aslinya.
+
+---
+### Apa Selanjutnya?
+Setelah Anda berhasil melihat semua nama user dengan `' OR '1'='1`, langkah berikutnya yang menantang adalah belajar **Cross-Site Scripting (XSS)**—di mana Anda bisa "mengerjai" tampilan web atau mencuri cookie.
+
