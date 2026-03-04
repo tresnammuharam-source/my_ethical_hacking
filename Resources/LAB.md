@@ -1,4 +1,4 @@
-Secara filosofis, **ya, keduanya adalah laboratorium**. Live streaming *ethical hacking* berfungsi sebagai **sandbox** atau lingkungan terkendali untuk menguji reaksi tanpa membahayakan sistem nyata, layaknya praktikum kimia di lab.
+Secara filosofis, **LAB Ethical Hacking adalah sama seprti LAB pada LAB KIMIA, atau LAB BIOLOGI, keduanya adalah laboratorium**. Live streaming *ethical hacking* berfungsi sebagai **sandbox** atau lingkungan terkendali untuk menguji reaksi tanpa membahayakan sistem nyata, layaknya praktikum kimia di lab.
 
 ---
 
