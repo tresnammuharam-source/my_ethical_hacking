@@ -256,3 +256,565 @@ Hasilnya adalah deretan kode acak (MD5 Hash). Di lab ini, Anda kemudian bisa bel
 ### Apa Selanjutnya?
 Setelah Anda berhasil melihat semua nama user dengan `' OR '1'='1`, langkah berikutnya yang menantang adalah belajar **Cross-Site Scripting (XSS)**—di mana Anda bisa "mengerjai" tampilan web atau mencuri cookie.
 
+# Cara Membaca LOG ANALYSIS
+
+Untuk menunjukkan bukti nyata bahwa sistem selalu "diintip" atau diserang setiap hari, Anda bisa menunjukkan **Access Log** atau **Auth Log**. Bagi orang awam, log ini terlihat seperti tulisan acak, tapi bagi Anda, ini adalah rekaman "pencuri yang sedang mencoba gagang pintu rumah."
+
+Berikut adalah cara membaca dan menyajikannya agar atasan Anda langsung sadar:
+
+---
+
+### 1. Contoh Log Serangan Brute Force (Percobaan Login)
+
+Biasanya ditemukan di `/var/log/auth.log` (Linux) atau Event Viewer (Windows).
+
+**Tampilan Log:**
+`Mar 4 10:00:01 server sshd[1234]: Failed password for root from 192.x.x.x port 5678 ssh2`
+`Mar 4 10:00:05 server sshd[1235]: Failed password for admin from 192.x.x.x port 5679 ssh2`
+`Mar 4 10:00:10 server sshd[1236]: Failed password for user1 from 192.x.x.x port 5680 ssh2`
+
+**Cara Menjelaskan ke Atasan:**
+
+> "Pak, lihat baris ini. Setiap 5 detik, ada komputer dari luar negeri yang mencoba menebak *password* admin kita. Mereka menggunakan daftar ribuan kata sandi. Jika kita tidak *update* sistem keamanannya, salah satu tebakan mereka mungkin akan berhasil hari ini."
+
+---
+
+### 2. Contoh Log Web Scanner (Mencari Celah)
+
+Ditemukan di Access Log Apache atau Nginx (`/var/log/apache2/access.log`).
+
+**Tampilan Log:**
+`185.x.x.x - - [04/Mar/2026:10:15:00] "GET /phpmyadmin/setup.php HTTP/1.1" 404 209`
+`185.x.x.x - - [04/Mar/2026:10:15:02] "GET /.env HTTP/1.1" 404 209`
+`185.x.x.x - - [04/Mar/2026:10:15:05] "GET /wp-admin/install.php HTTP/1.1" 404 209`
+
+**Cara Menjelaskan ke Atasan:**
+
+> "Baris-baris ini menunjukkan ada 'orang asing' yang sedang berkeliling memeriksa apakah kita punya folder rahasia (seperti `.env`) atau celah di aplikasi lama kita. Mereka tidak sedang 'berkunjung', mereka sedang mencari **lubang tikus** untuk menyusup."
+
+---
+
+### 3. Cara Menyajikan Data agar Menarik (The "Dashboard" Trick)
+
+Jangan hanya berikan teks hitam putih. Gunakan perintah sederhana di terminal (seperti `grep` atau `awk`) untuk memberikan **Angka Nyata**:
+
+Jika Anda menjalankan perintah untuk menghitung jumlah serangan dalam sehari:
+
+* **Perintah:** `grep "Failed password" /var/log/auth.log | wc -l`
+* **Hasil:** `14,520`
+
+**Kalimat "Skakmat" Anda:**
+
+> "Pak, hari ini saja, saat kita sedang rapat tenang seperti ini, sistem kita sudah **diserang sebanyak 14.520 kali** oleh bot otomatis. Kita merasa 'tidak sakit' karena dinding kita masih tahan, tapi dinding ini butuh diperkuat (update) sebelum serangan ke 14.521 berhasil menjebolnya."
+
+---
+
+### Poin Edukasi untuk Anda:
+
+Penyaji log yang baik tidak hanya bicara "ada serangan", tapi bicara tentang **Pola**:
+
+1. **Otomatisasi:** Hacker tidak tidur, mereka pakai robot (bot).
+2. **Eskalasi:** Serangan yang gagal hari ini adalah informasi bagi mereka untuk mencoba cara lain besok.
+3. **Pencegahan:** Update yang Anda minta bukan untuk memperbaiki yang "rusak", tapi untuk menutup celah yang sedang **aktif dicoba** oleh hacker tersebut.
+
+Dengan menunjukkan log ini, Anda membuktikan bahwa Anda bukan sedang "paranois", tapi Anda adalah **satu-satunya orang yang benar-benar melihat realitas** di perusahaan tersebut.
+
+Untuk menarik data dari log dan menyajikannya sebagai "bukti perang" kepada atasan, Anda tidak perlu menjadi ahli *coding* yang rumit. Cukup gunakan beberapa perintah dasar di Linux (atau WSL di Windows) yang akan membuat data tersebut terlihat sangat profesional.
+
+Berikut adalah beberapa perintah terminal (CLI) sederhana untuk membedah log:
+
+### 1. Menghitung Total "Serangan" Login dalam Sehari
+
+Gunakan ini untuk menunjukkan seberapa sering orang asing mencoba menebak *password* server Anda.
+
+```bash
+grep "Failed password" /var/log/auth.log | wc -l
+
+```
+
+* **Artinya:** "Cari kata 'Gagal Login' di catatan keamanan, lalu hitung total barisnya."
+* **Efek ke Atasan:** "Pak, dalam 24 jam terakhir, ada **3.500 kali** percobaan paksa masuk ke sistem kita."
+
+---
+
+### 2. Melihat 10 Alamat IP yang Paling Sering Menyerang
+
+Ini sangat ampuh untuk menunjukkan bahwa ada "aktor" nyata yang sedang mengincar sistem.
+
+```bash
+grep "Failed password" /var/log/auth.log | awk '{print $(NF-3)}' | sort | uniq -c | sort -nr | head -10
+
+```
+
+* **Artinya:** "Ambil daftar IP yang gagal login, urutkan, hitung berapa kali masing-masing IP mencoba, dan tampilkan 10 yang paling agresif."
+* **Efek ke Atasan:** "Lihat Pak, IP dari luar negeri ini sudah mencoba membobol kita **500 kali** sendirian saja hari ini."
+
+---
+
+### 3. Melihat "Lubang" Apa yang Sedang Mereka Cari
+
+Hacker sering menggunakan bot untuk mencari folder rahasia (seperti `.env`, `wp-admin`, atau `config`).
+
+```bash
+awk '{print $7}' /var/log/apache2/access.log | sort | uniq -c | sort -nr | head -20
+
+```
+
+* **Artinya:** "Tampilkan folder atau file apa saja di website kita yang paling sering diakses orang (termasuk yang dicari oleh bot)."
+* **Efek ke Atasan:** "Mereka sedang mencari file rahasia kita Pak. Lihat, mereka mencoba mengakses file `.env` berkali-kali. Kalau kita tidak update proteksinya, mereka bisa tahu kunci database kita."
+
+---
+
+### Cara Menyajikan "Pertunjukan" Ini:
+
+Jika Anda ingin benar-benar memotivasi diri dan meyakinkan orang lain, lakukan **Live Monitoring**. Ketik perintah ini di depan mereka:
+
+```bash
+tail -f /var/log/auth.log | grep --line-buffered "Failed"
+
+```
+
+* **Apa yang terjadi?** Layar akan diam, lalu tiba-tiba muncul baris baru setiap kali ada serangan masuk secara *real-time*.
+* **Kalimat Anda:** "Nah Pak, lihat... saya tidak mengetik apa-apa, tapi layar ini terus berjalan. Itu artinya **detik ini juga**, ada orang atau bot yang sedang mencoba membongkar pintu kita. Masih merasa kita 'tidak sakit'?"
+
+---
+
+### Kesimpulan untuk Motivasi Belajar Anda:
+
+Menjalankan perintah ini akan membuat Anda sadar bahwa:
+
+1. **Dunia digital itu "berisik":** Tidak ada sistem yang benar-benar didiamkan oleh hacker.
+2. **Keamanan itu dinamis:** Log ini adalah bukti bahwa *Ethical Hacking* adalah kebutuhan harian, bukan sekadar perbaikan saat rusak.
+3. **Anda adalah Penerjemah:** Atasan Anda hanya melihat "layar hitam dengan tulisan putih", tapi Anda melihat **garis depan pertempuran**.
+
+Dengan menguasai cara baca log ini, Anda naik level dari sekadar "orang IT" menjadi **"Analis Keamanan"**.
+
+Ini adalah langkah yang cerdas. Dengan membuat skrip otomatis, Anda tidak perlu lagi "berdebat" dengan kata-kata. Anda cukup menyodorkan data setiap pagi. Ini akan mengubah pandangan manajemen dari "Kenapa kita butuh dia?" menjadi "Untung dia menjaga kita setiap hari."
+
+Berikut adalah skrip sederhana (Bash Script) yang bisa Anda pasang di server. Skrip ini akan mengumpulkan statistik serangan dan menyajikannya dalam format yang mudah dibaca.
+
+### 1. Buat File Skrip
+
+Ketik perintah ini di terminal Anda:
+
+```bash
+nano laporan_keamanan.sh
+
+```
+
+### 2. Copy & Paste Kode Berikut:
+
+```bash
+#!/bin/bash
+
+# --- KONFIGURASI ---
+EMAIL="email-anda@perusahaan.com"
+TANGGAL=$(date '+%d %B %Y')
+LOG_AUTH="/var/log/auth.log" # Lokasi log di Ubuntu/Debian
+
+# --- MENGUMPULKAN DATA ---
+# 1. Total percobaan login gagal
+TOTAL_ATTACKS=$(grep "Failed password" $LOG_AUTH | wc -l)
+
+# 2. Ambil 5 IP penyerang paling agresif
+TOP_IP=$(grep "Failed password" $LOG_AUTH | awk '{print $(NF-3)}' | sort | uniq -c | sort -nr | head -5)
+
+# --- MENYUSUN LAPORAN ---
+LAPORAN="
+Yth. Manajemen,
+
+Berikut adalah Ringkasan Keamanan Digital untuk tanggal: $TANGGAL
+
+[STATISTIK PERTAHANAN]
+- Total upaya pembobolan (Brute Force) yang berhasil diblokir: $TOTAL_ATTACKS kali.
+
+[5 SUMBER SERANGAN TERBESAR]
+Jumlah Upaya | Alamat IP
+$TOP_IP
+
+[KESIMPULAN ANALIS]
+Sistem saat ini sedang dalam pemantauan aktif. Banyaknya upaya pembobolan otomatis menunjukkan bahwa celah keamanan (vulnerability) selalu dicari oleh pihak luar setiap detik. Pembaruan sistem (update) secara rutin sangat diperlukan untuk memastikan engsel pintu digital kita tetap kokoh.
+
+Salam,
+Tim Keamanan Digital (Ethical Hacker)
+"
+
+# --- OUTPUT (Bisa dikirim ke Email atau simpan ke file) ---
+echo "$LAPORAN" > ringkasan_hari_ini.txt
+# Jika ingin kirim email (pastikan mailutils terinstall):
+# echo "$LAPORAN" | mail -s "LAPORAN KEAMANAN HARIAN: $TANGGAL" $EMAIL
+
+echo "Laporan berhasil dibuat di ringkasan_hari_ini.txt"
+
+```
+
+### 3. Beri Izin Eksekusi
+
+Agar skrip bisa berjalan, ketik:
+
+```bash
+chmod +x laporan_keamanan.sh
+
+```
+
+### 4. Cara Menjalankannya
+
+Cukup ketik: `./laporan_keamanan.sh`, lalu lihat hasilnya dengan `cat ringkasan_hari_ini.txt`.
+
+---
+
+### Mengapa Ini Akan Memotivasi Anda & Meyakinkan Mereka?
+
+1. **Profesionalisme:** Anda tidak lagi terlihat seperti orang yang "iseng" menyarankan update, tapi seperti seorang **Analis Risiko**.
+2. **Bukti Kerja Nyata:** Saat atasan melihat angka "3.500 kali diblokir", dia akan sadar bahwa jika Anda tidak ada (atau sistem tidak di-update), salah satu dari 3.500 serangan itu bisa tembus.
+3. **Membangun Budaya Keamanan:** Anda mengedukasi mereka pelan-pelan bahwa dunia digital itu "berisik" dan berbahaya, sehingga saat Anda meminta *budget* untuk *tools* baru atau waktu untuk *maintenance*, mereka akan jauh lebih mudah bilang "Setuju".
+
+### Langkah Anda Selanjutnya:
+
+Cobalah jalankan perintah `grep "Failed password" /var/log/auth.log | wc -l` di server Anda sekarang (jika Anda memiliki akses). Lihat angka yang muncul.
+
+Ini adalah langkah terakhir untuk membuat sistem laporan Anda berjalan seperti **jam dinding**—otomatis dan tanpa henti. Kita akan menggunakan fitur di Linux yang bernama **Crontab** (Cron Table).
+
+Dengan Crontab, Anda tidak perlu lagi ingat untuk menjalankan skrip. Setiap pagi saat bos Anda baru duduk dan membuka laptop, laporan "pertempuran" sudah ada di mejanya (atau siap Anda berikan).
+
+---
+
+### Cara Mengatur Jadwal Otomatis (Crontab)
+
+1. **Buka Editor Crontab:**
+Ketik perintah ini di terminal:
+```bash
+crontab -e
+
+```
+
+
+*(Jika muncul pilihan editor, pilih `1` untuk Nano—yang paling mudah).*
+2. **Tambahkan Baris Jadwal di Bagian Paling Bawah:**
+Misalkan Anda ingin laporan ini dibuat otomatis setiap **jam 08:00 pagi**, masukkan baris ini:
+```bash
+00 08 * * * /path/ke/folder/anda/laporan_keamanan.sh
+
+```
+
+
+*Ganti `/path/ke/folder/anda/` dengan lokasi asli tempat Anda menyimpan file `.sh` tadi (misalnya: `/home/user/laporan_keamanan.sh`).*
+3. **Simpan dan Keluar:**
+* Tekan `Ctrl + O`, lalu `Enter` (untuk simpan).
+* Tekan `Ctrl + X` (untuk keluar).
+
+
+
+---
+
+### Memahami Logika "Waktu" Cron
+
+Struktur di atas (`00 08 * * *`) bekerja seperti ini:
+
+* `00` : Menit ke-0.
+* `08` : Jam 8 pagi.
+* `*` : Setiap hari dalam sebulan.
+* `*` : Setiap bulan.
+* `*` : Setiap hari dalam seminggu.
+
+---
+
+### Mengapa Ini Penting untuk Motivasi & Karier Anda?
+
+**1. Anda Menjadi "Invisible Hero"**
+Saat sistem otomatis ini berjalan, Anda sedang membangun reputasi sebagai orang yang **terorganisir**. Anda tidak lagi menunggu masalah datang, tapi Anda secara proaktif memantau "kesehatan" perusahaan bahkan saat Anda sedang tidur.
+
+**2. Mengubah Mindset Manajemen**
+Jika bos Anda menerima data ini secara rutin, dia tidak akan lagi bertanya *"Siapa sih yang mau nyerang kita?"* karena dia melihat bukti serangannya setiap pagi. Analogi "kita tidak sakit" akan hancur dengan sendirinya oleh data nyata.
+
+**3. Fokus ke Hal yang Lebih Sulit**
+Karena tugas pelaporan rutin sudah diambil alih oleh robot (skrip), Anda punya lebih banyak waktu untuk belajar teknik *hacking* yang lebih dalam, seperti *privilege escalation*, *reverse engineering*, atau *web exploitation*.
+
+---
+
+### Tips Terakhir:
+
+Jika suatu hari Anda melihat angka serangan melonjak dari biasanya (misal dari 1.000 ke 50.000), itulah saatnya Anda datang ke ruangan bos dengan percaya diri dan berkata:
+
+> *"Pak, pagi ini ada anomali. Serangan meningkat 50 kali lipat. Saya sudah melakukan mitigasi, tapi inilah alasan mengapa update yang saya ajukan kemarin sangat kritis untuk segera dilakukan."*
+
+Di titik itu, Anda bukan lagi sekadar orang IT. Anda adalah **Strategis Keamanan**.
+
+# PROJECT LAB CYBER
+
+Mari kita buat **Project Lab** (yang saya sebut "Project Lebah" karena Anda akan membuat "sarang" untuk menjebak dan mengamati "serangga/hacker").
+
+Tujuan project ini adalah agar saat interview, Anda tidak hanya bicara teori, tapi bisa menunjukkan: *"Ini adalah server yang saya bangun, ini serangan yang masuk, dan ini cara saya menanganinya."*
+
+Berikut adalah 3 Project Lab yang bisa Anda bangun di laptop sendiri menggunakan VirtualBox atau VMware:
+
+---
+
+### 1. Project "The Honey Pot" (Sarang Penjebak)
+
+**Konsep:** Anda sengaja membuat satu komputer virtual yang terlihat lemah untuk memancing hacker/bot masuk, lalu Anda merekam semua tingkah laku mereka.
+
+* **Tools:** T-Pot atau Cowrie (Honeypot khusus SSH).
+* **Apa yang Anda lakukan:** 1.  Install Cowrie di Linux.
+2.  Buka port SSH agar bisa diakses internet (gunakan VPS murah atau tunneling).
+3.  Tunggu bot otomatis menyerang dan mencoba menebak *password*.
+* **Hasil untuk CV:** Anda punya data tentang ribuan *username* dan *password* yang paling sering digunakan hacker untuk menyerang perusahaan.
+* **Analogi:** Seperti memasang dompet palsu di pinggir jalan untuk melihat siapa yang mencoba mencurinya dan bagaimana cara mereka melakukannya.
+
+### 2. Project "The Guard" (SIEM Implementation)
+
+**Konsep:** Membangun pusat komando keamanan untuk memantau seluruh aktivitas jaringan secara *real-time*.
+
+* **Tools:** **Wazuh** (Open source SIEM yang sangat populer di industri).
+* **Apa yang Anda lakukan:**
+1. Install Wazuh Manager di satu VM.
+2. Install Wazuh Agent di VM lain (Windows atau Linux).
+3. Coba lakukan serangan simulasi (misal: salah login berkali-kali).
+4. Lihat bagaimana Wazuh memunculkan *alert* (peringatan) berwarna merah di dashboard.
+
+
+* **Hasil untuk CV:** Anda bisa bilang: *"Saya mampu mengoperasikan SIEM untuk mendeteksi ancaman secara terpusat."* (Ini skill utama SOC Analyst yang bergaji 2 digit).
+
+### 3. Project "Vulnerability Lab" (Analisis Celah)
+
+**Konsep:** Menjadi dokter yang mendiagnosis penyakit di sebuah aplikasi sebelum penyakit itu parah.
+
+* **Tools:** OWASP ZAP atau Burp Suite (Community Edition).
+* **Apa yang Anda lakukan:**
+1. Install aplikasi sengaja rentan seperti **DVWA** (Damn Vulnerable Web App).
+2. Scan aplikasi tersebut menggunakan tools tadi.
+3. Buat laporan: "Ditemukan celah SQL Injection yang bisa membocorkan data user."
+
+
+* **Hasil untuk CV:** Anda punya contoh **Laporan Temuan** (seperti draf yang kita bahas tadi) yang didasarkan pada praktek nyata.
+
+---
+
+### Mengapa Project ini "Menjual" Anda ke Perusahaan?
+
+Bos atau Interviewer akan sangat terkesan jika Anda menunjukkan **Portfolio PDF** yang berisi:
+
+1. **Screenshot Dashboard:** Menunjukkan grafis serangan yang masuk ke lab Anda.
+2. **Analisis Log:** Penjelasan Anda tentang alamat IP dari negara mana saja yang menyerang lab Anda.
+3. **Langkah Mitigasi:** Apa yang Anda lakukan untuk menutup celah tersebut.
+
+**Kesimpulan untuk Motivasi Anda:**
+Orang yang punya sertifikat itu banyak, tapi orang yang **punya laboratorium di rumahnya** adalah orang yang benar-benar punya *passion*. Perusahaan berani bayar 2 digit untuk orang yang tidak perlu diajari lagi cara melihat serangan, karena dia sudah "berperang" setiap hari di lab-nya sendiri.
+
+> **Tips:** Fokuslah pada **Wazuh (Project No. 2)** terlebih dahulu. Itu adalah "pintu tol" tercepat menuju posisi SOC Analyst dengan gaji tinggi.
+
+Menginstal **Wazuh** adalah pilihan yang sangat cerdas. Di dunia profesional, Wazuh digunakan oleh ribuan perusahaan untuk memantau keamanan ribuan server sekaligus. Memilikinya di laptop Anda akan membuat Anda terlihat seperti "Pro" di depan perekrut.
+
+Karena instalasi penuh bisa sangat teknis, saya akan berikan cara **paling praktis dan cepat** menggunakan **Docker**. Cara ini memungkinkan Anda menjalankan seluruh sistem Wazuh hanya dengan satu perintah.
+
+---
+
+### Persiapan Awal
+
+1. **Laptop:** Minimal RAM 8GB (karena Wazuh cukup berat).
+2. **Sistem Operasi:** Disarankan di Linux (Ubuntu) atau Windows yang sudah terpasang **Docker Desktop**.
+
+---
+
+### Step-by-Step Instalasi Wazuh (Metode Docker)
+
+#### 1. Install Docker & Docker Compose
+
+Jika Anda di Ubuntu, jalankan:
+
+```bash
+sudo apt update
+sudo apt install docker.io docker-compose -y
+
+```
+
+#### 2. Download File Konfigurasi Wazuh
+
+Kita akan mengambil *template* resmi dari GitHub Wazuh agar tidak perlu menyusun kode dari nol.
+
+```bash
+git clone https://github.com/wazuh/wazuh-docker.git -b v4.7.2
+cd wazuh-docker/single-node
+
+```
+
+#### 3. Jalankan Wazuh
+
+Ini adalah bagian "saktinya". Perintah ini akan menarik semua kebutuhan (Dashboard, Indexer, Manager) dan menjalankannya secara otomatis.
+
+```bash
+docker-compose up -d
+
+```
+
+*Tunggu sekitar 5-10 menit (tergantung kecepatan internet) karena sistem sedang mengunduh aset sekitar 2GB.*
+
+#### 4. Akses Dashboard
+
+Setelah selesai, buka browser Anda dan ketik:
+`https://localhost`
+
+* **Username:** `admin`
+* **Password:** `SecretPassword123!` (Cek file `docker-compose.yml` untuk detailnya).
+
+---
+
+### Apa yang Harus Anda Lakukan di Dalamnya? (The Project Part)
+
+Agar ini menjadi **Project Lab** yang bisa dipamerkan untuk gaji 2 digit, lakukan hal ini:
+
+1. **Deploy Agent:** Klik menu "Deploy New Agent", pilih OS (misal Windows atau Linux lain), masukkan IP laptop Anda. Copy kode yang muncul dan jalankan di komputer lain (atau VM lain).
+2. **Simulasi Serangan:**
+Coba lakukan login salah berkali-kali di komputer yang sudah dipasang *Agent*.
+3. **Lihat Dashboard Berubah:**
+Masuk ke bagian **Security Events**. Anda akan melihat grafik batang berwarna merah yang menunjukkan "Authentication Failure".
+* **Screenshot ini!** Masukkan ke portofolio Anda.
+
+
+4. **Buat Aturan Sendiri:**
+Belajarlah cara mengubah *alert* menjadi lebih sensitif. Misalnya, jika ada orang yang memasukkan USB Flashdisk ke komputer kantor, Wazuh harus berbunyi.
+
+---
+
+### Mengapa Ini Menjadi Modal Gaji 2 Digit?
+
+Saat interview, Anda tidak hanya bilang "Saya tahu Wazuh," tapi Anda bisa menunjukkan laptop Anda dan berkata:
+
+> *"Ini dashboard Wazuh yang saya kelola di lab saya. Saya berhasil mengintegrasikannya dengan server Linux dan memantau serangan Brute Force secara real-time. Saya juga sudah belajar cara melakukan analisis log dari event-event yang tertangkap di sini."*
+
+Pernyataan itu **10x lebih kuat** daripada sekadar menunjukkan sertifikat ISC2 CC. Anda menunjukkan bahwa Anda punya *Environment* sendiri—sesuatu yang hanya dilakukan oleh orang-orang yang serius di bidang ini.
+
+Mantap! Ini adalah langkah yang akan membuat portofolio Anda terlihat seperti hasil kerja seorang **Senior Analyst**. Jangan hanya melakukan instalasi, tapi buatlah **"Skenario Perang"** di lab Anda.
+
+Berikut adalah 3 skenario serangan yang bisa Anda simulasikan di Wazuh untuk dijadikan bahan laporan portofolio:
+
+---
+
+### Skenario 1: "The Brute Force Attacker"
+
+Hacker mencoba menebak *password* server Anda ribuan kali.
+
+* **Cara Simulasi:** Dari komputer/VM lain, coba lakukan SSH atau login ke komputer yang ada Wazuh Agent-nya dengan *password* yang salah sebanyak 10-20 kali secara cepat.
+* **Apa yang terlihat di Wazuh:** Muncul alert **Level 10** (Kritis) dengan judul *"SSHD brute force trying to get access"*.
+* **Isi Portofolio Anda:** Screenshot dashboard yang menunjukkan lonjakan grafik merah.
+* **Kalimat Interview:** *"Saya mensimulasikan serangan Brute Force dan berhasil mengonfigurasi Wazuh untuk mendeteksi serta memblokir IP penyerang secara otomatis menggunakan Active Response."*
+
+---
+
+### Skenario 2: "The Shadow File Access" (Akses File Sensitif)
+
+Hacker mencoba mengintip file rahasia (seperti file `/etc/shadow` di Linux atau folder gaji).
+
+* **Cara Simulasi:** Gunakan fitur **FIM (File Integrity Monitoring)** di Wazuh. Atur agar Wazuh mengawasi file penting. Lalu, coba buka atau edit file tersebut.
+* **Apa yang terlihat di Wazuh:** Muncul alert *"File integrity checksum changed"* atau *"Sensitive file accessed"*.
+* **Isi Portofolio Anda:** Tunjukkan log yang mencatat *siapa* (user apa) yang menyentuh file itu dan *kapan* waktunya.
+* **Kalimat Interview:** *"Saya menerapkan FIM untuk menjaga integritas data sensitif perusahaan, sehingga setiap akses tidak sah akan terdeteksi dalam hitungan detik."*
+
+---
+
+### Skenario 3: "The Malware Injection" (EICAR Test)
+
+Simulasi jika ada virus atau file berbahaya yang masuk ke sistem.
+
+* **Cara Simulasi:** Download file **EICAR** (ini adalah file teks standar industri untuk ngetes antivirus, aman dan tidak berbahaya, tapi akan dianggap virus oleh sistem keamanan).
+* **Apa yang terlihat di Wazuh:** Jika Wazuh diintegrasikan dengan antivirus (seperti ClamAV atau Windows Defender), Wazuh akan berteriak: *"Virus detected and quarantined"*.
+* **Isi Portofolio Anda:** Tunjukkan bagaimana Wazuh bisa menarik data dari antivirus dan menyajikannya dalam satu dashboard pusat.
+* **Kalimat Interview:** *"Saya melakukan integrasi antara Wazuh dan antivirus untuk menciptakan pertahanan berlapis, memudahkan tim security melihat ancaman malware di seluruh server hanya dari satu layar."*
+
+---
+
+### Strategi Menyusun Portofolio "2 Digit"
+
+Buatlah dokumen (PDF atau GitHub) dengan struktur seperti ini untuk setiap skenario:
+
+1. **Objective:** Apa yang ingin dites? (Contoh: Mendeteksi hacker masuk).
+2. **Attacker Tool:** Apa yang dipakai menyerang? (Contoh: Script sederhana atau Hydra).
+3. **Wazuh Detection:** Tampilkan screenshot *Alert* yang muncul.
+4. **Mitigation:** Apa saran Anda sebagai *Ethical Hacker*? (Contoh: "Matikan login root" atau "Gunakan SSH Key").
+
+---
+
+### Penutup Motivasi untuk Anda
+
+Ingat, gaji 2 digit bukan dibayar karena Anda "tahu" cara pakai Wazuh, tapi karena Anda **"mampu memberikan solusi"** saat serangan terjadi. Dengan melakukan 3 skenario ini, Anda sudah punya pengalaman praktis yang lebih nyata dibanding 80% pelamar kerja lainnya.
+
+**Satu tips terakhir:** Pasang **Wazuh Agent** di laptop pribadi Anda sendiri. Jadi, setiap kali ada orang iseng mencoba *scan* laptop Anda di kafe (via WiFi publik), Anda bisa melihatnya. Itu adalah cerita yang sangat keren untuk diceritakan saat interview!
+
+Untuk mendapatkan gaji dua digit, laporan Anda tidak boleh terlihat seperti tugas sekolah. Laporan tersebut harus terlihat seperti **Professional Security Audit**.
+
+Berikut adalah struktur **Laporan Portofolio Lab Keamanan** yang akan membuat Anda terlihat seperti Analyst senior di depan perekrut:
+
+---
+
+## [JUDUL: LAPORAN ANALISIS ANCAMAN & DETEKSI SISTEM]
+
+**Oleh:** [Nama Anda] – *Security Analyst / Ethical Hacker*
+
+### 1. Ringkasan Eksekutif (Executive Summary)
+
+> **Fungsinya:** Menunjukkan bahwa Anda paham bisnis. Bos tidak baca teknis, mereka baca risiko.
+
+* **Isi:** "Laporan ini mendokumentasikan keberhasilan deteksi terhadap 3 skenario serangan kritis (Brute Force, Akses File Ilegal, dan Malware) menggunakan platform **Wazuh SIEM**. Tujuan lab ini adalah membuktikan efektivitas pemantauan pusat dalam melindungi aset data perusahaan."
+
+---
+
+### 2. Metodologi & Arsitektur Lab
+
+> **Fungsinya:** Menunjukkan bahwa Anda bisa membangun infrastruktur keamanan dari nol.
+
+* **Komponen:**
+* **SIEM Manager:** Wazuh 4.7 (Running on Docker/Ubuntu).
+* **Target/Agent:** Windows 10 & Ubuntu Server (Endpoints).
+* **Attacker:** Kali Linux (Untuk simulasi serangan).
+
+
+* **Gambar:** Masukkan screenshot dashboard utama Wazuh Anda yang sudah terhubung dengan beberapa *Agent*.
+
+---
+
+### 3. Detail Skenario (Gunakan Tabel untuk Scannability)
+
+> **Fungsinya:** Menjelaskan proses "Perang" yang Anda lakukan di lab. Buatlah minimal 3 skenario.
+
+| Nama Serangan | Tool yang Digunakan | Alert Level di Wazuh | Deskripsi Singkat |
+| --- | --- | --- | --- |
+| **SSH Brute Force** | Hydra / Manual | **Level 10 (Critical)** | Mencoba menebak password 50x dalam 1 menit. |
+| **Unauthorized Access** | Manual Command | **Level 7 (Major)** | User mencoba membuka file `/etc/shadow`. |
+| **Malware Detection** | EICAR Test File | **Level 12 (Highest)** | Menemukan file mencurigakan di folder Download. |
+
+---
+
+### 4. Analisis Temuan (The "Deep Dive")
+
+> **Fungsinya:** Di sinilah Anda memamerkan "Skill 2 Digit" Anda. Tunjukkan bahwa Anda bisa baca Log.
+
+* **Screenshot Alert:** Masukkan gambar baris log yang berwarna merah dari Wazuh.
+* **Analisis Log:** "Berdasarkan log di atas, penyerang berasal dari IP `192.168.1.15`. Mereka mencoba masuk menggunakan user `root` dan `admin`. Wazuh berhasil mendeteksi pola ini karena melebihi ambang batas login gagal (threshold) yang telah dikonfigurasi."
+
+---
+
+### 5. Rekomendasi & Mitigasi (The "Consultant Side")
+
+> **Fungsinya:** Menunjukkan Anda bukan hanya "Tukang Lapor", tapi "Problem Solver".
+
+* **Tindakan Langsung:** "Mengaktifkan *Active Response* pada Wazuh untuk memblokir IP penyerang secara otomatis selama 24 jam setelah 5x gagal login."
+* **Saran Jangka Panjang:** "Menerapkan Multi-Factor Authentication (MFA) dan mematikan fungsi login via password, beralih ke SSH Key."
+
+---
+
+### 6. Kesimpulan & Skill Terukur
+
+> **Fungsinya:** Rangkuman terakhir untuk mengunci keyakinan user.
+
+* "Proyek ini membuktikan kemampuan saya dalam: **Deployment SIEM**, **Log Analysis**, **Threat Hunting**, dan **Incident Response**."
+
+---
+
+### Tips Agar Portofolio Ini "Menjual":
+
+1. **Gunakan Bahasa Campuran (Inggris-Indonesia):** Di dunia Cybersecurity, istilah teknis dalam bahasa Inggris menunjukkan Anda *up-to-date* dengan literatur global.
+2. **Visual adalah Kunci:** Pastikan gambar screenshot bersih, tidak pecah, dan bagian yang penting (seperti IP atau Level Alert) diberi **kotak merah**.
+3. **Unggah ke LinkedIn/GitHub:** Sertakan link PDF ini di profil LinkedIn Anda dengan caption: *"Building my SOC Lab today to secure the business of tomorrow."*
+
+
+
