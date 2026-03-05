@@ -149,3 +149,12 @@ ROOM 17 Cloud Computing Fundamentals
 - type cloud seperti IaaS, PaaS dan SaaS seperti kita menyewa tempat = IaaS (kostan), PaaS (apartemen), SaaS (rumah fullfurnish)
 - Cloud ini akan berhubungan dengan cost yang dikeluarkan untuk membuat app kita bisa di akses oleh banyak orang, tapi cost ini menjadi stabil bisa di manager
 - server cloud itu seperti AWS, Google Cloud IMB Cloud dll
+
+<img width="1148" height="724" alt="image" src="https://github.com/user-attachments/assets/2554d0ce-372d-4e2b-858b-f3236ca8dc10" />
+
+ROOM 18 Operating System Introduction
+## Penyelesaian
+- Sekarang masuk ke OS (operating system) kamu mungkin tau seperti windows, Linux dan macOS. itu adalah nama2 Operating System (OS)
+- OS adalah yang mendasari kinerja dalam laptop atau PC kamu, kecepatan network, kecepatan proses aplikasi berjalan tergantung pada apa OS kamu
+- tanpa adanya OS computer tidak bisa dipakai, hanya bisa masuk ke sistem hardwarenya atau BIOS
+- OS adalah yang menyambungkan antara hardware dan user, makanya ada CLI (command-line interface) dan GUI (graphic user interface)
