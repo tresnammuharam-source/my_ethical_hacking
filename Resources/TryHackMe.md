@@ -170,12 +170,22 @@ ROOM 19 Windows OS Basic
 
 <img width="1169" height="720" alt="image" src="https://github.com/user-attachments/assets/d72037df-ca94-4550-a318-e16663dda80b" />
 
-ROOM 20 Linux OS CLI Basic
+ROOM 20 Linux CLI Basic
 ## Penyelesaian
 - Disini bagian serunya, jika kamu sudah terbiasa dengan GUI dari Windows, maka jika di Linux CLI kamu harus menyesuaikannya karena di sini kita memakai terminal untuk berkomunikasi dengan komputer
 - terminal adalah perintah dari kita agar komputer bisa menjalankan apa yang diinginkan kita, semuanya teks base, oleh karena itu namanya Linux CLI >> CLI = Command-Line Interface
 - dengan teks base artinya kamu memasukan command yang dimengerti komputer di sini kamu akan belajar dasarnya agar kamu terbiasa, paham kamu dimana, dan bagiamna cara menjelajahnya
 - kamu akan belajar command pwd, ls, ls -l, ls -al, cd .., find ~ -name [nama file], cat, cd /etc, whoami, uname, uname -a, df -h
 - terbiasalah karena ini bagian serunya
+
+<img width="1094" height="686" alt="image" src="https://github.com/user-attachments/assets/31859911-35a8-45d4-8186-912dfd8c48ba" />
+
+ROOM 21 Windows CLI Basic
+## Penyelesaian
+- Setelah CLI di Linux, di windows juga yg notabene pake GUI ternyata punya teks base juga atau CLI yaitu pake Command Pormpt (CMD)
+- CMD di windows bisa shortcut dengan ketik di keyboard WIN + R, maka akan muncul tab dan ketik cmd, nanti akan muncul terminalnya
+- di cmd kamu bisa ketik command seperti pada CLI Linux, namun dengan script command yang agak berbeda
+- kamu akan mengetahui cd itu sama dengan yg ada di linux, tapi untuk menampilkan list seperti di linux yaitu ls di windows berubah menjadi dir (directory)
+- kamu akan belajar command prompt cmd = cd, dir, type, dir /a, dir /s (file yg dicari), cd (alamat file yg dituju), whoami, hostname, systeminfo, ipconfig
 
 
