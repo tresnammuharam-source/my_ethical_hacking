@@ -158,3 +158,12 @@ ROOM 18 Operating System Introduction
 - OS adalah yang mendasari kinerja dalam laptop atau PC kamu, kecepatan network, kecepatan proses aplikasi berjalan tergantung pada apa OS kamu
 - tanpa adanya OS computer tidak bisa dipakai, hanya bisa masuk ke sistem hardwarenya atau BIOS
 - OS adalah yang menyambungkan antara hardware dan user, makanya ada CLI (command-line interface) dan GUI (graphic user interface)
+
+<img width="1148" height="714" alt="image" src="https://github.com/user-attachments/assets/eaa23bda-1159-49e7-a2b0-94c4db565fc6" />
+
+ROOM 19 Windows OS Basic
+## Penyelesaian
+- Seperti pada masa2 dulu belajar mengenal komputer, di windows kamu dikenalkan degan desktop dan task bar serta detailnya
+- terutama fokus pada About Komputer / identitas komputer
+- cara menganalisa scaning pada security folder >> windows security dan firewall devender
+- cara melihat task manager mana user yang sedang digunakan
