@@ -167,3 +167,15 @@ ROOM 19 Windows OS Basic
 - terutama fokus pada About Komputer / identitas komputer
 - cara menganalisa scaning pada security folder >> windows security dan firewall devender
 - cara melihat task manager mana user yang sedang digunakan
+
+<img width="1169" height="720" alt="image" src="https://github.com/user-attachments/assets/d72037df-ca94-4550-a318-e16663dda80b" />
+
+ROOM 20 Linux OS CLI Basic
+## Penyelesaian
+- Disini bagian serunya, jika kamu sudah terbiasa dengan GUI dari Windows, maka jika di Linux CLI kamu harus menyesuaikannya karena di sini kita memakai terminal untuk berkomunikasi dengan komputer
+- terminal adalah perintah dari kita agar komputer bisa menjalankan apa yang diinginkan kita, semuanya teks base, oleh karena itu namanya Linux CLI >> CLI = Command-Line Interface
+- dengan teks base artinya kamu memasukan command yang dimengerti komputer di sini kamu akan belajar dasarnya agar kamu terbiasa, paham kamu dimana, dan bagiamna cara menjelajahnya
+- kamu akan belajar command pwd, ls, ls -l, ls -al, cd .., find ~ -name [nama file], cat, cd /etc, whoami, uname, uname -a, df -h
+- terbiasalah karena ini bagian serunya
+
+
