@@ -190,7 +190,7 @@ ROOM 21 Windows CLI Basic
 
 <img width="1125" height="697" alt="image" src="https://github.com/user-attachments/assets/9753e5d1-3077-43a0-971d-7a7e83f53369" />
 
-ROOM 22 Fist Penetration Operating System Security
+ROOM 22 First Penetration Operating System Security
 ## Penyelesaian
 - Di ini kamu peraktek meretas server orang lain melalui SSH
 - dengan ssh user@IP Address
