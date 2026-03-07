@@ -188,4 +188,13 @@ ROOM 21 Windows CLI Basic
 - kamu akan mengetahui cd itu sama dengan yg ada di linux, tapi untuk menampilkan list seperti di linux yaitu ls di windows berubah menjadi dir (directory)
 - kamu akan belajar command prompt cmd = cd, dir, type, dir /a, dir /s (file yg dicari), cd (alamat file yg dituju), whoami, hostname, systeminfo, ipconfig
 
+<img width="1125" height="697" alt="image" src="https://github.com/user-attachments/assets/9753e5d1-3077-43a0-971d-7a7e83f53369" />
 
+ROOM 22 Fist Penetration Operating System Security
+## Penyelesaian
+- Di ini kamu peraktek meretas server orang lain melalui SSH
+- dengan ssh user@IP Address
+- pada saat pengetikan password, tulisan password tidak akan terlihat dan langsung enter untuk melihat hasilnya apakah passowrdnya benar atau salah
+- percobaan password berkali-kali tetap akan tampil di LOG KEAMANAN cyber security dan bisa dianalisa, tapi jika kamu login dengan password benar dari sumber orang yang tidak paham keamanan cyber maka kamu bisa login
+- setelah login kamu bisa percobaan pindah server dengan perintah su - (user yg di ketahui bisa login pada server yg sama)
+- deengan menggunakan command history maka kamu bisa melihat aktivitas sebelumnya yg dilakukan oleh user, bisa jadi di dalamnya terdapat password ke root system, dan kita bisa pindah su - root
