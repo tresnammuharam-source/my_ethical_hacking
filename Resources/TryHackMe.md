@@ -206,3 +206,10 @@ ROOM 23 Data Representation
 - Data represtation ini bertujuan membuat kamu mengerti data yang dihasilkan komputer itu pake apa?
 - komputer berkomunikasi dan bertrasfer data memakai binary, hexadecimal, semua hanya berawalan 0 dan 1
 - di sini kamu memiliki percobaan dengan binary yaitu 0 dan 1 dengan praktek di color RGB = 000
+
+<img width="1094" height="676" alt="image" src="https://github.com/user-attachments/assets/ede356c4-102b-4987-9906-73ba0bf7f8d6" />
+
+ROOM 24 Data Encoding
+## Penyelesaian
+- Sesi ini sya tidak begitu memahami detail yg initinya kamu belajar data binary 0 dan 1 ini jika di lanjut dengan group dan pengelompkan tertentu akan menjadi text dan simbol
+- dalam hal ini ada aturan dari Unicode = U+8, U+16 dan U+32
