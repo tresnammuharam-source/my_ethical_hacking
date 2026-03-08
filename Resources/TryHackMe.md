@@ -198,3 +198,11 @@ ROOM 22 First Penetration Operating System Security
 - percobaan password berkali-kali tetap akan tampil di LOG KEAMANAN cyber security dan bisa dianalisa, tapi jika kamu login dengan password benar dari sumber orang yang tidak paham keamanan cyber maka kamu bisa login
 - setelah login kamu bisa percobaan pindah server dengan perintah su - (user yg di ketahui bisa login pada server yg sama)
 - deengan menggunakan command history maka kamu bisa melihat aktivitas sebelumnya yg dilakukan oleh user, bisa jadi di dalamnya terdapat password ke root system, dan kita bisa pindah su - root
+
+<img width="1160" height="689" alt="image" src="https://github.com/user-attachments/assets/a77cb65f-335b-4a3c-a635-e9cffd95d806" />
+
+ROOM 23 Data Representation
+## Penyelesaian
+- Data represtation ini bertujuan membuat kamu mengerti data yang dihasilkan komputer itu pake apa?
+- komputer berkomunikasi dan bertrasfer data memakai binary, hexadecimal, semua hanya berawalan 0 dan 1
+- di sini kamu memiliki percobaan dengan binary yaitu 0 dan 1 dengan praktek di color RGB = 000
