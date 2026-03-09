@@ -252,3 +252,11 @@ ROOM 28 CIA Triad
 - (I) Integrity → perubahan data tanpa izin
 - (A) Availability → sistem tidak bisa diakses
 - jika ada kejadian cyber crime, maka yang harus ditanyakan pertama kali adalah CIA
+
+<img width="1153" height="705" alt="image" src="https://github.com/user-attachments/assets/bc7b9e96-1ed5-4a64-973b-256ccaee9358" />
+
+ROOM 29 Cryptography
+## Penyelesaian
+- dalam mengantarkan pesan di dunia cyber kita harus melalui jalur router, claud untuk bisa sampai ke si penerima, banyak serangan saat diperjalanan data tersebut seperti halnya pada prinsip CIA
+- dalam hal ini kamu akan mengerti pesan tersebut bisa terencripsi untuk bisa di buka oleh yg berwenang menerimanya inilah dengan cara cruptograhy
+- si A ingin mengirim pesan ke si B dengan public key si B, dan saat pesan datang yg bisa membuka itu hanya si B karena dia akan membuka dengan private key si B dengan ini pesan aman sampai tujuan
