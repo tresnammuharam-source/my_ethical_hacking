@@ -242,3 +242,13 @@ ROOM 27 Database Basic SQL
 - where = untuk memfilter pada tabel yang di cari
 - oreder, group, sum(), count() semuanya bisa kamu bayangkan sedang mengolah data di excel, tapi dalam bentuk script
 - jika kamu ingin memperdalam queries SQL kamu bisa mencari materi khusus untuk SQL, sya menyarankan **w3school SQL**
+
+<img width="1158" height="701" alt="image" src="https://github.com/user-attachments/assets/0c8432ab-3a88-477c-bdbf-a37742e3ddad" />
+
+ROOM 28 CIA Triad
+## Penyelesaian
+- Dalam cyber security CIA Triad adalah pondasi awal dari mindset cyber security
+- (C) Confidentiality → kebocoran data
+- (I) Integrity → perubahan data tanpa izin
+- (A) Availability → sistem tidak bisa diakses
+- jika ada kejadian cyber crime, maka yang harus ditanyakan pertama kali adalah CIA
