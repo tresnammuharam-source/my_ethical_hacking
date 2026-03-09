@@ -216,8 +216,18 @@ ROOM 24 Data Encoding
 
 <img width="1140" height="693" alt="image" src="https://github.com/user-attachments/assets/17553aaa-8c85-43fd-a431-580d809d77c4" />
 
-ROOM 25 Phyton Basic
+ROOM 25 Phyton Simple Demo
 ## Penyelesaian
 - Kamu di sini berkenalan dengan phyton, hanya berkenalan secara prinsip, bagaimana penggunaan phyton dan apa sih scrip programming yg legent dan friendly ini bekerja
-- Kamu belajar scrip phyton = print(), if else (elif), while (prinsip looping) dan menjalankannya di visual studio code
+- Kamu belajar scrip phyton = print(), if else (elif), != (tidak sama dengan), while (prinsip looping) dan menjalankannya di visual studio code
 - Phyton di sini hanya sebagai cicip saja, jika kamu ingin mendalami phyton bisa buka tutor khusus phyton ya
+
+<img width="1139" height="703" alt="image" src="https://github.com/user-attachments/assets/0b5dad8d-64ca-4b50-9e47-6b5a5114b6b0" />
+
+ROOM 26 JavaScript Simpel Demo
+## Penyelesaian
+- Kamu di sini hanya mencicipi bagaimana code JavaScript bekerja, dengan menjalankan di Visual Studio Code, dan melakukan run concole dengan node.js
+- Biasanya jika menjalankan di VS Code, dia belum terinstal node.js jadi harus instal dulu seperti menginstal aplikasi biasa baru buka VS Code lagi
+- JavaScript lebih ke visual logika yang berada di frontend (visualisasi) sedangkan sebelumnya phyton merupakan logic untuk dikerjakan di backend
+- Disini kamu akan mengerjakan script yang sama intruksinya seperti di phyton, seperti = concole.log() = untuk display script, if else, !== (tidak sama dengan), while (juga sama tentang looping)
+- Jika kamu akan memeperdalam JavaScript bisa mempelajari materi khusus JavaScript ya, apalagi jika kamu suka dengan tampilan atau frontend seperti frontend website, aplikasi dll
