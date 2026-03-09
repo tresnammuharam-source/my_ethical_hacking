@@ -231,3 +231,14 @@ ROOM 26 JavaScript Simpel Demo
 - JavaScript lebih ke visual logika yang berada di frontend (visualisasi) sedangkan sebelumnya phyton merupakan logic untuk dikerjakan di backend
 - Disini kamu akan mengerjakan script yang sama intruksinya seperti di phyton, seperti = concole.log() = untuk display script, if else, !== (tidak sama dengan), while (juga sama tentang looping)
 - Jika kamu akan memeperdalam JavaScript bisa mempelajari materi khusus JavaScript ya, apalagi jika kamu suka dengan tampilan atau frontend seperti frontend website, aplikasi dll
+
+<img width="1133" height="709" alt="image" src="https://github.com/user-attachments/assets/50afc0c0-7c99-4d9d-baac-cd6fd273509b" />
+
+ROOM 27 Database Basic SQL
+## Penyelesaian
+- Disni kamu mempelajari bagaimana penyimpanana Data pada server dengan menggunaan SQL. dalam SQL ini berisi dengan tabel-tabel yang terdiri colom dan rows, dimana kamu memanggil datanya tidak seperti di excel atau spreadsheet, karena SQL khusus untuk skema jutaan data dengan banyak kombinasinya untuk dilakukan visulisasi data
+- dalam hal ini kamu akan melakukan penarikan data di SQL menggunakan script yang namanya QUERIES
+- script >> select * from (nama tabel) = untuk menampilkan semua data pada nama tabel yang dipanggil
+- where = untuk memfilter pada tabel yang di cari
+- oreder, group, sum(), count() semuanya bisa kamu bayangkan sedang mengolah data di excel, tapi dalam bentuk script
+- jika kamu ingin memperdalam queries SQL kamu bisa mencari materi khusus untuk SQL, sya menyarankan **w3school SQL**
