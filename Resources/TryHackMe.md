@@ -213,3 +213,11 @@ ROOM 24 Data Encoding
 ## Penyelesaian
 - Sesi ini sya tidak begitu memahami detail yg initinya kamu belajar data binary 0 dan 1 ini jika di lanjut dengan group dan pengelompkan tertentu akan menjadi text dan simbol
 - dalam hal ini ada aturan dari Unicode = U+8, U+16 dan U+32
+
+<img width="1140" height="693" alt="image" src="https://github.com/user-attachments/assets/17553aaa-8c85-43fd-a431-580d809d77c4" />
+
+ROOM 25 Phyton Basic
+## Penyelesaian
+- Kamu di sini berkenalan dengan phyton, hanya berkenalan secara prinsip, bagaimana penggunaan phyton dan apa sih scrip programming yg legent dan friendly ini bekerja
+- Kamu belajar scrip phyton = print(), if else (elif), while (prinsip looping) dan menjalankannya di visual studio code
+- Phyton di sini hanya sebagai cicip saja, jika kamu ingin mendalami phyton bisa buka tutor khusus phyton ya
