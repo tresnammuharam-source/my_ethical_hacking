@@ -406,5 +406,192 @@ Was the data changed?
 Was the system unavailable?
 → Availability
 ```
+Berikut **5 contoh serangan cyber nyata di dunia** yang sering digunakan sebagai contoh untuk menjelaskan **CIA Triad** dalam kelas cybersecurity. Saya jelaskan **kejadian, dampak, dan bagian CIA yang dilanggar**.
+
+---
+
+# 1️⃣ Kebocoran Data Facebook (2019–2021)
+
+Perusahaan: Meta Platforms
+
+### Apa yang terjadi
+
+Sekitar **533 juta data pengguna** dari **Facebook** bocor di internet.
+
+Data yang bocor meliputi:
+
+* nomor telepon
+* nama
+* lokasi
+* tanggal lahir
+* email
+
+Data ini kemudian **diposting gratis di forum hacker**.
+
+### Dampak
+
+Hacker bisa menggunakan data tersebut untuk:
+
+* phishing
+* scam
+* identity theft
+
+### CIA yang dilanggar
+
+```
+Confidentiality
+```
+
+Karena **data pribadi pengguna terekspos ke publik**.
+
+---
+
+# 2️⃣ Serangan Ransomware Rumah Sakit Inggris (2017)
+
+Serangan ini terjadi melalui malware **WannaCry**.
+
+Target utama:
+
+National Health Service
+
+### Apa yang terjadi
+
+Ransomware mengenkripsi file rumah sakit sehingga:
+
+* dokter tidak bisa mengakses data pasien
+* sistem medis berhenti
+* operasi harus ditunda
+
+### Dampak
+
+* ribuan appointment dibatalkan
+* sistem kesehatan lumpuh
+
+### CIA yang dilanggar
+
+```
+Availability
+```
+
+Karena **sistem tidak bisa diakses oleh dokter dan staf**.
+
+---
+
+# 3️⃣ Serangan SolarWinds Supply Chain (2020)
+
+Perusahaan: SolarWinds
+
+### Apa yang terjadi
+
+Hacker menyusup ke proses update software SolarWinds.
+
+Update yang terinfeksi malware kemudian diinstall oleh:
+
+* perusahaan besar
+* pemerintah
+* organisasi global
+
+### Dampak
+
+Penyerang bisa:
+
+* mengakses jaringan internal
+* memata-matai organisasi
+
+### CIA yang dilanggar
+
+```
+Confidentiality
+```
+
+Karena hacker **mengakses informasi rahasia organisasi**.
+
+---
+
+# 4️⃣ Serangan Sony Pictures (2014)
+
+Perusahaan: Sony Pictures
+
+### Apa yang terjadi
+
+Hacker berhasil masuk ke jaringan Sony dan:
+
+* mencuri email internal
+* mencuri film yang belum dirilis
+* merusak data perusahaan
+
+### Dampak
+
+* data sensitif karyawan bocor
+* reputasi perusahaan rusak
+
+### CIA yang dilanggar
+
+```
+Integrity
+```
+
+Karena **data perusahaan dimodifikasi dan dirusak**.
+
+---
+
+# 5️⃣ Serangan DDoS Dyn DNS (2016)
+
+Target: Dyn
+
+Serangan menggunakan botnet malware **Mirai**.
+
+### Apa yang terjadi
+
+Jutaan perangkat IoT (kamera CCTV, router, dll) digunakan untuk melakukan **DDoS attack**.
+
+Akibatnya banyak website besar tidak bisa diakses, termasuk:
+
+* Twitter
+* Netflix
+* Reddit
+
+### Dampak
+
+* website besar down selama beberapa jam
+
+### CIA yang dilanggar
+
+```
+Availability
+```
+
+Karena **layanan tidak tersedia bagi pengguna**.
+
+---
+
+# Ringkasan 5 Kasus
+
+| Serangan            | CIA yang dilanggar |
+| ------------------- | ------------------ |
+| Facebook data leak  | Confidentiality    |
+| WannaCry ransomware | Availability       |
+| SolarWinds attack   | Confidentiality    |
+| Sony Pictures hack  | Integrity          |
+| Dyn DNS DDoS        | Availability       |
+
+---
+
+# Cara berpikir profesional cybersecurity
+
+Security analyst biasanya selalu bertanya:
+
+```
+Apakah data bocor?
+→ Confidentiality
+
+Apakah data diubah?
+→ Integrity
+
+Apakah sistem tidak bisa digunakan?
+→ Availability
+```
+
+Inilah cara **CIA Triad digunakan dalam incident response**.
 
 ---
