@@ -260,3 +260,13 @@ ROOM 29 Cryptography
 - dalam mengantarkan pesan di dunia cyber kita harus melalui jalur router, claud untuk bisa sampai ke si penerima, banyak serangan saat diperjalanan data tersebut seperti halnya pada prinsip CIA
 - dalam hal ini kamu akan mengerti pesan tersebut bisa terencripsi untuk bisa di buka oleh yg berwenang menerimanya inilah dengan cara cruptograhy
 - si A ingin mengirim pesan ke si B dengan public key si B, dan saat pesan datang yg bisa membuka itu hanya si B karena dia akan membuka dengan private key si B dengan ini pesan aman sampai tujuan
+
+<img width="1122" height="708" alt="image" src="https://github.com/user-attachments/assets/7b88eba6-f28d-40af-8f8a-f9f29b113c33" />
+
+ROOM 30 Become a Hacker
+## Penyelesaian
+- Di room ini kamu mengenal selayang pandang bagaimana hacker bekerja, dalam hal ini hacker yang meretas keamanan yang legal atau disebut ETHICAL HACKER
+- kamu juga mencicipi bagaimana cara hacker membobol informasi dan masuk ke dalam server website dengan menggunakan command CLI Linux
+- seprti command hydra untuk malihat password yang cocok dengan password admin yang biasanya orang2 gunakan
+- sekalin itu di jalur hacker ini yang disebut juga ovensif atau penyerang kamu bisa masuk minat spesialist di cyber security apakah kamu masu red team, atau vulnerability tester, atau penetrasi tester dll
+
