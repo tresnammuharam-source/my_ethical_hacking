@@ -270,3 +270,10 @@ ROOM 30 Become a Hacker
 - seprti command hydra untuk malihat password yang cocok dengan password admin yang biasanya orang2 gunakan
 - sekalin itu di jalur hacker ini yang disebut juga ovensif atau penyerang kamu bisa masuk minat spesialist di cyber security apakah kamu masu red team, atau vulnerability tester, atau penetrasi tester dll
 
+<img width="1122" height="673" alt="image" src="https://github.com/user-attachments/assets/544bb87d-ba38-49ea-a345-bf3bb826fe20" />
+
+ROOM 31 Become a Defender
+## Penyelesaian
+- Di room ini adalah sebaliknya dari kerjaan hacker sebelumnya. di sini tugas kita adalah menjaga atau guardian. jika diibaratkan sebuah lingkungan ada dinding (firewall) ada juga kantor pos (mail server) ada juga gedung seles atau pasar (web server) ada Home citizen (employe device) dan ada juga lingkungan diluar benteng (internet)
+- sebelum kita melakukan penjagaan, kita harus tau dulu langungan apa yang mau di jaga? ada apa saja di sana? apa yang harus dilindungi? jika ada kejadian harus seperti apa?
+- di sinilah kalain mencicipi infomrasi tentang keamanan cyber
