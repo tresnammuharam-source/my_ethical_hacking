@@ -277,3 +277,10 @@ ROOM 31 Become a Defender
 - Di room ini adalah sebaliknya dari kerjaan hacker sebelumnya. di sini tugas kita adalah menjaga atau guardian. jika diibaratkan sebuah lingkungan ada dinding (firewall) ada juga kantor pos (mail server) ada juga gedung seles atau pasar (web server) ada Home citizen (employe device) dan ada juga lingkungan diluar benteng (internet)
 - sebelum kita melakukan penjagaan, kita harus tau dulu langungan apa yang mau di jaga? ada apa saja di sana? apa yang harus dilindungi? jika ada kejadian harus seperti apa?
 - di sinilah kalain mencicipi infomrasi tentang keamanan cyber
+
+<img width="1133" height="703" alt="image" src="https://github.com/user-attachments/assets/d4b4765e-1df8-41e7-8266-280e1f09ca8f" />
+
+ROOM 32 Defensive Security Intro
+## Penyelesaian
+- Di room mungkin untuk masuk lebih dalam mengenal BULE TEAMING yaitu tim Guardians penjaga benteng peretasan yg di dalamnya ada berabagai peran
+- peran seperti SOC Analyst (si penjaga menara), ada Inciden Responder (si detective yang akan menginvestigasi serangan), ada security enginer (yang membuat benteng tersebut dalam struktural yang bagus dan ketat) dan digital forensic (si tim forensic yang mendalami jejak after peretasan, mengidentifikasi malware dan lainnya)
