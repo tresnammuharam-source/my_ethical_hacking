@@ -352,6 +352,10 @@ Karena Anda menunjukkan 3 level kemampuan sekaligus:
 
 Inilah yang membedakan **Operator IT** (Gaji standar) dengan **Security Analyst** (Gaji 2 digit).
 
+---
+
+# Informasi Geografis
+
 Menambahkan informasi **Geografis** (lokasi negara/kota) penyerang ke dalam laporan Anda adalah "sentuhan emas". Ini membuktikan kepada atasan bahwa serangan itu nyata dan datang dari luar benteng perusahaan.
 
 Ada dua cara: menggunakan **Terminal** (keren untuk demo) dan menggunakan **Web** (bagus untuk ambil screenshot peta).
