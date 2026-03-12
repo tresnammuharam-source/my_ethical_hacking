@@ -4,11 +4,13 @@ Untuk menguasai CLI Linux, Anda harus berhenti menggunakan mouse dan mulai melak
 
 ### Langkah Praktis Penguasaan CLI
 
-* **Navigasi Dasar:** Kuasai `pwd` (cek posisi), `ls -la` (list file tersembunyi), dan `cd` (pindah direktori).
-* **Manajemen File:** Latih `mkdir` (buat folder), `touch` (buat file), `cp` (salin), `mv` (pindah/ganti nama), dan `rm` (hapus).
-* **Intip Isi File:** Gunakan `cat`, `less`, atau `tail -f` untuk melihat log secara *real-time*.
-* **Izin Akses (Penting!):** Pahami `chmod` untuk mengubah izin file dan `chown` untuk kepemilikan.
-* **Pencarian & Filter:** Pelajari `grep` untuk mencari kata, `find` untuk mencari file, dan **Piping (`|`)** untuk menghubungkan satu perintah ke perintah lain.
+| **Fungsi** | **Script** |
+| --- | --- |
+| **Navigasi Dasar:** | `pwd` (cek posisi), `ls -la` (list file tersembunyi), dan `cd` (pindah direktori). |
+| **Manajemen File:** | `mkdir` (buat folder), `touch` (buat file), `cp` (salin), `mv` (pindah/ganti nama), dan `rm` (hapus). |
+| **Intip Isi File:** | `cat`, `less`, atau `tail -f` untuk melihat log secara *real-time*. |
+| **Izin Akses (Penting!):** | `chmod` untuk mengubah izin file dan `chown` untuk kepemilikan. |
+| **Pencarian & Filter:** | `grep` untuk mencari kata, `find` untuk mencari file, dan **Piping (`|`)** untuk menghubungkan satu perintah ke perintah lain. |
 
 ### Tips Mempercepat Jam Terbang
 
@@ -16,4 +18,4 @@ Untuk menguasai CLI Linux, Anda harus berhenti menggunakan mouse dan mulai melak
 2. **Tab Completion:** Selalu gunakan tombol **Tab** untuk melengkapi nama file atau perintah secara otomatis agar tidak salah ketik.
 3. **Hapus GUI:** Jika menggunakan VM, coba masuk ke mode *headless* (tanpa tampilan grafis) agar Anda terpaksa menggunakan CLI.
 
-**Latihan pertama:** Coba buat sebuah folder bernama `belajar_hacking`, masuk ke dalamnya, buat file teks kosong, lalu hapus kembali. Berhasil?
+
