@@ -173,3 +173,59 @@ Tahap setelah sistem dikuasai untuk mengambil data atau berpindah ke komputer la
 
 ## cara membedakan perangkat asli dan perangkat virtual hanya lewat CLI
 
+Membezakan antara peranti fizikal (asli) dan peranti virtual melalui CLI adalah kemahiran penting untuk memastikan siapa yang berada di dalam rangkaian anda. Cara yang paling tepat adalah dengan menganalisis **MAC Address** dan **TTL (Time to Live)**.
+
+Berikut adalah teknik-teknik yang boleh anda gunakan menggunakan **Nmap** di Kali Linux:
+
+### 1. Mengenal Pasti Melalui OUI (Organizationally Unique Identifier)
+
+Setiap kad rangkaian mempunyai MAC Address yang unik. 3 bait pertama (6 digit pertama) MAC Address menunjukkan pengeluar perkakasan tersebut.
+
+Gunakan arahan ini:
+`sudo nmap -sP 192.168.1.0/24`
+
+**Cara Membacanya:**
+
+* **Peranti Virtual:** Jika anda melihat pengeluar seperti **VMware**, **Oracle VirtualBox**, atau **Microsoft Hyper-V**, itu sah peranti virtual.
+* **Peranti Asli:** Jika anda melihat nama seperti **Samsung**, **Apple**, **TP-Link**, atau **Intel**, itu adalah peranti fizikal (telefon atau laptop keluarga).
+
+### 2. Teknik OS Detection (Fingerprinting)
+
+Nmap mempunyai pangkalan data yang luas untuk meneka sama ada sistem itu berjalan di atas perkakasan sebenar atau lapisan virtual.
+
+Gunakan arahan:
+`sudo nmap -O [IP_Target]`
+
+**Hasil yang perlu diperhatikan:**
+
+* Nmap biasanya akan menyatakan secara spesifik: *"Device type: general purpose | OS details: Linux 5.x (VirtualBox)"*.
+* Jika ia adalah peranti asli, ia akan menunjukkan model yang lebih spesifik seperti *"Google Android 11"* atau *"Apple iOS 14"*.
+
+### 3. Analisis TTL (Time to Live)
+
+TTL adalah nilai dalam paket data yang menunjukkan berapa banyak "lompatan" (hops) yang boleh dilalui paket tersebut. Peranti virtual sering kali mempunyai nilai TTL yang berbeza daripada peranti fizikal semasa tindak balas.
+
+Gunakan arahan:
+`sudo nmap -sn --traceroute [IP_Target]`
+
+* Jika `traceroute` menunjukkan hanya **1 hop** tetapi peranti tersebut berkelakuan pelik (latensi sangat rendah, di bawah 1ms), ada kemungkinan ia adalah VM yang berjalan di dalam komputer anda sendiri (Host-Only/NAT).
+
+---
+
+### Cara Membezakan Peranti Sendiri vs Penyusup
+
+Untuk mengenali peranti keluarga di rumah, anda boleh menggunakan strategi **"White-listing"**:
+
+1. **Imbas semasa semua orang ada di rumah:**
+Jalankan scan dan catat semua MAC Address peranti keluarga (HP Isteri, Laptop Anak, dsb).
+`sudo nmap -sP 192.168.1.0/24 > senarai_peranti_sah.txt`
+2. **Bandingkan dengan Vendor:**
+* **Penyusup:** Jika anda nampak IP dengan vendor **"Espressif Inc"** tetapi anda tidak mempunyai peranti Smart Home (lampu pintar/CCTV), itu mungkin penyusup yang menggunakan modul Wi-Fi murah.
+* **Penyusup Virtual:** Jika anda nampak vendor **"VMware"** tetapi anda tidak menjalankan sebarang Lab, itu mungkin seseorang sedang melakukan serangan menggunakan Kali Linux dari dalam laptop mereka.
+
+### Latihan CLI:
+
+Cuba jalankan arahan ini untuk melihat peranti di sekitar anda sekarang:
+`sudo nmap -sn -PR 192.168.1.0/24`
+*(Flag `-PR` menggunakan ARP request, sangat pantas dan tepat untuk rangkaian lokal).*
+
