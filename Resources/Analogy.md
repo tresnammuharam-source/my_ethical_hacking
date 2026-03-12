@@ -215,3 +215,89 @@ Mengingat Anda sedang mempelajari **Kali Linux** dan bercita-cita menjadi **SOC 
 * **Nmap** akan sering Anda lihat di log (sebagai serangan yang masuk).
 * **Wireshark** akan menjadi alat utama Anda untuk membedah serangan tersebut.
 
+---
+
+# Seorang Ethical Hacker / SOC Perlu Mempunyai Jam Terbang
+
+**Pengalaman praktis** adalah kunci di dunia keamanan siber karena teori saja tidak cukup untuk menghadapi skenario ancaman yang terus berubah. Jam terbang membantu Anda mengasah "insting" dalam mendeteksi anomali atau celah keamanan yang tidak terbaca oleh alat pemindai otomatis.
+
+Untuk membangun portofolio dan pengalaman tersebut, Anda bisa mulai dengan:
+
+* **Platform Lab:** Berlatih di TryHackMe, Hack The Box, atau CyberDefenders untuk simulasi dunia nyata.
+* **Sertifikasi Berbasis Praktik:** Kejar sertifikat seperti OSCP (untuk Pentesting) atau BTL1 (untuk SOC) yang ujiannya berupa simulasi lab 24 jam.
+* **Proyek Open Source & Bug Bounty:** Berpartisipasi dalam program pengungkapan kerentanan untuk menghadapi sistem asli secara legal.
+
+Untuk membangun jam terbang tinggi di dunia *cybersecurity*, kuncinya adalah **konsistensi dalam menghadapi anomali**. Anda tidak bisa hanya membaca buku; Anda harus "mengotori tangan" di medan tempur digital setiap hari.
+
+### Kiat Strategis Membangun Pengalaman
+
+* **Hajar Lab Simulasi:** Habiskan waktu di platform seperti **Hack The Box** atau **TryHackMe**. Selesaikan tantangan dari level *easy* hingga *insane* untuk melatih logika berpikir penyerang (*adversarial mindset*).
+* **Dokumentasikan Write-ups:** Setiap kali Anda berhasil menembus mesin atau menganalisis log, tuliskan metodenya. Ini membuktikan bahwa Anda tidak hanya beruntung, tapi paham prosesnya.
+* **Terjun ke Bug Bounty:** Coba program legal seperti **HackerOne**. Menemukan satu celah nyata pada sistem aktif bernilai jauh lebih tinggi daripada simulasi apa pun.
+* **Analisis Log Real-Time:** Jika mengincar SOC, buatlah *home lab* menggunakan ELK Stack atau Splunk untuk memantau trafik jaringan Anda sendiri.
+
+### Semangat yang Dibutuhkan
+
+Milikilah **keingintahuan yang mengganggu** (*insatiable curiosity*). Jangan puas hanya dengan tahu bahwa sebuah alat bekerja; bedah kode di baliknya untuk tahu *mengapa* ia bekerja. Mentalitas pantang menyerah saat membentur tembok (stuck) adalah pembeda utama antara pemula dan ahli.
+
+## Simple Road Map Penetration Testing / The Infiltrator
+
+Ini adalah peta jalan (*roadmap*) untuk menguasai **Ethical Hacking** (Penetration Testing) guna membangun jam terbang yang solid:
+
+### 1. Fondasi Teknis (The Groundwork)
+
+Sebelum membobol sistem, Anda harus paham cara kerjanya.
+
+* **Networking:** Pahami model OSI, TCP/IP, DNS, dan HTTP/S.
+* **Linux/Unix:** Kuasai *command line* (CLI) karena mayoritas alat peretasan berbasis Linux.
+* **Scripting:** Pelajari Python atau Bash untuk mengotomatisasi tugas-tugas repetitif.
+
+### 2. Metodologi Serangan (The Kill Chain)
+
+Pelajari tahapan sistematis dalam sebuah penetrasi:
+
+1. **Reconnaissance:** Mengumpulkan informasi target (OSINT, Whois).
+2. **Scanning:** Mencari port terbuka dan layanan yang berjalan (Nmap).
+3. **Exploitation:** Memasuki sistem menggunakan celah yang ditemukan (Metasploit, SQL Injection).
+4. **Post-Exploitation:** Mempertahankan akses dan eskalasi hak istimewa (*Privilege Escalation*).
+
+### 3. Asah Kemampuan di Lab (Building Flight Hours)
+
+Jangan hanya membaca; praktikkan di lingkungan legal agar terbiasa dengan "bau" celah keamanan:
+
+* **TryHackMe:** Sangat bagus untuk pemula dengan panduan terstruktur.
+* **Hack The Box:** Untuk tingkat lanjut yang ingin mengasah kreativitas dalam mencari celah.
+* **VulnHub:** Unduh mesin virtual (VM) yang sengaja dibuat rentan untuk diserang secara offline.
+
+### 4. Sertifikasi untuk Validasi
+
+Gelar profesional membantu Anda melewati filter HRD dan membuktikan ketangguhan mental:
+
+* **eJPT:** Sertifikasi praktis terbaik untuk memulai.
+* **OSCP:** Standar emas industri yang menguji kemampuan praktis Anda selama 24 jam penuh.
+
+**Kunci Semangat:** Jadikan setiap kegagalan (*exploit failed*) sebagai data baru, bukan akhir dari pencarian.
+
+
+## Daftar *tools* wajib yang harus Anda kuasai di awal
+
+Kuasai **Linux Command Line** dan **Networking (TCP/IP)** sebagai fondasi utama. Tanpa memahami cara data berpindah dan cara mengendalikan sistem operasi, Anda akan kesulitan menggunakan alat peretasan secara efektif.
+
+Berikut adalah daftar prioritas untuk dipelajari di awal:
+
+* **Navigasi Linux:** Terbiasa dengan terminal, manajemen file, dan hak akses (*permissions*).
+* **Protokol Jaringan:** Pahami cara kerja DNS, HTTP/S, IP Addressing, dan Port.
+* **Analisis Web:** Pelajari struktur dasar HTML dan bagaimana *request/response* bekerja.
+* **Logika Pemrograman:** Minimal paham dasar Bash *scripting* atau Python untuk otomatisasi sederhana.
+
+Menggunakan **Kali Linux** melalui **WSL** (Windows Subsystem for Linux) atau **VirtualBox/VMware** adalah langkah awal yang tepat.
+
+Langkah praktis pertama Anda:
+
+1. **Update Repository**: Jalankan `sudo apt update && sudo apt upgrade` untuk memastikan semua *tools* siap pakai.
+2. **Kuasai Terminal**: Jangan gunakan antarmuka grafis (GUI); paksa diri Anda menggunakan perintah dasar seperti `ls`, `cd`, `grep`, dan `cat`.
+3. **Pahami Nmap**: Pelajari cara memindai jaringan sendiri untuk melihat *port* apa yang terbuka.
+
+---
+
+
