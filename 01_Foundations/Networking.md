@@ -11,7 +11,7 @@ ada guru pelajaran lain di luar lagi liat ke dalam kelas (public network) apakah
 ICMP (Internet Control Massage Protocol) ini adalah cara dan alat untuk mengecek apakah di suatu jaringan itu bagus, stabil dan menggunakan perangkat OS apa.
 itu pun klo itu guru pelajaran lain yg melihat isi kelas dari luar, bagaimana yg melihat kelas dari luar itu adalah penculik? maka itu diesebut dengan hacker, yg akan mencuri IP Address atau MAC Address atau berpura2 jadi MAC Address orang lain ("fake spoofed").
 
-# 📡 Apa itu **Ping**?
+# Apa itu **Ping**?
 
 **Ping** adalah tool untuk:
 
@@ -32,7 +32,7 @@ ping google.com
 
 ---
 
-# 📦 Apa itu **ICMP**?
+# Apa itu **ICMP**?
 
 **ICMP** adalah singkatan dari:
 
@@ -46,9 +46,9 @@ ICMP adalah protokol yang digunakan untuk:
 
 ---
 
-# 🔗 Hubungan Ping dan ICMP
+# Hubungan Ping dan ICMP
 
-👉 **Ping menggunakan ICMP untuk bekerja.**
+**Ping menggunakan ICMP untuk bekerja.**
 
 Saat kamu mengetik:
 
@@ -64,7 +64,7 @@ Yang sebenarnya terjadi:
 
 ---
 
-# 🔄 Alur Sederhana
+# Alur Sederhana
 
 ```
 Kamu  → ICMP Echo Request → Server
@@ -80,7 +80,7 @@ Kalau tidak ada reply = kemungkinan:
 
 ---
 
-# 🎯 Kenapa Ini Penting di Cyber Security?
+# Kenapa Ini Penting di Cyber Security?
 
 Karena:
 
@@ -113,7 +113,7 @@ Sebagai pentester atau SOC analyst, ping membantu:
 
 ---
 
-# 🧠 Insight Penting
+# Insight Penting
 
 Ping bekerja di:
 
@@ -126,7 +126,7 @@ Banyak orang salah kira ping pakai TCP — padahal tidak.
 
 ---
 
-# 🔥 Dalam Dunia Ethical Hacking
+# Dalam Dunia Ethical Hacking
 
 Tool seperti:
 
@@ -187,7 +187,7 @@ Mari kita bedah satu per satu.
 
 ---
 
-# 🎯 1️⃣ time=24ms → Apa Artinya?
+# time=24ms → Apa Artinya?
 
 **24 ms = 24 milidetik**
 
@@ -203,7 +203,7 @@ Jadi:
 
 ---
 
-# 🧠 Interpretasi Nilai ms
+# Interpretasi Nilai ms
 
 | Nilai ms   | Interpretasi       |
 | ---------- | ------------------ |
@@ -217,7 +217,7 @@ Jadi:
 
 ---
 
-# 🔥 Apa yang Bisa Kamu Dapat Dari Nilai ms?
+# Apa yang Bisa Kamu Dapat Dari Nilai ms?
 
 ## 1️⃣ Mengukur Latency Jaringan
 
@@ -257,7 +257,7 @@ Itu bisa menunjukkan:
 
 ---
 
-# 🎯 TTL Itu Apa?
+# TTL Itu Apa?
 
 Contoh output:
 
@@ -282,7 +282,7 @@ Tapi ini hanya indikasi, bukan pasti.
 
 ---
 
-# 🔥 Dalam Cyber Security, Ping Bisa Digunakan Untuk:
+# Dalam Cyber Security, Ping Bisa Digunakan Untuk:
 
 ## 1️⃣ Host Discovery
 
@@ -320,7 +320,7 @@ Sebagai pentester, kamu tidak boleh langsung asumsi host mati.
 
 ---
 
-# 🎓 Kesimpulan
+# Kesimpulan
 
 Kalau kamu melihat:
 
@@ -337,9 +337,8 @@ Itu berarti:
 
 ---
 
----
 
-# 🎯 Cara Membaca Ping Untuk Analisa Lebih Dalam
+# Cara Membaca Ping Untuk Analisa Lebih Dalam
 
 Misalnya hasilnya seperti ini:
 
@@ -387,7 +386,7 @@ Artinya:
 
 ---
 
-## 🎯 Action Berdasarkan Latency
+## Action Berdasarkan Latency
 
 ### 🔹 Jika 1–5ms
 
@@ -444,7 +443,7 @@ Biasanya:
 
 ---
 
-## 🎯 Action Berdasarkan TTL
+## Action Berdasarkan TTL
 
 Kalau TTL ~64:
 
@@ -485,7 +484,7 @@ Kemungkinan:
 
 ---
 
-## 🎯 Action Jika Timeout
+## Action Jika Timeout
 
 Gunakan:
 
@@ -527,7 +526,7 @@ Dalam SOC environment, ini bisa jadi indikasi:
 
 ---
 
-# 🧠 Cara Berpikir Seorang Pentester
+# Cara Berpikir Seorang Pentester
 
 Ping bukan cuma:
 "Apakah hidup?"
@@ -542,7 +541,7 @@ Tapi:
 
 ---
 
-# 🔥 Workflow Profesional Setelah Ping
+# Workflow Profesional Setelah Ping
 
 ```
 1️⃣ Ping
