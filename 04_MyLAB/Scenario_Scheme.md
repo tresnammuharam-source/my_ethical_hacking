@@ -1,4 +1,4 @@
-## kita akan mengambil peran sebagai **The Infiltrator (Red Team)**.
+# Schema **The Infiltrator (Red Team)**.
 
 Bayangkan Anda baru saja menerima kontrak "Penetration Testing" resmi dari sebuah perusahaan teknologi fiktif bernama **"Arka-Data Corp"**.
 
@@ -63,7 +63,7 @@ Jika Anda ingin serius di jalur ini, ini adalah *skill tree* yang harus Anda nai
 * **Scripting:** Minimal paham dasar Python atau Bash untuk otomatisasi serangan.
 * **Cybersecurity Tools:** Belajar menggunakan Nmap, Metasploit, dan Wireshark.
 
-## Scheme The Guardian
+# Scheme The Guardian
 
 Mari kita putar balik waktu. Sekarang, Anda adalah **The Guardian (SOC Analyst Tier 1)** yang sedang bertugas di markas keamanan **Arka-Data Corp**.
 
