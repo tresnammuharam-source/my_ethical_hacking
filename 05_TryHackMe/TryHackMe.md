@@ -291,3 +291,10 @@ ROOM 31 Search Skill
 ## Penyelesaian
 - Inti dari room ini dalah jika kamu sebagai ethical hacker, kamu tidak langung melakukan peretasan, tapi kamu akan melihat situasi target, medan dan orang2nya. nah dari mana kamu mendapatkan informasi tersebut?
 - dalam hal ini proses melakukan pemetaan target di sebut recon / Reconnaissance yaitu tahap awal pengumpulan informasi
+
+<img width="1147" height="701" alt="image" src="https://github.com/user-attachments/assets/0a91c6d2-26ae-4afb-9641-de71915889fc" />
+
+ROOM 32 Linux Fuindamental part 1
+## Penyelesaian
+- DI sini kamu belajar CLI awal yang kamu harus ketahui di Linux
+- echo, > >>, ls, cd, pwd, whoami, find -name (nama), grep -l (yang dicari)
