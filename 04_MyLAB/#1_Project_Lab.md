@@ -61,6 +61,10 @@ Orang yang punya sertifikat itu banyak, tapi orang yang **punya laboratorium di 
 
 > **Tips:** Fokuslah pada **Wazuh (Project No. 2)** terlebih dahulu. Itu adalah "pintu tol" tercepat menuju posisi SOC Analyst dengan gaji tinggi.
 
+---
+
+# Cara Instal WAZUH
+
 Menginstal **Wazuh** adalah pilihan yang sangat cerdas. Di dunia profesional, Wazuh digunakan oleh ribuan perusahaan untuk memantau keamanan ribuan server sekaligus. Memilikinya di laptop Anda akan membuat Anda terlihat seperti "Pro" di depan perekrut.
 
 Karena instalasi penuh bisa sangat teknis, saya akan berikan cara **paling praktis dan cepat** menggunakan **Docker**. Cara ini memungkinkan Anda menjalankan seluruh sistem Wazuh hanya dengan satu perintah.
