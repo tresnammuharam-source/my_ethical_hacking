@@ -145,6 +145,9 @@ Saat interview, Anda tidak hanya bilang "Saya tahu Wazuh," tapi Anda bisa menunj
 > *"Ini dashboard Wazuh yang saya kelola di lab saya. Saya berhasil mengintegrasikannya dengan server Linux dan memantau serangan Brute Force secara real-time. Saya juga sudah belajar cara melakukan analisis log dari event-event yang tertangkap di sini."*
 
 Pernyataan itu **10x lebih kuat** daripada sekadar menunjukkan sertifikat ISC2 CC. Anda menunjukkan bahwa Anda punya *Environment* sendiri—sesuatu yang hanya dilakukan oleh orang-orang yang serius di bidang ini.
+---
+
+# "Skenario Serangan" di lab Wazuh
 
 Mantap! Ini adalah langkah yang akan membuat portofolio Anda terlihat seperti hasil kerja seorang **Senior Analyst**. Jangan hanya melakukan instalasi, tapi buatlah **"Skenario Perang"** di lab Anda.
 
