@@ -284,3 +284,10 @@ ROOM 32 Defensive Security Intro
 ## Penyelesaian
 - Di room mungkin untuk masuk lebih dalam mengenal BULE TEAMING yaitu tim Guardians penjaga benteng peretasan yg di dalamnya ada berabagai peran
 - peran seperti SOC Analyst (si penjaga menara), ada Inciden Responder (si detective yang akan menginvestigasi serangan), ada security enginer (yang membuat benteng tersebut dalam struktural yang bagus dan ketat) dan digital forensic (si tim forensic yang mendalami jejak after peretasan, mengidentifikasi malware dan lainnya)
+
+<img width="1129" height="713" alt="image" src="https://github.com/user-attachments/assets/cdde4744-b614-4a9d-bbad-ade0f9357f25" />
+
+ROOM 31 Search Skill
+## Penyelesaian
+- Inti dari room ini dalah jika kamu sebagai ethical hacker, kamu tidak langung melakukan peretasan, tapi kamu akan melihat situasi target, medan dan orang2nya. nah dari mana kamu mendapatkan informasi tersebut?
+- dalam hal ini proses melakukan pemetaan target di sebut recon / Reconnaissance yaitu tahap awal pengumpulan informasi
