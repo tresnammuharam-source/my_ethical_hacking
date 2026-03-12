@@ -52,6 +52,8 @@ Atur konfigurasi jaringan virtual ke mode **Host-Only**. Ini seperti menutup pin
 
 ---
 
+## Menyiapkan Peralatan LAB
+
 Untuk membangun lab *ethical hacking* yang aman, Anda wajib menyiapkan **"Peralatan Utama"** berikut:
 
 * **Hypervisor (Wadah Lab):** Instal **VirtualBox** atau **VMware Player** sebagai fondasi untuk menjalankan simulasi tanpa merusak komputer asli.
@@ -61,7 +63,7 @@ Untuk membangun lab *ethical hacking* yang aman, Anda wajib menyiapkan **"Perala
 
 Risiko utama dalam lab *ethical hacking* adalah **"Data Spill"** atau kebocoran malware/serangan ke jaringan asli (fisik) Anda atau internet publik.
 
-### Risiko dan Penyebab Kebocoran
+## Risiko dan Penyebab Kebocoran
 
 | Risiko | Penyebab (Action) |
 | --- | --- |
@@ -70,7 +72,7 @@ Risiko utama dalam lab *ethical hacking* adalah **"Data Spill"** atau kebocoran 
 | **Data Leakage** | Mengaktifkan fitur **Shared Clipboard** atau **Shared Folders** secara dua arah antara laptop asli dan mesin lab. |
 | **Legal Issues** | Salah mengetik alamat IP sehingga Anda menyerang server asli di internet, bukan mesin simulasi di lab sendiri. |
 
-### Tindakan Pencegahan (Mitigasi)
+## Tindakan Pencegahan (Mitigasi)
 
 1. **Gunakan Host-Only Adapter:** Pastikan semua mesin virtual hanya bisa berkomunikasi satu sama lain, bukan ke internet.
 2. **Snapshot:** Selalu buat "cadangan" (snapshot) sebelum menjalankan kode berbahaya agar bisa *reset* instan jika terjadi error.
@@ -102,11 +104,13 @@ Penyebab laptop bekas sangat efektif untuk lab:
 * **Eksperimen Bebas:** Anda tidak perlu takut sistem *crash* atau harus *install* ulang OS karena tidak ada data penting di dalamnya.
 * **Fokus:** Laptop tersebut bisa dikonfigurasi khusus hanya untuk *tools* hacking tanpa gangguan aplikasi lain.
 
-Selain serangan fisik menggunakan USB, dunia *Ethical Hacking* sebagian besar berfokus pada **Web Application Penetration Testing**. Ini adalah bidang yang mempelajari bagaimana sebuah website atau aplikasi bisa ditembus melalui internet tanpa harus menyentuh perangkatnya secara fisik.
+---
+
+## **Web Application Penetration Testing**
+
+Ini adalah bidang yang mempelajari bagaimana sebuah website atau aplikasi bisa ditembus melalui internet tanpa harus menyentuh perangkatnya secara fisik.
 
 Berikut adalah hal-hal seru yang bisa Anda pelajari di lab Anda terkait keamanan web:
-
----
 
 ### 1. Mempelajari "The Big Three" (Serangan Web Paling Populer)
 
@@ -141,7 +145,7 @@ Anda bisa bergabung dengan platform belajar yang memberikan lab *online* gratis 
 
 ---
 
-### Apa yang Bisa Anda Lakukan Sekarang?
+## Apa yang Bisa Anda Lakukan Sekarang?
 
 Jika Anda sudah punya **Kali Linux** di laptop, Anda sudah memiliki hampir semua tools di atas secara gratis.
 
@@ -209,17 +213,13 @@ Pastikan DVWA Anda sudah berjalan dan tingkat keamanan (**DVWA Security**) diatu
 
 ---
 
-### Langkah-langkah Serangan SQL Injection
+## Langkah-langkah Serangan SQL Injection
 
 1. **Buka Menu:** Klik pada tab **SQL Injection** di menu sebelah kiri.
 2. **Uji Coba Normal:** Masukkan angka `1` di kolom "User ID" dan klik Submit.
 * **Hasil:** Anda akan melihat `ID: 1`, `First name: admin`, `Surname: admin`. Ini adalah cara kerja normal aplikasi.
-
-
 3. **Mendeteksi Celah:** Masukkan tanda petik satu (`'`) saja.
 * Jika muncul pesan error seperti *"You have an error in your SQL syntax"*, selamat! Itu artinya website tersebut **rentan** karena ia mencoba menjalankan tanda petik tersebut sebagai perintah database.
-
----
 
 ### Eksploitasi: Mengambil Semua Data User
 
