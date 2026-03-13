@@ -246,5 +246,10 @@ Cuba jalankan arahan ini untuk melihat peranti di sekitar anda sekarang:
 | **`grep ("kata yg dicari")`** | mencari kata yg di cari dalam suatu file | jika memakai -R (recursive) maka jadi `grep -R ("kata yg dicari")` atau `grep -R ("lata yg dicari") /etc/` akan mencari di semua direktori dan subdirektory |
 | **`>`** | memasukan kata ke dalam file | echo hello > note (txt) = akan mereplace semua kata di note.txt menjadi hello |
 | **`>>`** | menambahkan kata ke dalam file | echo dunia >> note (txt) = maka akan menambahakan kata dunia ke dalam file txt note tanpa menghilangkan kata yang sudah ada di dalamnya |
-
+| **`touch`** | touch	Create fil | membuat file di direktory |
+| **`mkdir`** | make directory untuk Create a folder | membuat folder di direktory, `mkdir folder4` akan menjadi folder4 |
+| **`cp`** | Copy a file or folde | melakukan copy `cp note.txt` |
+| **`mv`** | Move a file or folder | memindahkan file atau folder ke tempat yang di tuju, `mv catatan folder4` memindahkan file catatan ke folder folder4 |
+| **`rm`** | Remove a file or folder | melakukan penghapusan file atau folder, `mr catatan` akan menghapus file catatan, `mr *` akan menghapus semua file di folder yg ditempati |
+| **`file`** | Determine the type of a file | untuk melihat jenis file yang disebut, `file catatan` maka akan muncul hasilnya `catatan.txt` karena formatnya .txt, `file -a` akan membuka semua jenis file di direktory tersebut |
 
