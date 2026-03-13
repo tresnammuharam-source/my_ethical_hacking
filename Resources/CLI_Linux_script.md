@@ -251,5 +251,5 @@ Cuba jalankan arahan ini untuk melihat peranti di sekitar anda sekarang:
 | **`cp`** | Copy a file or folde | melakukan copy `cp note.txt` |
 | **`mv`** | Move a file or folder | memindahkan file atau folder ke tempat yang di tuju, `mv catatan folder4` memindahkan file catatan ke folder folder4 |
 | **`rm`** | Remove a file or folder | melakukan penghapusan file atau folder, `mr catatan` akan menghapus file catatan, `mr *` akan menghapus semua file di folder yg ditempati |
-| **`file`** | Determine the type of a file | untuk melihat jenis file yang disebut, `file catatan` maka akan muncul hasilnya `catatan.txt` karena formatnya .txt, `file -a` akan membuka semua jenis file di direktory tersebut |
+| **`file`** | Determine the type of a file | untuk melihat jenis file yang disebut, `file catatan` maka akan muncul hasilnya `catatan.txt` karena formatnya .txt, `file -l` akan membuka semua jenis file di direktory tersebut |
 
