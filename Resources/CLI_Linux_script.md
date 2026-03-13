@@ -229,6 +229,8 @@ Cuba jalankan arahan ini untuk melihat peranti di sekitar anda sekarang:
 `sudo nmap -sn -PR 192.168.1.0/24`
 *(Flag `-PR` menggunakan ARP request, sangat pantas dan tepat untuk rangkaian lokal).*
 
+---
+
 ## Rangkuman CLI yang sering dipakai
 
 | Perintah | Fungsi | Kegunaan dalam Keamanan |
