@@ -229,3 +229,20 @@ Cuba jalankan arahan ini untuk melihat peranti di sekitar anda sekarang:
 `sudo nmap -sn -PR 192.168.1.0/24`
 *(Flag `-PR` menggunakan ARP request, sangat pantas dan tepat untuk rangkaian lokal).*
 
+## Rangkuman CLI yang sering dipakai
+
+| Perintah | Fungsi | Kegunaan dalam Keamanan |
+| --- | --- | --- |
+| **`pwd`** | Menampilkan direktori kerja saat ini. | Memastikan posisi Anda sebelum menjalankan perintah sensitif. |
+| **`ls -la`** | List file (termasuk yang tersembunyi). | Melihat file mencurigakan yang diawali tanda titik (`.`). |
+| **`cd`** | Berpindah direktori. | Berpindah ke folder konfigurasi sistem atau log. |
+| **`echo`** | Membuat teks | menulis teks yg bisa langsung dibuatkan dalam file .txt, atau sekedar print teks |
+| **`whoami`** | melihat username server | mengetahui server siapa yang sedang digunakan |
+| **`cat`** | membaca file | concatenate membuka file dan melihat isinya |
+| **`find -name (nama file yg dicari)`** | mencari lokasi direktori dari file yang dicari | melihat lokasi file secara urutan direktori, jika `find -name *.txt` artinya mencari file-file semua file yg .txt di di rektory tersebut |
+| **`wc -l (nama file)`** | melihat baris pada file .txt | melihat jumlah baris agar tidak langsung banyak membukanya jika file barinya banyak |
+| **`grep ("kata yg dicari")`** | mencari kata yg di cari dalam suatu file | jika memakai -R (recursive) maka jadi `grep -R ("kata yg dicari")` atau `grep -R ("lata yg dicari") /etc/` akan mencari di semua direktori dan subdirektory |
+| **`>`** | memasukan kata ke dalam file | echo hello > note (txt) = akan mereplace semua kata di note.txt menjadi hello |
+| **`>>`** | menambahkan kata ke dalam file | echo dunia >> note (txt) = maka akan menambahakan kata dunia ke dalam file txt note tanpa menghilangkan kata yang sudah ada di dalamnya |
+
+
