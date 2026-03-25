@@ -298,3 +298,21 @@ ROOM 32 Linux Fuindamental part 1
 ## Penyelesaian
 - DI sini kamu belajar CLI awal yang kamu harus ketahui di Linux
 - echo, > >>, ls, cd, pwd, whoami, find -name (nama), grep -l (yang dicari)
+
+<img width="1233" height="759" alt="image" src="https://github.com/user-attachments/assets/edc53d02-a36d-4bc8-a38c-756ed6bc8a08" />
+
+ROOM 34 Linux Fuindamental part 3
+## Penyelesaian
+- free memory, you get some lean about CLI level advance
+
+<img width="1242" height="758" alt="image" src="https://github.com/user-attachments/assets/f31bcb50-b365-4f20-a1e5-396a26031b09" />
+
+ROOM 36 Windows Fuindamental part 2
+## Penyelesaian
+- free memory, you get some lean about windows level advance
+
+<img width="1244" height="756" alt="image" src="https://github.com/user-attachments/assets/b7bc65f5-0da9-4346-9ed1-62d97d71bcc5" />
+
+ROOM 37 Windows Fuindamental part 3
+## Penyelesaian
+- free memory, you get some lean about windows level advance
