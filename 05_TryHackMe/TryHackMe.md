@@ -316,3 +316,10 @@ ROOM 36 Windows Fuindamental part 2
 ROOM 37 Windows Fuindamental part 3
 ## Penyelesaian
 - free memory, you get some lean about windows level advance
+
+<img width="1126" height="674" alt="image" src="https://github.com/user-attachments/assets/cce3c15e-86c4-4e9f-b3fe-94c081014462" />
+
+ROOM 38 Active Directory Basic
+## Penyelesaian
+- active directory (AD) ini memungkinkan kita untuk mengatur semua perangkat user, server, PC, Laptop dalam suatu jaringan yang kita banyak
+- dalam perusahaan pastinya banyak divisi dan pasti ada akses jaringan tidak boleh dilihat oleh user B ke user A dan sebaliknya, dan kita mengatur protocol securitynya di active directory
