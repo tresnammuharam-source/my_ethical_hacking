@@ -323,3 +323,11 @@ ROOM 38 Active Directory Basic
 ## Penyelesaian
 - active directory (AD) ini memungkinkan kita untuk mengatur semua perangkat user, server, PC, Laptop dalam suatu jaringan yang kita banyak
 - dalam perusahaan pastinya banyak divisi dan pasti ada akses jaringan tidak boleh dilihat oleh user B ke user A dan sebaliknya, dan kita mengatur protocol securitynya di active directory
+
+<img width="1188" height="732" alt="image" src="https://github.com/user-attachments/assets/20445994-f2a3-459c-8e0f-c481ec4a064b" />
+
+ROOM 39 Windows Command Line
+## Penyelesaian
+- sebelumnya kamu sudah mengenal CLI dan CMD (windows) untuk sesi ini lebih detail tentang command line di windows
+- keunggulan command line ini lebih cepat dan bisa mengautomatisasi dibanding GUI windows
+- sesi ini kamu mengenal lebih detail tantang systeminfo, ipconfig, netstat, nslookup, dir, dan lebih dalam tentang command line hingga pengantar ke power shell
