@@ -334,8 +334,18 @@ ROOM 39 Windows Command Line
 
 <img width="1174" height="708" alt="image" src="https://github.com/user-attachments/assets/7d7a78eb-cbee-46ed-9d17-8371852f8372" />
 
-ROOM 39 PowerShell Basic
+ROOM 40 Windows PowerShell Basic
 ## Penyelesaian
 - Belajar PowerShell seperti menemukan mainan baru yang powerfull, ini adalah aplikasi atau service yang menjalankan perintah berdasarkan command-line, yang memadukan bahasa cmd.exe dan CLI Linux
 - di path ini kamu akan merasakan bahasa powershell sendiri yang mana jika kita pake bahasa command CLI Linux atau pun pake cmd Windows, masih tetap berjalan fungsi commandnya
 - di sini kamu menyesuaikan command dengan perintah yang tujuannya sama
+
+<img width="1162" height="726" alt="image" src="https://github.com/user-attachments/assets/d1bc2312-d327-4e11-b7a0-1efb1368e15a" />
+
+ROOM 41 Linux Shell Basic
+## Penyelesaian
+- Belajar PowerShell di linux adalah power untuk melakukan automatisasi dalam prosess
+- di shell ini adlah jembatan antara User dan OS
+- dengan shell kita melakukan prosess dengan automatisasi dan dengan script sh (shell)
+- aplication shell ada beberapa seperti Bash, Fish, Zshell
+- dengan yang paling sering adalah Bash untuk nano file sh : #!/bin/bash
