@@ -331,3 +331,11 @@ ROOM 39 Windows Command Line
 - sebelumnya kamu sudah mengenal CLI dan CMD (windows) untuk sesi ini lebih detail tentang command line di windows
 - keunggulan command line ini lebih cepat dan bisa mengautomatisasi dibanding GUI windows
 - sesi ini kamu mengenal lebih detail tantang systeminfo, ipconfig, netstat, nslookup, dir, dan lebih dalam tentang command line hingga pengantar ke power shell
+
+<img width="1174" height="708" alt="image" src="https://github.com/user-attachments/assets/7d7a78eb-cbee-46ed-9d17-8371852f8372" />
+
+ROOM 39 PowerShell Basic
+## Penyelesaian
+- Belajar PowerShell seperti menemukan mainan baru yang powerfull, ini adalah aplikasi atau service yang menjalankan perintah berdasarkan command-line, yang memadukan bahasa cmd.exe dan CLI Linux
+- di path ini kamu akan merasakan bahasa powershell sendiri yang mana jika kita pake bahasa command CLI Linux atau pun pake cmd Windows, masih tetap berjalan fungsi commandnya
+- di sini kamu menyesuaikan command dengan perintah yang tujuannya sama
