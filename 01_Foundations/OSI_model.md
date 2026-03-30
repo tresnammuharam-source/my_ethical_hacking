@@ -67,3 +67,6 @@ Jika kita memahami maka kita akan tahu:
 ✔ Tahu bagaimana paket dimanipulasi
 
 <img width="1239" height="516" alt="image" src="https://github.com/user-attachments/assets/36117030-1a62-4b9d-824f-b7d3a249ec9b" />
+
+<img width="1243" height="520" alt="image" src="https://github.com/user-attachments/assets/b43032b0-9116-46b1-b6c8-35aedc47f311" />
+
