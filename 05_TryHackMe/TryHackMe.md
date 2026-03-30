@@ -349,3 +349,11 @@ ROOM 41 Linux Shell Basic
 - dengan shell kita melakukan prosess dengan automatisasi dan dengan script sh (shell)
 - aplication shell ada beberapa seperti Bash, Fish, Zshell
 - dengan yang paling sering adalah Bash untuk nano file sh : #!/bin/bash
+
+<img width="1139" height="685" alt="image" src="https://github.com/user-attachments/assets/9e797161-6ab4-40b2-a85a-ebf3c0c752de" />
+
+ROOM 42 Networking Advance
+## Penyelesaian
+- Room ini kurang lebih mengenalkan kembali tentang OSI Model, dan juga TCP/IP, yang mana TCP/IP ada 4 layer yang menyatukan dari 7 layer OSI model
+- Selain itu materi baru yaitu Telnet (teletype network) yaitu melakukan remoting berdasarkan port, port yang digunakan adalah port 7 (tentang echo), port 13 (untuk pertanggalan) dan port 80 (web atau HTTP)
+- example: telnet [IP address target] [nomer port] // telnet 10.49.187.55 80 == ini melakukan koneksi remote terhadap IP address tersebut melalui HTTP port 80
