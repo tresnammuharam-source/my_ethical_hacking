@@ -54,4 +54,68 @@ Karena kamu sudah siap secara *hardware*, ini adalah link resmi untuk mendapatka
 4.  Setelah download (sekitar 3GB), kamu cukup ekstrak file `.zip`-nya.
 5.  Di VMware, pilih **"Open a Virtual Machine"** dan cari file berakhiran `.vmx` di dalam folder ekstraksi tadi.
 
-**Apakah kamu ingin saya pandu cara mengekstrak dan menjalankan file Kali Linux tersebut di VMware untuk pertama kalinya?**
+## Instal Kali Linux di VMware
+
+Tentu! Menggunakan versi **"Pre-built"** atau instan adalah pilihan paling cerdas karena kamu tidak perlu melakukan proses instalasi Linux yang memakan waktu 30-60 menit. Kamu hanya perlu melakukan "Import".
+
+Karena kamu sudah punya RAM 16GB, proses ini akan terasa sangat cepat. Berikut panduannya:
+
+### Langkah 1: Ekstrak File Kali Linux
+File yang kamu download dari situs Kali Linux biasanya berformat `.7z` atau `.zip`.
+1. Cari file tersebut di folder *Downloads*.
+2. Klik kanan pada file tersebut, lalu pilih **Extract All** atau **Extract to "kali-linux-..."**.
+3. Pastikan kamu tahu di mana folder hasil ekstraknya berada. Di dalamnya akan ada banyak file, tapi yang paling penting adalah file dengan ikon VMware (ekstensi `.vmx`).
+
+---
+
+### Langkah 2: Membuka File di VMware
+Sekarang, buka aplikasi **VMware Workstation Pro** yang sudah kamu instal:
+
+1. Di halaman utama (*Home*), klik tombol **"Open a Virtual Machine"**.
+2. Telusuri folder hasil ekstrak tadi.
+3. Pilih file yang bernama **`kali-linux-202X.X-vmware-amd64.vmx`** (ikonnya biasanya berbentuk kotak biru kecil).
+4. Klik **Open**.
+
+
+
+---
+
+### Langkah 3: Pengaturan RAM & CPU (Opsional tapi Disarankan)
+Sebelum menyalakan, mari kita manfaatkan RAM 16GB kamu agar "ngebut":
+1. Klik tulisan **"Edit virtual machine settings"**.
+2. Di bagian **Memory**, geser angkanya ke **4096 MB (4GB)**.
+3. Di bagian **Processors**, ubah *Number of cores* menjadi **2** atau **4** (tergantung jumlah core laptopmu).
+4. Klik **OK**.
+
+---
+
+### Langkah 4: Menjalankan Kali Linux
+1. Klik tombol hijau bertuliskan **"Power on this virtual machine"**.
+2. Jika muncul pesan *"This virtual machine might have been moved or copied"*, pilih tombol **"I Copied It"**. (Ini penting agar VMware mengatur ulang jalur jaringannya secara otomatis).
+3. Tunggu proses *booting* (layar hitam dengan logo naga) sampai muncul layar login.
+
+---
+
+### Langkah 5: Login Pertama Kali
+Berbeda dengan instalasi manual, versi instan ini sudah punya username dan password bawaan dari pabriknya:
+
+* **Username:** `kali`
+* **Password:** `kali`
+
+
+
+---
+
+### Tips Setelah Masuk ke Desktop Kali Linux:
+
+1.  **Layar Fullscreen:** Jika layarnya kecil, klik menu **View** di bagian atas VMware, lalu pilih **Fit Guest Now** atau cukup maksimalkan jendela VMware-nya.
+2.  **Ganti Password:** Karena alasan keamanan, segera buka terminal (ikon kotak hitam di kiri atas) dan ketik perintah `passwd` untuk mengganti password "kali" menjadi password pilihanmu sendiri.
+3.  **Update Sistem:** Ketik perintah ini di terminal agar Linux kamu punya versi terbaru:
+    ```bash
+    sudo apt update && sudo apt upgrade -y
+    ```
+
+### Bagaimana Jika Terjadi Error?
+Jika saat klik "Power On" muncul pesan error tentang **"Side-channel mitigations"** atau **"Virtualization is disabled"**, itu artinya fitur virtualisasi di BIOS laptopmu belum aktif. Kamu harus masuk ke BIOS saat laptop baru dinyalakan dan mencari opsi **Intel VT-x** atau **AMD-V** untuk di-**Enable**.
+
+Apakah kamu sudah berhasil mengunduh filenya, atau ada kendala saat proses ekstrak?
