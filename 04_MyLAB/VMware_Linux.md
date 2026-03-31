@@ -1,4 +1,4 @@
-# Cara Menginstal Kali Linux dan VMware
+# Kali Linux dan VMware
 
 Karena Anda menggunakan **VirtualBox** atau **VMware**, Anda memiliki akses penuh ke fitur jaringan Kali Linux dibandingkan menggunakan WSL.
 
