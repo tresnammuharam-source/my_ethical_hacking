@@ -352,8 +352,18 @@ ROOM 41 Linux Shell Basic
 
 <img width="1139" height="685" alt="image" src="https://github.com/user-attachments/assets/9e797161-6ab4-40b2-a85a-ebf3c0c752de" />
 
-ROOM 42 Networking Advance
+ROOM 42 Networking Concept Advance
 ## Penyelesaian
 - Room ini kurang lebih mengenalkan kembali tentang OSI Model, dan juga TCP/IP, yang mana TCP/IP ada 4 layer yang menyatukan dari 7 layer OSI model
 - Selain itu materi baru yaitu Telnet (teletype network) yaitu melakukan remoting berdasarkan port, port yang digunakan adalah port 7 (tentang echo), port 13 (untuk pertanggalan) dan port 80 (web atau HTTP)
 - example: telnet [IP address target] [nomer port] // telnet 10.49.187.55 80 == ini melakukan koneksi remote terhadap IP address tersebut melalui HTTP port 80
+
+<img width="1144" height="670" alt="image" src="https://github.com/user-attachments/assets/b6da6988-4172-41ed-84c3-0c7af68c0b67" />
+
+ROOM 42 Networking Essentials
+## Penyelesaian
+- Room ini kamu akan belajar tentang jaringan yang penting dan pasti terus bertemu dengan pembahasan ini, yaitu DHCP, ARP, ICMP dan NAT
+- Dynamic Host Configuration Protocol (DHCP) untuk membuat IP Address atau proses request antara device dengan pabrik IP address (router) yg berjalan dengan 4 tahapan proses yaitu DORA (Discover=Broadcash, Offer=memberi tawaran IP address, Request=mengkonfirmasi pesanan iya dari yg ditawarkan, Acknowledge=mengkonfirmasi ok dari router)
+- Address Resoluting Protocol (ARP) adalah proses briedge antara layer 2 dan layer 3 (OSI Model), dia mengkoneksikan MAC address ini punya IP address apa, maka ARP yang tau.
+- Internet Control Massage Protocol (ICMP) adalah yang melakukan check jaringan denagn PING, apakah jaringan device ini tersambung ke server? maka ICMP jalannya, dengan melihat TTL (time to live) traceroute untuk menghentikan pencarian, dan Real-time life )RTL) waktu yg dibutuhkan untuk sampai di tujuan router, klo lama berarti jauh server tujuannya bukan LAN (local area network)
+- Network Address Tranlation (NAT) adalah yang menghubungkan IP private dengan IP public, dianam jika kita punya jaringan LAN dengan di dalamnya berbagai device dan IP address yang sudah direqest dengan proses DHCP, maka untuk terhubung internet dunia luar, router akan request ke DNS sebagai IP public.
