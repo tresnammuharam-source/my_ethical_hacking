@@ -28,8 +28,6 @@ Bayangkan kamu mencoba sebuah *script* dan tiba-tiba Linux kamu tidak bisa masuk
 5.  Akan muncul peringatan bahwa kondisi sekarang akan hilang, klik **Yes**.
 6.  Sistem akan langsung kembali ke waktu saat kamu mengambil snapshot tersebut. Semua kerusakan akan hilang.
 
-
-
 ---
 
 ### 3. Strategi Penggunaan Snapshot yang Profesional
@@ -41,6 +39,54 @@ Agar penyimpanan laptopmu tidak cepat penuh, ikuti aturan ini:
 
 ---
 
+## Cara Menghapus Snapshot Lama agar memory tidak penuh
+
+Menghapus snapshot lama sangat penting untuk menjaga agar performa laptopmu tetap kencang dan kapasitas harddisk tidak cepat penuh. Di **VMware Workstation Pro**, proses ini sangat mudah dilakukan melalui **Snapshot Manager**.
+
+Berikut adalah langkah-langkahnya:
+
+### 1. Masuk ke Snapshot Manager
+1. Buka VMware dan pilih tab **Kali Linux** kamu.
+2. Klik menu **VM** di bagian atas.
+3. Pilih **Snapshot** > **Snapshot Manager** (atau tekan shortcut `Ctrl + M`).
+
+### 2. Memilih Snapshot yang Akan Dihapus
+Di dalam jendela Snapshot Manager, kamu akan melihat diagram pohon (tree) yang menunjukkan riwayat snapshot yang pernah kamu ambil.
+1. Klik pada **ikon snapshot** (gambar jam) yang ingin kamu hapus.
+2. Pastikan kamu tidak menghapus snapshot yang sedang menjadi "pijakan" kondisi kamu sekarang (biasanya ada tanda panah kuning bertuliskan *You are here*).
+3. Klik tombol **Delete** di bagian bawah jendela tersebut.
+
+### 3. Proses "Consolidating"
+Saat kamu klik Delete, VMware akan melakukan proses yang disebut **Consolidating**. 
+* **Apa itu?** VMware akan menggabungkan data dari snapshot tersebut ke dalam file utama Linux kamu.
+* **Lama proses:** Tergantung seberapa banyak perubahan yang kamu lakukan sejak snapshot itu dibuat. Jika perubahannya banyak, mungkin butuh waktu 1-3 menit.
+* **PENTING:** Jangan mematikan laptop atau menutup VMware saat proses *Consolidating* (persentase di pojok bawah) sedang berjalan agar file Linux kamu tidak rusak (*corrupt*).
+
+---
+
+### Tips Mengelola Snapshot agar RAM 16GB Tetap Awet:
+
+* **Hapus yang Tidak Perlu:** Jangan menyimpan terlalu banyak snapshot (misal lebih dari 5-10). Semakin banyak snapshot, semakin lambat performa pembacaan data di VM kamu.
+* **Snapshot "Berantai":** Jika kamu punya snapshot A -> B -> C, dan kamu menghapus B, VMware akan menggabungkan perubahan di B ke dalam C. Jadi jangan takut kehilangan data di kondisi terakhirmu.
+* **Kondisi Power Off:** Menghapus snapshot akan jauh lebih cepat jika dilakukan saat Kali Linux dalam posisi **Mati (Power Off)**.
+
+---
+
+### Kapan Waktu yang Tepat Menghapus Snapshot?
+Sebagai *ethical hacker*, gunakan logika ini:
+1. Kamu ambil snapshot **"Sebelum Coba Tool A"**.
+2. Kamu coba Tool A dari GitHub dan ternyata **aman & berhasil**.
+3. Sekarang kamu tidak butuh lagi snapshot "Sebelum Coba Tool A". Kamu bisa menghapusnya, atau membuat snapshot baru bernama **"Tool A Terpasang - Stabil"** lalu hapus yang lama.
+
+---
+
+**Sekarang "Laboratorium" kamu sudah lengkap:**
+1. **VMware** sudah terinstal (Pro Gratis).
+2. **Kali Linux** sudah siap (Versi Instan).
+3. **RAM 16GB** sudah terbagi dengan pas.
+4. **Snapshot** sudah siap sebagai jaring pengaman.
+
+Apakah kamu ingin kita mulai mencoba perintah pertama di Terminal Kali Linux untuk mengunduh alat (*tools*) keamanan dari GitHub seperti yang kamu tanyakan di awal?
 ### Tips Tambahan untuk RAM 16GB:
 Karena RAM kamu besar, kamu bisa mengambil snapshot saat Linux sedang menyala tanpa membuat Windows kamu terasa berat. Proses "Go To" atau *Restore* juga akan terasa sangat instan.
 
