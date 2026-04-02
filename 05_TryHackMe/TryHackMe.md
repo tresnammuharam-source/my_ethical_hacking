@@ -367,3 +367,10 @@ ROOM 42 Networking Essentials
 - Address Resoluting Protocol (ARP) adalah proses briedge antara layer 2 dan layer 3 (OSI Model), dia mengkoneksikan MAC address ini punya IP address apa, maka ARP yang tau.
 - Internet Control Massage Protocol (ICMP) adalah yang melakukan check jaringan denagn PING, apakah jaringan device ini tersambung ke server? maka ICMP jalannya, dengan melihat TTL (time to live) traceroute untuk menghentikan pencarian, dan Real-time life )RTL) waktu yg dibutuhkan untuk sampai di tujuan router, klo lama berarti jauh server tujuannya bukan LAN (local area network)
 - Network Address Tranlation (NAT) adalah yang menghubungkan IP private dengan IP public, dianam jika kita punya jaringan LAN dengan di dalamnya berbagai device dan IP address yang sudah direqest dengan proses DHCP, maka untuk terhubung internet dunia luar, router akan request ke DNS sebagai IP public.
+
+<img width="1132" height="671" alt="image" src="https://github.com/user-attachments/assets/03c3cd16-d986-4bce-8ce5-f285fa3f3e21" />
+
+ROOM 43 Networking Core Protocol
+## Penyelesaian
+- Room ini sangat esensial karena kamu berkenakan dengan port2 penting untuk modal penetrasi seperti port 80, 442, 21, 25 dll
+- kamu akan mealkukan penetrasi dengan masuk secara remote ke port tersebut dengan menggunakan command telnet
