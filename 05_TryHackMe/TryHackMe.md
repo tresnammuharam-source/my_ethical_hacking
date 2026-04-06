@@ -374,3 +374,10 @@ ROOM 43 Networking Core Protocol
 ## Penyelesaian
 - Room ini sangat esensial karena kamu berkenakan dengan port2 penting untuk modal penetrasi seperti port 80, 442, 21, 25 dll
 - kamu akan mealkukan penetrasi dengan masuk secara remote ke port tersebut dengan menggunakan command telnet
+
+<img width="1173" height="692" alt="image" src="https://github.com/user-attachments/assets/6582a9a9-a5e9-4725-818a-e2924eccc198" />
+
+ROOM 45 wireshark Basic
+## Penyelesaian
+- Room ini kamu mengenal interface dari wireshark, dan mencoba beberapa tools
+- di wireshark room ini kamu melihat trafick data, dan melakukan open, filter, sempel, save coloring dan lainnya
