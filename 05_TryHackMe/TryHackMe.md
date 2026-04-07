@@ -381,3 +381,10 @@ ROOM 45 wireshark Basic
 ## Penyelesaian
 - Room ini kamu mengenal interface dari wireshark, dan mencoba beberapa tools
 - di wireshark room ini kamu melihat trafick data, dan melakukan open, filter, sempel, save coloring dan lainnya
+
+<img width="1158" height="720" alt="image" src="https://github.com/user-attachments/assets/c9670d71-5058-4457-956a-6927dfed7491" />
+
+ROOM 46 TCPDUMP Basic
+## Penyelesaian
+- Room ini kamu mengenal tcpdump dimana fungsinya sama seperti wireshark yaitu untuk menangkap trafick jaringan namun jika wireshark memakai GUI, kalo tcpdump memakai command-line
+- di command-line tcpdump kamu mengenal cara membaca, save, menangkap jaringan, filtering, dan berbagai command-line yang tujuannya untuk melakukan analisa pada lalu lintas jaringan
