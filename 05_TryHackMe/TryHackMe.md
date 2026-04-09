@@ -396,3 +396,11 @@ ROOM 47 Nmap Basic
 - Room ini mempelajari tentang penggunaan Nmap, prinsipnya adalah seblum kamu melakukan penetration ke jaringan kamu harus tau dulu sipa yang akan di serang, apa ada tembok atau tidak dan lainya
 - dengan Nmap kamu menscan dan mencari calon objek, port mana yang terbuka, dengan kamu menggunakan Nmap pada root (linux) / administrator (windows) atau kamu bisa menggunakan 'sudo' (super user do) untuk sementara menjadi administrator
 - command : Nmap -sS 192.168.0.80 untuk scan IP dan melihat port mana yang terbuka
+
+<img width="1056" height="627" alt="image" src="https://github.com/user-attachments/assets/3ecccc44-1415-4f87-acbc-dd2f5425972a" />
+
+ROOM 47 Nmap Basic
+## Penyelesaian
+- Room ini mempelajari tentnag dasar-dasar cryptografi, dimana pesan yang di kirim itu akan di encrypt dulu sebelum sampai ke penerima.
+- proses excrypted ini bertujuan untuk melindungi pesan yang berjalan pada lalu lintas jaringan hingga pesan tersebut sampai ke penerima yang berhak membukanya
+- proses si A ke si B, si A > paintext > encrypt > ciphertext > descrypt > paintext > si B
