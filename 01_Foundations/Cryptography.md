@@ -19,3 +19,7 @@ Upon completing this room, you will learn the following:
 - Standard symmetric ciphers
 - Common asymmetric ciphers
 - Basic mathematics commonly used in cryptography
+
+| Judul Artikel | Link Artikel |
+| ------------- | --------------- |
+| standard required for handling credit card information | https://drive.google.com/file/d/1cnt8Yl8tnKCeMGgn2B80fnzKGZpu8bSR/view?usp=sharing |
