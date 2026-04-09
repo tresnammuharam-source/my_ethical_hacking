@@ -388,3 +388,11 @@ ROOM 46 TCPDUMP Basic
 ## Penyelesaian
 - Room ini kamu mengenal tcpdump dimana fungsinya sama seperti wireshark yaitu untuk menangkap trafick jaringan namun jika wireshark memakai GUI, kalo tcpdump memakai command-line
 - di command-line tcpdump kamu mengenal cara membaca, save, menangkap jaringan, filtering, dan berbagai command-line yang tujuannya untuk melakukan analisa pada lalu lintas jaringan
+
+<img width="1030" height="630" alt="image" src="https://github.com/user-attachments/assets/b5cdfec0-7845-4c1e-889b-b77e8ff30a08" />
+
+ROOM 47 Nmap Basic
+## Penyelesaian
+- Room ini mempelajari tentang penggunaan Nmap, prinsipnya adalah seblum kamu melakukan penetration ke jaringan kamu harus tau dulu sipa yang akan di serang, apa ada tembok atau tidak dan lainya
+- dengan Nmap kamu menscan dan mencari calon objek, port mana yang terbuka, dengan kamu menggunakan Nmap pada root (linux) / administrator (windows) atau kamu bisa menggunakan 'sudo' (super user do) untuk sementara menjadi administrator
+- command : Nmap -sS 192.168.0.80 untuk scan IP dan melihat port mana yang terbuka
