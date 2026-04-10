@@ -399,8 +399,14 @@ ROOM 47 Nmap Basic
 
 <img width="1056" height="627" alt="image" src="https://github.com/user-attachments/assets/3ecccc44-1415-4f87-acbc-dd2f5425972a" />
 
-ROOM 47 Nmap Basic
+ROOM 47 Cryptograph Basic
 ## Penyelesaian
 - Room ini mempelajari tentnag dasar-dasar cryptografi, dimana pesan yang di kirim itu akan di encrypt dulu sebelum sampai ke penerima.
 - proses excrypted ini bertujuan untuk melindungi pesan yang berjalan pada lalu lintas jaringan hingga pesan tersebut sampai ke penerima yang berhak membukanya
 - proses si A ke si B, si A > paintext > encrypt > ciphertext > descrypt > paintext > si B
+
+<img width="1230" height="727" alt="image" src="https://github.com/user-attachments/assets/076a9cad-f927-47f2-b3c2-1c230c1681b0" />
+
+ROOM 48 Public Key Basic
+## Penyelesaian
+- Room ini mempelajari tentang Public Key dan Private Key, yg mana ada beberapa perhitungan rumus disini untuk melakukan perhitungan Public Key ini
