@@ -410,3 +410,15 @@ ROOM 47 Cryptograph Basic
 ROOM 48 Public Key Basic
 ## Penyelesaian
 - Room ini mempelajari tentang Public Key dan Private Key, yg mana ada beberapa perhitungan rumus disini untuk melakukan perhitungan Public Key ini
+
+<img width="1170" height="721" alt="image" src="https://github.com/user-attachments/assets/7215894a-4788-4879-be24-8c2105f590a3" />
+
+ROOM 49 Hashing Basic
+## Penyelesaian
+- Room ini mempelajari tenang apa itu HASH? HASH adalah seragkaian code atau identitas / sidik jari dari suatu file
+- HASH julahnya banyak code, engan perbedaan satu huruf saja bisa merubah hash sedemikian rumit
+- Hash tidak bisa bolak balik seperti encrypsi
+- Hash identity yang bisa di crack dengan mencocokan pada table rainbow, namun hash ini tidak berlaku di crack jika dibumbui SALT
+- Di sini kamu belajar cara Cracking Hash dengan berbagai alur metode : hashcat
+- sha256 adalah hash yang paling rumit sekarang
+- 
