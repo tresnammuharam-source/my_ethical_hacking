@@ -37,3 +37,6 @@ Here’s a quick table of some of the most common Unix-style password prefixes y
 ## Time to Crack Some Hashes
 
 hashcat -m <hash_type> -a <attack_mode> hashfile wordlist
+
+<img width="1247" height="322" alt="image" src="https://github.com/user-attachments/assets/e621d385-44d4-4c26-85ec-712a832021cb" />
+
