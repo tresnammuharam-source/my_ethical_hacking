@@ -421,4 +421,4 @@ ROOM 49 Hashing Basic
 - Hash identity yang bisa di crack dengan mencocokan pada table rainbow, namun hash ini tidak berlaku di crack jika dibumbui SALT
 - Di sini kamu belajar cara Cracking Hash dengan berbagai alur metode : hashcat
 - sha256 adalah hash yang paling rumit sekarang
-- 
+- in linux bisa di baca dengan md4sum, sha256sum <lokasi> <file.txt password dibaca>
