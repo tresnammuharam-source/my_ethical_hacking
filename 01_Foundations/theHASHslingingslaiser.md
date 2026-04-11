@@ -20,7 +20,8 @@ maka hash tersebut menampilkan isi dari hash yang ada dalam tabel rainbow terseb
 
 | link | Keterangan |
 | :---: | :---: |
-| https://hashes.com/en/decrypt/hash | untuk mendari code hash dan identity type hash |
+| https://hashes.com/en/decrypt/hash | untuk mendari code hash dan identity type hash |\
+| https://hashcat.net/wiki/doku.php?id=example_hashes | untuk melihat Hash-Mode dari serangkaian hash name dan contohnya |
 
 ## Linux Passwords
 On Linux, password hashes are stored in /etc/shadow, which is normally only readable by root. They used to be stored in /etc/passwd, which was readable by everyone.
