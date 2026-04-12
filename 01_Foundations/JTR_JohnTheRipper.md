@@ -149,3 +149,41 @@ You do this by prepending the hash with the username that the hash belongs to, s
 _From 1efee03cdcb96d90ad48ccc7b8666033_
 
 _To mike:1efee03cdcb96d90ad48ccc7b8666033_
+
+# Zip2John
+Similarly to the unshadow tool we used previously, we will use the zip2john tool to convert the Zip file into a hash format that John can understand and hopefully crack. The primary usage is like this:
+
+_zip2john [options] [zip file] > [output file]_
+
+- [options]: Allows you to pass specific checksum options to zip2john; this shouldn’t often be necessary
+- [zip file]: The path to the Zip file you wish to get the hash of
+- >: This redirects the output from this command to another file
+- [output file]: This is the file that will store the output
+
+## Example Usage
+
+_zip2john zipfile.zip > zip_hash.txt_
+
+# Cracking
+We’re then able to take the file we output from zip2john in our example use case, zip_hash.txt, and, as we did with unshadow, feed it directly into John as we have made the input specifically for it.
+
+_john --wordlist=/usr/share/wordlists/rockyou.txt zip_hash.txt_
+
+# Rar2John
+Almost identical to the zip2john tool, we will use the rar2john tool to convert the RAR file into a hash format that John can understand. The basic syntax is as follows:
+
+_rar2john [rar file] > [output file]_
+
+- rar2john: Invokes the rar2john tool
+- [rar file]: The path to the RAR file you wish to get the hash of
+- >: This redirects the output of this command to another file
+- [output file]: This is the file that will store the output from the command
+
+## Example Usage
+
+_/opt/john/rar2john rarfile.rar > rar_hash.txt_
+
+# Cracking
+Once again, we can take the file we output from rar2john in our example use case, rar_hash.txt, and feed it directly into John as we did with zip2john.
+
+_john --wordlist=/usr/share/wordlists/rockyou.txt rar_hash.txt_
