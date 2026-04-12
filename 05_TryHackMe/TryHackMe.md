@@ -422,3 +422,11 @@ ROOM 49 Hashing Basic
 - Di sini kamu belajar cara Cracking Hash dengan berbagai alur metode : hashcat
 - sha256 adalah hash yang paling rumit sekarang
 - in linux bisa di baca dengan md4sum, sha256sum <lokasi> <file.txt password dibaca>
+
+<img width="1223" height="724" alt="image" src="https://github.com/user-attachments/assets/c0b461cb-75a7-4f94-8b30-def65ae792b8" />
+
+ROOM 50 John The Ripper Basic
+## Penyelesaian
+- Room ini mempelajari tentang tools JTR (John The Ripper) dimana tools ini digunakan untuk melakukan cracking pada Hash
+- kamu akan mempelajari cara cracking Hash dengan John versi baru yaitu Jumbo John
+- kamu emempelajari /etc/windows, singel crack, cracking password pada ZIP dan RAR serta cracking SSH
