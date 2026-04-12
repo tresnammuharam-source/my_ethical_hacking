@@ -123,3 +123,8 @@ root:x:0:0::/root:/bin/bash
 Contains the /etc/shadow line for the root user: root:$6$2nwjN454g.dv4HN/$m9Z/r2xVfweYVkrr.v5Ft8Ws3/YYksfNwq96UL1FX0OJjY1L6l.DS3KEVsZ9rOVLB/ldTeEL/OIhJZ4GMFMGA0:18576::::::
 
 # Cracking
+
+We can then feed the output from unshadow, in our example use case called unshadowed.txt, directly into John. We should not need to specify a mode here as we have made the input specifically for John; however, in some cases, you will need to specify the format as we have done previously using: --format=sha512crypt
+
+_john --wordlist=/usr/share/wordlists/rockyou.txt --format=sha512crypt unshadowed.txt_\
+
