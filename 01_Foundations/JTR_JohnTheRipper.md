@@ -122,9 +122,30 @@ root:x:0:0::/root:/bin/bash
 
 Contains the /etc/shadow line for the root user: root:$6$2nwjN454g.dv4HN/$m9Z/r2xVfweYVkrr.v5Ft8Ws3/YYksfNwq96UL1FX0OJjY1L6l.DS3KEVsZ9rOVLB/ldTeEL/OIhJZ4GMFMGA0:18576::::::
 
-# Cracking
+## Cracking
 
 We can then feed the output from unshadow, in our example use case called unshadowed.txt, directly into John. We should not need to specify a mode here as we have made the input specifically for John; however, in some cases, you will need to specify the format as we have done previously using: --format=sha512crypt
 
 _john --wordlist=/usr/share/wordlists/rockyou.txt --format=sha512crypt unshadowed.txt_\
 
+# Using Single Crack Mode
+To use single crack mode, we use roughly the same syntax that we’ve used so far; for example, if we wanted to crack the password of the user named “Mike”, using the single mode, we’d use:
+
+_john --single --format=[format] [path to file]_
+
+--single: This flag lets John know you want to use the single hash-cracking mode
+
+--format=[format]: As always, it is vital to identify the proper format.
+
+### Example Usage:
+
+_john --single --format=raw-sha256 hashes.txt_
+
+A Note on File Formats in Single Crack Mode:
+
+If you’re cracking hashes in single crack mode, you need to change the file format that you’re feeding John for it to understand what data to create a wordlist from.
+You do this by prepending the hash with the username that the hash belongs to, so according to the above example, we would change the file hashes.txt
+
+_From 1efee03cdcb96d90ad48ccc7b8666033_
+
+_To mike:1efee03cdcb96d90ad48ccc7b8666033_
