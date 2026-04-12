@@ -88,3 +88,38 @@ _john --format=raw-md5 --wordlist=/usr/share/wordlists/rockyou.txt hash_to_crack
 ### A Note on Formats:
 
 When you tell John to use formats, if you’re dealing with a standard hash type, e.g. md5 as in the example above, you have to prefix it with raw- to tell John you’re just dealing with a standard hash type, though this doesn’t always apply. To check if you need to add the prefix or not, you can list all of John’s formats using john --list=formats and either check manually or grep for your hash type using something like _john --list=formats | grep -iF "md5"_
+
+# Cracking Hashes from /etc/shadow
+The /etc/shadow file is the file on Linux machines where password hashes are stored. It also stores other information, such as the date of last password change and password expiration information.
+It contains one entry per line for each user or user account of the system. This file is usually only accessible by the root user, so you must have sufficient privileges to access the hashes.
+However, if you do, there is a chance that you will be able to crack some of the hashes.
+
+## Unshadowing
+John can be very particular about the formats it needs data in to be able to work with it; for this reason, to crack **/etc/shadow** passwords,
+you must combine it with the **/etc/passwd** file for John to understand the data it’s being given. To do this, we use a tool built into the John suite of tools called unshadow. The basic syntax of unshadow is as follows:
+
+_unshadow [path to passwd] [path to shadow]_
+
+- unshadow: Invokes the unshadow tool
+- [path to passwd]: The file that contains the copy of the /etc/passwd file you’ve taken from the target machine
+- [path to shadow]: The file that contains the copy of the /etc/shadow file you’ve taken from the target machine
+
+### Example Usage:
+
+unshadow local_passwd local_shadow > unshadowed.txt
+
+### Note on the files
+
+When using unshadow, you can either use the entire /etc/passwd and /etc/shadow files, assuming you have them available, or you can use the relevant line from each, for example:
+
+**FILE 1 - local_passw**d
+
+Contains the /etc/passwd line for the root user:
+
+root:x:0:0::/root:/bin/bash
+
+**FILE 2 - local_shadow**
+
+Contains the /etc/shadow line for the root user: root:$6$2nwjN454g.dv4HN/$m9Z/r2xVfweYVkrr.v5Ft8Ws3/YYksfNwq96UL1FX0OJjY1L6l.DS3KEVsZ9rOVLB/ldTeEL/OIhJZ4GMFMGA0:18576::::::
+
+# Cracking
