@@ -70,3 +70,21 @@ _john --wordlist=[path to wordlist] [path to file]_
 Example Usage:
 
 _john --wordlist=/usr/share/wordlists/rockyou.txt hash_to_crack.txt_
+
+# Format-Specific Cracking
+
+Once you have identified the hash that you’re dealing with, you can tell John to use it while cracking the provided hash using the following syntax:
+
+_john --format=[format] --wordlist=[path to wordlist] [path to file]_
+
+--format=: This is the flag to tell John that you’re giving it a hash of a specific format and to use the following format to crack it
+
+[format]: The format that the hash is in
+
+Example Usage:
+
+_john --format=raw-md5 --wordlist=/usr/share/wordlists/rockyou.txt hash_to_crack.txt_
+
+### A Note on Formats:
+
+When you tell John to use formats, if you’re dealing with a standard hash type, e.g. md5 as in the example above, you have to prefix it with raw- to tell John you’re just dealing with a standard hash type, though this doesn’t always apply. To check if you need to add the prefix or not, you can list all of John’s formats using john --list=formats and either check manually or grep for your hash type using something like _john --list=formats | grep -iF "md5"_
