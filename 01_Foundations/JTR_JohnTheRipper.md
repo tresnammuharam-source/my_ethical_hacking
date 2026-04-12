@@ -48,3 +48,12 @@ For all of the tasks in this room, we will use the infamous rockyou.txt wordlist
 If you are not using any of the above distributions, you can get the rockyou.txt wordlist from the SecLists(opens in new tab) repository under the /Passwords/Leaked-Databases subsection.
 You may need to extract it from the .tar.gz format using tar xvzf rockyou.txt.tar.gz.
 
+# John Basic Syntax
+The basic syntax of John the Ripper commands is as follows. We will cover the specific options and modifiers used as we use them.
+
+_john [options] [file path]_
+
+- john: Invokes the John the Ripper program
+- [options]: Specifies the options you want to use
+- [file path]: The file containing the hash you’re trying to crack; if it’s in the same directory, you won’t need to name a path, just the file.
+
