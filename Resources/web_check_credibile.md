@@ -12,4 +12,5 @@
 | **CVE** | https://cve.mitre.org , https://nvd.nist.gov , https://www.exploit-db.com | Common Vulnerabilities and Exposures (CVE) adalah sistem penamaan standar untuk kerentanan keamanan pada software atau sistem. CVE adalah ID unik untuk setiap vulnerability yang ditemukan di dunia cybersecurity. exp: CVE-YEAR-NUMBER |
 | **IP Location** | https://www.iplocation.net/ip-lookup | Melihat Lokasi IP berada di negara mana |
 | **DomainTools** | https://whois.domaintools.com/ | untuk melihat detail interfomasi tentang domain address atau IP Address |
+| **buku resep docking** | https://www.exploit-db.com/google-hacking-database | untuk melihat contoh2 script docking atau melihat kerentanan dalam jalur search engine Google |
 
