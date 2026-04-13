@@ -430,3 +430,9 @@ ROOM 50 John The Ripper Basic
 - Room ini mempelajari tentang tools JTR (John The Ripper) dimana tools ini digunakan untuk melakukan cracking pada Hash
 - kamu akan mempelajari cara cracking Hash dengan John versi baru yaitu Jumbo John
 - kamu emempelajari /etc/windows, singel crack, cracking password pada ZIP dan RAR serta cracking SSH
+
+<img width="994" height="638" alt="image" src="https://github.com/user-attachments/assets/f442726e-c06e-46fc-804a-ace9a0d74954" />
+
+ROOM 51 Moniker Link - CVE
+## Penyelesaian
+- Room ini mempelajari tentang exploitasi CVE
