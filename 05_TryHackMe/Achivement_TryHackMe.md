@@ -436,3 +436,15 @@ ROOM 50 John The Ripper Basic
 ROOM 51 Moniker Link - CVE
 ## Penyelesaian
 - Room ini mempelajari tentang exploitasi CVE
+
+<img width="1283" height="758" alt="image" src="https://github.com/user-attachments/assets/d1d2bbb0-fc6e-4afc-8a4d-3d9c2777d5dd" />
+
+ROOM 52 Metaexploitation Introduction
+## Penyelesaian
+- Room ini mempelajari tentang praktek-praktek exploitasi menggunakan meta exploitation framework console ( msfconsole )
+- kamu mempelajari dulu interface dari meta exploitasi dengan mengaktifkan command msfconsole kamu masuk ke app meta explotitasi
+- di dalam msfconsole kamu harus mengerti dulu module yang bisa digunakan untuk melakukan explit, module bisa di cari dengan command `search ms17`
+- didalam daftar module kamu bisa mengecek `show options` untuk melihat payload yang bisa digunakan
+- dan melakukan exploit dengan command `exploit -z` -z untuk proses di target dalam background
+
+
