@@ -447,4 +447,9 @@ ROOM 52 Metaexploitation Introduction
 - didalam daftar module kamu bisa mengecek `show options` untuk melihat payload yang bisa digunakan
 - dan melakukan exploit dengan command `exploit -z` -z untuk proses di target dalam background
 
+<img width="1203" height="736" alt="image" src="https://github.com/user-attachments/assets/0ba7d966-3127-4b2d-abc4-afe365eff3a8" />
 
+ROOM 53 Metasploit: Exploitation
+## Penyelesaian
+- Room ini kamu belajar lebih dalam tentang metasploit framework dengan belajar modul lain untuk bisa di gunakan
+- selain iu msfvenom dan lainnya
