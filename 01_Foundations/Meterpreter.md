@@ -11,6 +11,7 @@ You will interact with the target operating system and files and use Meterpreter
 - `hashdump` = will list the content of the SAM database. The SAM (Security Account Manager) database stores user's passwords on Windows systems. These passwords are stored in the NTLM (New Technology LAN Manager) format.
 - `search` = for search file like find the file in linux CLI `search -f flag2.txt`, if you on system target
 - `sysinfo` = for show informations system on target exploit
+- `shell` = The shell command will launch a regular command-line shell on the target system. Pressing CTRL+Z will help you go back to the Meterpreter shell.
 
 The list will show Meterpreter versions available for the following platforms;
 
