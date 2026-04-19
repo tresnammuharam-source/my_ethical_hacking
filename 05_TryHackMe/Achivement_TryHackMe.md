@@ -453,3 +453,12 @@ ROOM 53 Metasploit: Exploitation
 ## Penyelesaian
 - Room ini kamu belajar lebih dalam tentang metasploit framework dengan belajar modul lain untuk bisa di gunakan
 - selain iu msfvenom dan lainnya
+
+<img width="1131" height="702" alt="image" src="https://github.com/user-attachments/assets/07a888bf-dc5e-4ecc-afda-cd33455fe46a" />
+
+ROOM 54 Metasploit: Meterpreter
+## Penyelesaian
+- Room ini kamu memperdalam apa itu meterpreter, diaman room sebelumnya kamu saat melakukan hand-on dengan msfconsole kamu sudah berkenalan dengan meterpreter
+- Meterpreter adalah system yg masuk ke target dan menyamar sebagai system yang berjalan di RAM
+- di meterpreter kamu bisa melakukan exploit sesuai yg kamu butuhkan karena kamu sudah ada di dalam jaringannya, seperti melakukan command pada linux root
+
