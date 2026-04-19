@@ -9,6 +9,8 @@ You will interact with the target operating system and files and use Meterpreter
 - `msfvenom --list payloads | grep meterpreter` = for show modul payload materpreter can you used
 - `getuid` = for get user_id on target exploit
 - `hashdump` = will list the content of the SAM database. The SAM (Security Account Manager) database stores user's passwords on Windows systems. These passwords are stored in the NTLM (New Technology LAN Manager) format.
+- `search` = for search file like find the file in linux CLI `search -f flag2.txt`, if you on system target
+- `sysinfo` = for show informations system on target exploit
 
 The list will show Meterpreter versions available for the following platforms;
 
