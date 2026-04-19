@@ -462,3 +462,15 @@ ROOM 54 Metasploit: Meterpreter
 - Meterpreter adalah system yg masuk ke target dan menyamar sebagai system yang berjalan di RAM
 - di meterpreter kamu bisa melakukan exploit sesuai yg kamu butuhkan karena kamu sudah ada di dalam jaringannya, seperti melakukan command pada linux root
 
+<img width="1194" height="716" alt="image" src="https://github.com/user-attachments/assets/9064c014-efdf-4d63-9a06-e2dc98a01300" />
+
+ROOM 55 Eternal_Blue : Exploit
+## Penyelesaian
+- Room ini Hand-on untuk melakukan Exploitations ke Windows
+- Dengan mengecek dulu system target dengan Nmap untuk mencari kerentanan (vulnerability) dan di cek di google dan ddi exploit-database untuk mencari daftar vulnerability
+- setelah tau sumber vulnerabilitynya dari exploit-database, misal ms17-010 jadi harus mencoba modul ms17 dengan search ms17
+- setelah itu masuk show options dan lainnya
+- lanjut hingga exploitasi data di dalam system target
+
+
+
