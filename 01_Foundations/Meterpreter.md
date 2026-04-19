@@ -12,6 +12,7 @@ You will interact with the target operating system and files and use Meterpreter
 - `search` = for search file like find the file in linux CLI `search -f flag2.txt`, if you on system target
 - `sysinfo` = for show informations system on target exploit
 - `shell` = The shell command will launch a regular command-line shell on the target system. Pressing CTRL+Z will help you go back to the Meterpreter shell.
+- `net share` = for show the name of the share likely created by the user and this command use on the shell target.
 
 The list will show Meterpreter versions available for the following platforms;
 
