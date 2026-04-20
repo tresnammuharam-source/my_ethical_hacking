@@ -472,5 +472,11 @@ ROOM 55 Eternal_Blue : Exploit
 - setelah itu masuk show options dan lainnya
 - lanjut hingga exploitasi data di dalam system target
 
+<img width="1026" height="671" alt="image" src="https://github.com/user-attachments/assets/3d90294f-4b08-4e47-a67d-9254ceb48f28" />
 
+ROOM 56 Web Application: Introduction
+## Penyelesaian
+- Room ini kamu mempelajari kembali tentang dasar-dasar web, bagaimana web itu terbentuk, bagaimana struktur di dalamnya dan bagaiman keamanan di dalamnya
+- header security di ini adalah hal yang baru untuk memperlihatkan detail header yang rentan dan website pengecekannya
+- kamu mempelajari lagi URL, GET, POST, PUT, DELETE, respons dan interaksi antara web server dan web browser, action result seperti 404 not found, 200 ok, dll
 
