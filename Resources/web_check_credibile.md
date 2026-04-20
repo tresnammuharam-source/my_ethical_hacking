@@ -14,5 +14,5 @@
 | **DomainTools** | https://whois.domaintools.com/ | untuk melihat detail interfomasi tentang domain address atau IP Address |
 | **buku resep docking** | https://www.exploit-db.com/google-hacking-database | untuk melihat contoh2 script docking atau melihat kerentanan dalam jalur search engine Google |
 | **Security Headers** | https://securityheaders.com/ | untuk mengecek web tersebut apakah mempunyai keamanan apa saja secara security headers |
-
+| **Lab Latihan Online** | https://labex.io/learn | untuk mealkukan latihan dengan berbagai sumber bahasa |
 
