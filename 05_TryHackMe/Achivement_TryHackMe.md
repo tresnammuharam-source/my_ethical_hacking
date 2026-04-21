@@ -480,3 +480,11 @@ ROOM 56 Web Application: Introduction
 - header security di ini adalah hal yang baru untuk memperlihatkan detail header yang rentan dan website pengecekannya
 - kamu mempelajari lagi URL, GET, POST, PUT, DELETE, respons dan interaksi antara web server dan web browser, action result seperti 404 not found, 200 ok, dll
 
+<img width="919" height="615" alt="image" src="https://github.com/user-attachments/assets/aef63e28-7447-4dbe-8da7-9b6433b8e82c" />
+
+ROOM 57 Java Script: Introduction
+## Penyelesaian
+- Room ini kamu mempelajari tentang penggunaan Java Script (JS) diaman JS ini yang membentuk proses pengerjaan di web
+- JavaScript ini ssistemnya langsung cripting di browser
+- kamu dapat mempelajari tentang script JS di HTML dengan intenal script atau eksternal script
+- kamu mempelajari cara melakukan code apda script JS agar tidak mudah dimanipulasi
