@@ -488,3 +488,15 @@ ROOM 57 Java Script: Introduction
 - JavaScript ini ssistemnya langsung cripting di browser
 - kamu dapat mempelajari tentang script JS di HTML dengan intenal script atau eksternal script
 - kamu mempelajari cara melakukan code apda script JS agar tidak mudah dimanipulasi
+
+<img width="1185" height="781" alt="image" src="https://github.com/user-attachments/assets/0d85a3cd-74bd-40d3-895c-8ef45e861e7e" />
+
+ROOM 58 SQL Fundamental
+## Penyelesaian
+- Room ini kamu mempelajari tentang menjalankan Database dengan RDMS (read database managemen system) untuk mengolah data dengan tools SQL
+- ada beberapa system SQL tapi semua menjalankannya dan prinsipnya sama dengan menggunakan bahasa QUERY
+- kalian akan mempelajari command query untuk bisa mengolah data yang ada dalam database
+- di CLI kalian bisa masuk mysql -u root -p untuk masuk ke suatu system mysql
+- setelah itu kalian bisa masuk ke databasenya dan use databasenya, setelah itu baru kalian bisa liat tabel2 yang ada di database
+- dengan query ini kamu akan mengolah dan mengubungkan semua tabel yang ada di database sesuai kebutuhan dan kegunaan visualisasi datanya yg diinginkan
+
