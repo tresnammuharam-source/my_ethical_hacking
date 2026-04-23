@@ -11,5 +11,6 @@ burp suite ini bisa interpensi terhadap paket yang sudah ditangkap, memanipusai 
   2. Burp Suite Enterprise
   3. Burp Suite Profesional
  
-  <img width="661" height="470" alt="image" src="https://github.com/user-attachments/assets/01571ec0-be9a-4565-9f31-ceb27341623e" />
+<img width="661" height="470" alt="image" src="https://github.com/user-attachments/assets/01571ec0-be9a-4565-9f31-ceb27341623e" />
 
+<img width="1549" height="504" alt="image" src="https://github.com/user-attachments/assets/d288412d-1e15-43e6-9b91-6e64d8e61b64" />
