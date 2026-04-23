@@ -500,3 +500,13 @@ ROOM 58 SQL Fundamental
 - setelah itu kalian bisa masuk ke databasenya dan use databasenya, setelah itu baru kalian bisa liat tabel2 yang ada di database
 - dengan query ini kamu akan mengolah dan mengubungkan semua tabel yang ada di database sesuai kebutuhan dan kegunaan visualisasi datanya yg diinginkan
 
+<img width="1282" height="837" alt="image" src="https://github.com/user-attachments/assets/1c9e1c28-5e46-4011-9a92-54c238828f57" />
+
+ROOM 58 SQL Fundamental
+## Penyelesaian
+- Room ini kamu mempelajari tentang cara penggunaan Brup Suite yang mana berfungsi untuk menangkap paket yang ada di jaringan dan melakukan manipulasi pada paket tersebut
+- tahapan di standard kamu melakukan setting target URL atau IP Address yang di targetkan > mealkukan intersept untuk menangkap paket data, kita bisa mengunjungi websitenya juga untuk melakukan explorasi dan sengaja ditangkap oleh burp suite
+- dari tangkapan ini kamu bisa melakukan injection atau test keamanan pada website tersebut
+- kamulihat site map, http history atau langsung pada proxy intercept
+
+
