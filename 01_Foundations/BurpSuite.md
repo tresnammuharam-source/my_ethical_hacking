@@ -15,3 +15,9 @@ burp suite ini bisa interpensi terhadap paket yang sudah ditangkap, memanipusai 
 
 Tata Cara Melakukan Analisa di Burp Suite "standard vertion"
 <img width="1549" height="504" alt="image" src="https://github.com/user-attachments/assets/d288412d-1e15-43e6-9b91-6e64d8e61b64" />
+
+---
+## Scripting for XSS Injection
+
+> <script>alert("Succ3ssful XSS")</script>
+
