@@ -13,4 +13,5 @@ burp suite ini bisa interpensi terhadap paket yang sudah ditangkap, memanipusai 
  
 <img width="661" height="470" alt="image" src="https://github.com/user-attachments/assets/01571ec0-be9a-4565-9f31-ceb27341623e" />
 
+Tata Cara Melakukan Analisa di Burp Suite "standard vertion"
 <img width="1549" height="504" alt="image" src="https://github.com/user-attachments/assets/d288412d-1e15-43e6-9b91-6e64d8e61b64" />
