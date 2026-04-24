@@ -509,4 +509,11 @@ ROOM 58 SQL Fundamental
 - dari tangkapan ini kamu bisa melakukan injection atau test keamanan pada website tersebut
 - kamulihat site map, http history atau langsung pada proxy intercept
 
+<img width="1176" height="743" alt="image" src="https://github.com/user-attachments/assets/04fec58a-3fbe-42a3-90e5-a0375b88481d" />
 
+ROOM 59 Hydra Fundamental
+## Penyelesaian
+- Room ini kamu akan langsung on air melakukan praktek Hydra (hand on)
+- dengan tahapan yg sebernya kamu bisa lihat di wireshark dan burp suite
+- buka burp suite jalankan browser, coba cek ip addresnya di browser, lihat paket yg muncul?
+- lakukan percobaan login dengan user yg diketahui tapi belum tau paswordnya, cek respon layar jika salah memaskan master
