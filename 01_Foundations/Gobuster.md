@@ -71,3 +71,24 @@ Gobuster will use each entry in the wordlist to form a new URL and send a GET re
 Gobuster would send a GET request to http://example.thm/images/.(opens in new tab)
 - `-t 64` sets the number of threads Gobuster will use to 64. This improves the performance drastically.
 
+## Hand-on
+
+Important: We work in a local network with a DNS server on the web server. To ensure we can resolve the domains used throughout this room, you need to change the `/etc/resolv-dnsmasq` file:
+
+- Open up a terminal on the the AttackBox and enter the command: `sudo nano /etc/resolv-dnsmasq`.
+- Insert `nameserver 10.49.178.232` as the first line.
+- Save the file by pressing CTRL+O, followed by pressing ENTER, and then exit the editor by pressing CTRL+X.
+- Enter the command `/etc/init.d/dnsmasq restart` to restart the Dnsmasq service.
+The file should look something like this:
+```
+root@tryhackme:~# cat /etc/resolv-dnsmasq 
+nameserver 10.49.178.232
+nameserver 169.254.169.253
+```
+- If error for after restart you mush check terminal DNS with command: `sudo systemctl status dnsmasq.servvice -l`. check port number error.
+- if port already in use, now you check who is used the port number with command: `sudo lsof -i :53` if port 53 already in use
+- and disconnect the port number who not used with command: `sudo systemctl disable systemd-resolved` and `sudo rm /etc/resolv.conf` and make `echo "nameserver 8.8.8.8" | sudo tee /etc/resolv.conf`
+- and restart with `/etc/init.d/dnsmasq restart
+
+
+
