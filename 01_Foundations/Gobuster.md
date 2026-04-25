@@ -88,7 +88,7 @@ nameserver 169.254.169.253
 - If error for after restart you mush check terminal DNS with command: `sudo systemctl status dnsmasq.servvice -l`. check port number error.
 - if port already in use, now you check who is used the port number with command: `sudo lsof -i :53` if port 53 already in use
 - and disconnect the port number who not used with command: `sudo systemctl disable systemd-resolved` and `sudo rm /etc/resolv.conf` and make `echo "nameserver 8.8.8.8" | sudo tee /etc/resolv.conf`
-- and restart with `/etc/init.d/dnsmasq restart
+- and restart with `/etc/init.d/dnsmasq restart`
 
 
 
