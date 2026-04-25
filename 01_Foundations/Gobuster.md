@@ -160,3 +160,56 @@ Notice that the command also includes the flags `-d` and `-w`, in addition to th
 - `-d example.thm` sets the target to the example.thm domain.
 - `-w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt` sets the wordlist to subdomains-top1million-5000.txt. Gobuster uses each entry of this list to construct a new DNS query. If the first entry of this list is 'all', the query would be all.example.thm.
 
+---
+# ENUMERATION VHOST
+The last and final mode we’ll focus on is the `vhost` mode. This mode allows Gobuster to brute force virtual hosts. Virtual hosts are different websites on the same machine. Sometimes, they look like subdomains, but don’t be deceived! Virtual hosts are IP-based and are running on the same server. Subdomains are set up in DNS. The  difference between `vhost` and `dns` mode is in the way Gobuster scans:
+
+- `vhost` mode will navigate to the URL created by combining the configured HOSTNAME (`-u` flag) with an entry of a wordlist.
+- `dns` mode will do a DNS lookup to the FQDN created by combining the configured domain name (`-d` flag) with an entry of a wordlist.
+
+<img width="1237" height="584" alt="image" src="https://github.com/user-attachments/assets/42f2c357-ee12-4033-87ff-01f00ff73dd4" />
+
+## How To Use vhost Mode
+To run Gobuster in vhost mode, type the following command:
+
+`gobuster vhost -u "http://example.thm" -w /path/to/wordlist`
+
+Notice that the command also includes the flags `-u` and `-w`, in addition to the `vhost` keyword. These two flags are required for the Gobuster vhost enumeration to work. Let us look at a practical example of how to enumerate virtual hosts with Gobuster `vhost` mode:
+```
+root@tryhackme:~# gobuster vhost -u "http://10.49.178.232" --domain example.thm -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt --append-domain --exclude-length 250-320 
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) &amp; Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:              http://10.10.94.214
+[+] Method:           GET
+[+] Threads:          10
+[+] Wordlist:         /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt
+[+] User Agent:       gobuster/3.6
+[+] Timeout:          10s
+[+] Append Domain:    true
+[+] Exclude Length:   250,254,263,274,283,293,294,299,253,261,269,277,285,290,300,257,258,270,278,282,291,252,260,264,268,271,279,280,289,251,256,262,265,272,297,287,292,295,255,266,276,284,286,296,267,273,275,281,288,259,298
+===============================================================
+Starting gobuster in VHOST enumeration mode
+===============================================================
+Found: blog.example.thm Status: 200 [Size: 1493]
+Found: shop.example.thm Status: 200 [Size: 2983]
+Found: www.example.thm Status: 200 [Size: 84352]
+Found: chelyabinsk-rnoc-rr02.backbone.example.thm Status: 404 [Size: 304]
+Found: academy.example.thm Status: 200 [Size: 434]
+Progress: 4989 / 4990 (99.98%)
+===============================================================
+Finished
+===============================================================
+```
+
+You will notice that this command is much more complex than the base command syntax. It contains many more configured flags. This will often be the case in realistic tests, depending on how the infrastructure of the domain to test has been set up. In our case, we don't have a fully set up DNS infrastructure. This requires us to give in extra flags like `--domain` and `--append-domain`. We need to look at the web requests Gobuster sends to understand better how these flags work. Below, you can see a basic GET request to _www.example.thm_:
+```
+GET / HTTP/1.1
+Host: www.example.thm
+User-Agent: gobuster/3.6
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+```
