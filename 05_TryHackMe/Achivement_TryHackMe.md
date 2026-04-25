@@ -517,3 +517,15 @@ ROOM 59 Hydra Fundamental
 - dengan tahapan yg sebernya kamu bisa lihat di wireshark dan burp suite
 - buka burp suite jalankan browser, coba cek ip addresnya di browser, lihat paket yg muncul?
 - lakukan percobaan login dengan user yg diketahui tapi belum tau paswordnya, cek respon layar jika salah memaskan master
+
+<img width="1151" height="714" alt="image" src="https://github.com/user-attachments/assets/5061ab74-f45a-462b-b5ff-a5be8ac3b8ad" />
+
+ROOM 60 Gobuster Fundamental
+## Penyelesaian
+- Room ini kamu belajar tools Enumerasi, dimana kamu akan mealkkukan scaning kepada target, untuk melihat daftar2 yang menarik
+- enumeration yang ddipelajari adalah DNS enumeration yang mana dalam jaringan kamu melihat server tersebut
+- enumeration directiori, dimana server dengan ip target / url target yang kamu incar dilihat directorynya, dalaman directorynya dan susuan tree -L
+- enumeration subdomain, dari url dalam servernya mempunyai subdomain atau url lain yang terhubung, maka kita bisa mengetahui url yang terhubung dalam satu server dengan url target
+- enumeration vhost, dalam satu server tadi ada beberapa url subdomain, bisa jadi subdomain tersebut di hostingkan yg berbeda dengan url target, maka host ini adalah scan untuk yg berada dalam satu hosting
+
+
