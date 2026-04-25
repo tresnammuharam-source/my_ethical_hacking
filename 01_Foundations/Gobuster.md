@@ -91,6 +91,7 @@ nameserver 169.254.169.253
 - and restart with `/etc/init.d/dnsmasq restart`
 
 ---
+# ENUMERATION DIRECTORY
 
 Gobuster has a `dir` mode, allowing users to enumerate website directories and their files. This mode is useful when you are performing a penetration test and would like to see what the directory structure of a website is and what files it contains. Often, directory structures of websites and web apps follow a particular convention, making them susceptible to Brute Force using wordlists. For example, the  directory structure on the web server hosting WordPress looks something  like this:
 ```
@@ -137,4 +138,10 @@ Let’s look at a second example where we use the `-x` flag to specify what type
 `gobuster dir -u "http://www.example.thm" -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x .php,.js`
 
 This command will look for directories located at _http://example.thm_ (opens in new tab) using the wordlist directory-list-2.3-medium.txt. In addition to directory listing, this command also lists all the files that have a .php or .js extension.
+
+---
+# ENUMERATION SUBDOMAIN
+
+subdomain is same server but have domain linked to main-domain.
+
 
