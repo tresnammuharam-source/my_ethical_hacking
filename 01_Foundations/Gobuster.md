@@ -144,4 +144,19 @@ This command will look for directories located at _http://example.thm_ (opens in
 
 subdomain is same server but have domain linked to main-domain.
 
+The next mode we’ll focus on is the dns mode. This mode allows Gobuster to brute force subdomains. During a penetration test,  checking the subdomains of your target’s top domain is essential. Just because something is patched in the regular domain, it doesn't mean it is also patched in the subdomain. An opportunity to exploit a vulnerability in one of these subdomains may exist. For example, if TryHackMe owns tryhackme.thm and mobile.tryhackme.thm, there may be a vulnerability in mobile.tryhackme.thm that is not present in tryhackme.thm. That is why it is important to search for subdomains as well!
+
+<img width="1241" height="412" alt="image" src="https://github.com/user-attachments/assets/2cad3001-3a33-4f6d-bb4c-929635e4b518" />
+
+## How to Use dns Mode
+To run Gobuster in dns mode, use the following command syntax:
+`gobuster dns -d example.thm -w /path/to/wordlist`
+
+Notice that the command also includes the flags `-d` and `-w`, in addition to the `dns` keyword. These two flags are required for the Gobuster subdomain enumeration to work. Let us look at an example of how to enumerate  subdomains with Gobuster dns mode:
+
+`gobuster dns -d example.thm -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt`
+
+- `gobuster dns` enumerates subdomains on the configured domain.
+- `-d example.thm` sets the target to the example.thm domain.
+- `-w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt` sets the wordlist to subdomains-top1million-5000.txt. Gobuster uses each entry of this list to construct a new DNS query. If the first entry of this list is 'all', the query would be all.example.thm.
 
