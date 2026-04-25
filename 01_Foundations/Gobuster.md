@@ -174,6 +174,8 @@ To run Gobuster in vhost mode, type the following command:
 
 `gobuster vhost -u "http://example.thm" -w /path/to/wordlist`
 
+`gobuster vhost -u "http://10.49.178.232" --domain example.thm -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt --append-domain --exclude-length 250-320`
+
 Notice that the command also includes the flags `-u` and `-w`, in addition to the `vhost` keyword. These two flags are required for the Gobuster vhost enumeration to work. Let us look at a practical example of how to enumerate virtual hosts with Gobuster `vhost` mode:
 ```
 root@tryhackme:~# gobuster vhost -u "http://10.49.178.232" --domain example.thm -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt --append-domain --exclude-length 250-320 
