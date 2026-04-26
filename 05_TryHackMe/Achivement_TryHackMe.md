@@ -528,4 +528,9 @@ ROOM 60 Gobuster Fundamental
 - enumeration subdomain, dari url dalam servernya mempunyai subdomain atau url lain yang terhubung, maka kita bisa mengetahui url yang terhubung dalam satu server dengan url target
 - enumeration vhost, dalam satu server tadi ada beberapa url subdomain, bisa jadi subdomain tersebut di hostingkan yg berbeda dengan url target, maka host ini adalah scan untuk yg berada dalam satu hosting
 
+<img width="1192" height="723" alt="image" src="https://github.com/user-attachments/assets/68f92227-9577-4543-b0f7-9872e91ea288" />
 
+ROOM 61 Shell Fundamental
+## Penyelesaian
+- Room ini kamu belajar tentang shell untuk digunakan dalam enumeration
+- dimana banyak tahap yang ada dalam shell seperti reverse shell, bind shell, web shell dan lainnya
