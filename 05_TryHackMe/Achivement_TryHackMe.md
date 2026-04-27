@@ -534,3 +534,12 @@ ROOM 61 Shell Fundamental
 ## Penyelesaian
 - Room ini kamu belajar tentang shell untuk digunakan dalam enumeration
 - dimana banyak tahap yang ada dalam shell seperti reverse shell, bind shell, web shell dan lainnya
+
+<img width="1253" height="785" alt="image" src="https://github.com/user-attachments/assets/44bdd8d9-120c-4ad6-8384-7b4bb25ff02e" />
+
+ROOM 62 SQLMap: Basic
+## Penyelesaian
+- Room ini kamu belaja tentnag SQL Injection, bagaimana kita bisa melakukan injection SQL di website
+- sqlmap adalah yg utama disi diamna nati kita akan melakukan tracking database, dan melihat isi dalam databasenya untuk mencari user dan password
+- sqlmap -u 'link url' --dbs // sqlmap -u 'link url' -D data_name --tables // sqlmap -u 'link url' -D data_name -T user --dump
+
