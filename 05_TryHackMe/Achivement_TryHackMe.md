@@ -543,3 +543,11 @@ ROOM 62 SQLMap: Basic
 - sqlmap adalah yg utama disi diamna nati kita akan melakukan tracking database, dan melihat isi dalam databasenya untuk mencari user dan password
 - sqlmap -u 'link url' --dbs // sqlmap -u 'link url' -D data_name --tables // sqlmap -u 'link url' -D data_name -T user --dump
 
+<img width="1184" height="744" alt="image" src="https://github.com/user-attachments/assets/431ce1f1-6b51-40e9-a04a-4364f48c947c" />
+
+ROOM 63 SOC Analyst Introduction
+## Penyelesaian
+- Room ini kamu akan mengetahui pandangan tentang jabatan di cybersecurity yaitu SOC Analyst
+- SOC (Secuirity Operations Center) diibaratkan seperti penjaga menara, yg mana fungsinya memantau, memindai, menganalisa pola kejadian dan melakukan eskalasi ke tingkat lebih tinggi jika ada incident
+- alat tools yang biasa dilakukan adalah SIEM diaman SIEM adalah management system dengan didalamnya bisa terintegrasi tools monitoring jaringan seperti wiresharck, storn, sherlock, burp swite dll yang harus dikonfigurasikan
+- faktor utama penjagaan dari SOC analyst adalah 3 pilah ini : People (berhubngan dengan behaviour), Prosess (berhubungan dengan work flow dan titik buntu proses yg berjalan), Technology (berhubungan dengan alat yg digunakan user yang mempengaruhi jaringan dan resiko yang bisa dialaminya)
