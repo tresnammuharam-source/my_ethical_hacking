@@ -22,16 +22,19 @@ dalam hal ini proses identifikasi dan investigasi ini dibantu dengan tools agar 
 - AV (antivirus)
 - EDR (Endpoint Detection and Responses)
 
-dalam proses investigasi ini kita melakukan penggalian dari sebuah data yaitu LOGS.
+dalam proses investigasi ini kita melakukan penggalian dari sebuah data yaitu LOGS. karena logs adalah jejak digital yang ditinggalkan oleh pengguna.
 
 LOGS ini di kemas dalam berbagai LOGS sesuai peruntukannya, seperti:
 - Audit Logs
 - System Logs
 - Network Logs
 - System Logs
+- Security Logs
 
 dari sini kita bisa mengecek terutama dalam network dengan code2 yang harus kita pantau lebih maksimal, yaitu:
 <img width="1244" height="585" alt="image" src="https://github.com/user-attachments/assets/cb9988ec-4a52-408e-add6-9b2972c97271" />
 
-dari daftar kode Logs_id diartas kita harus pantau aktivitas terutama pada code 4625 (filed login) dan 4724 (reset password)
+dari daftar kode Logs_id diartas kita harus pantau aktivitas terutama pada code 4625 (filed login) dan 4724 (reset password), 4720 (pembuatan akun baru), dan 4726 (melakukan deledting activitas)
+
+
 
