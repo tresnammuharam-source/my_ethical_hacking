@@ -551,3 +551,13 @@ ROOM 63 SOC Analyst Introduction
 - SOC (Secuirity Operations Center) diibaratkan seperti penjaga menara, yg mana fungsinya memantau, memindai, menganalisa pola kejadian dan melakukan eskalasi ke tingkat lebih tinggi jika ada incident
 - alat tools yang biasa dilakukan adalah SIEM diaman SIEM adalah management system dengan didalamnya bisa terintegrasi tools monitoring jaringan seperti wiresharck, storn, sherlock, burp swite dll yang harus dikonfigurasikan
 - faktor utama penjagaan dari SOC analyst adalah 3 pilah ini : People (berhubngan dengan behaviour), Prosess (berhubungan dengan work flow dan titik buntu proses yg berjalan), Technology (berhubungan dengan alat yg digunakan user yang mempengaruhi jaringan dan resiko yang bisa dialaminya)
+
+<img width="1194" height="716" alt="image" src="https://github.com/user-attachments/assets/675071e0-3d76-4b6d-a2e3-d155b8a36d7d" />
+
+ROOM 64 Digital Forensic Introduction
+## Penyelesaian
+- Room ini kamu akan mengetahui tentang bagaimana cara melakukan aktivitas forensik dari sebuah data yang sudah dikirim
+- dengan kamu melakukan trace doklumen yang di kirim seperti `pdfinfo "nama pdf"` untuk melihat detail dari sebuah pdf
+- `xdg-open "nama image"` ini untuk membuka sebuah gambar dengan format .jpg
+- `exiftool "nama image"` ini untuk melihat detail dari sebuah foto beserta kapan dan lokasi pengambilan dalam digree
+
