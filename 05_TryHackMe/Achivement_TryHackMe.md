@@ -572,3 +572,6 @@ ROOM 65 Incident Responses Introduction
 - activitas penangan incident ada framework dalam prosedur response inciden yaitu SANS dan NIST
 - setelah menyelesaikan incident ini, kita harus mengambil pelajaran, dan mengupdate dan mengupgrade karena jika incident telah selesai, tapi tidak ada action pencegahan lanjutan dari kejadian itu, maka sama saja akan
 kerentanan akan tetap masuk di jalur yang sama.
+- tools yang membantu dalam tahap prosedur incident reponses diantaranya : SIEM, AV (antivirus), EDR (Endpoint Detection and Responses).
+- Playbook adalah jurnaling dari sebuah incident yang sudah pernah terjadi, dimana dengan adanya playbook ini mejadi panduan untuk menyelesaikan incident.
+
