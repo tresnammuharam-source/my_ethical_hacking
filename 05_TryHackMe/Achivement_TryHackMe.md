@@ -561,3 +561,14 @@ ROOM 64 Digital Forensic Introduction
 - `xdg-open "nama image"` ini untuk membuka sebuah gambar dengan format .jpg
 - `exiftool "nama image"` ini untuk melihat detail dari sebuah foto beserta kapan dan lokasi pengambilan dalam digree
 
+<img width="1212" height="726" alt="image" src="https://github.com/user-attachments/assets/bae14a4a-d8d3-4cef-a4e9-2474f4fdeebd" />
+
+ROOM 65 Incident Responses Introduction
+## Penyelesaian
+- Room ini kamu akan mengetahui tenatng cata cara melakukan penangan incident, yang mana incident adalah kejadian yang merugikan pada cyber
+- ada kategory alent yang bersumber dari SIEM diamana kita harus kita identifikasi satu2 dan masukan ke dalam kategory true positive dan false positive
+- false positive ini adalah kejadian yang keteriger sebagai alent tapi sebenarnya ini legar setelah melakukan investigasi
+- true positive ini adalah kejaian yang benar2 akan merugilkan dan terdeteksi sebagi alent dan harus ditindak inilah yg disebut incident
+- activitas penangan incident ada framework dalam prosedur response inciden yaitu SANS dan NIST
+- setelah menyelesaikan incident ini, kita harus mengambil pelajaran, dan mengupdate dan mengupgrade karena jika incident telah selesai, tapi tidak ada action pencegahan lanjutan dari kejadian itu, maka sama saja akan
+kerentanan akan tetap masuk di jalur yang sama.
