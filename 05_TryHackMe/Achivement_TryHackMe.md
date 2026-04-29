@@ -575,3 +575,12 @@ kerentanan akan tetap masuk di jalur yang sama.
 - tools yang membantu dalam tahap prosedur incident reponses diantaranya : SIEM, AV (antivirus), EDR (Endpoint Detection and Responses).
 - Playbook adalah jurnaling dari sebuah incident yang sudah pernah terjadi, dimana dengan adanya playbook ini mejadi panduan untuk menyelesaikan incident.
 
+<img width="1214" height="724" alt="image" src="https://github.com/user-attachments/assets/b449901e-2827-47b2-9a3f-d6ddd01a41de" />
+
+ROOM 66 Logs Fundamental
+## Penyelesaian
+- Room ini kamu akan diajarkan bagaimana menganalisa Logs, karena logs adalah jejak digital yang kita bisa melakukan analisa aktivitas di jaringan tersebut.
+- dengan masuk dalam event viewer dan masuk dalam windows logs, kamu bisa menemukan application log, system log security log yang bisa kita manfaatkan untuk pencegakan kerentanan
+- untuk di linux kamu bisa melakukan edit data, dengan access.log yang ada di computer lalu kita lakukan `cat access.log` ini adalah command di kumpukan untuk akses logs di linux CLI
+- agar lebih akurat pencairannya bisa seperti ini alamatya `cat accesss.log | grep "nama file, folder"
+
