@@ -584,3 +584,12 @@ ROOM 66 Logs Fundamental
 - untuk di linux kamu bisa melakukan edit data, dengan access.log yang ada di computer lalu kita lakukan `cat access.log` ini adalah command di kumpukan untuk akses logs di linux CLI
 - agar lebih akurat pencairannya bisa seperti ini alamatya `cat accesss.log | grep "nama file, folder"
 
+<img width="1192" height="761" alt="image" src="https://github.com/user-attachments/assets/afe64671-a020-469e-bbf2-1e34a9bd5d67" />
+
+ROOM 67 SIEM Fundamental
+## Penyelesaian
+- Room ini kamu akan memperdalam apa itu SIEM, yang mana digunakan oleh SOC atau devender untuk memantau dan mengekseksui envet yang masuk pada jaringan
+- di sini kamu belajar menitoring SIEM yang bersumber dari alert di berbagai log dengan bantuan tools seperti splank dan lainnnya
+- dengan adanya SIEM kita tidak perlu maunal satu2 melibat LOG yang mencurigakan, dari aturan yang kita configurasi di SIEM, SIEM dalam memberikan alert sesuai yg kita mau
+- dari alert itulah baru kita investigasi dan katergorikan lebih dalam, ke dalam bagian mana dan tingkata seperti apa, setelah itu baru eksekusi actionnnya
+
