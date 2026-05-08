@@ -70,3 +70,66 @@ Nantinya, alurnya akan seperti ini:
 3. **Anda (SOC Analyst)** menyalin kode tersebut ke **CyberChef** untuk mencari tahu: *"Ini virus jenis apa?"* atau *"IP mana yang diserang?"*.
 
 Apakah Anda ingin saya berikan satu contoh kasus/data acak untuk Anda coba "bongkar" sendiri di CyberChef sebagai latihan awal?
+
+---
+
+Ini adalah contoh kasus klasik yang sering ditemui oleh seorang SOC Analyst. Kita akan melakukan simulasi **"Deobfuscation"** (membongkar kode yang disembunyikan).
+
+Bayangkan SIEM Anda menangkap aktivitas mencurigakan dari sebuah komputer kantor pada jam 2 pagi. Log menunjukkan sebuah perintah PowerShell dijalankan secara otomatis.
+
+---
+
+### Bagian 1: Temuan Kasus (The Evidence)
+
+Anda menemukan potongan kode "sampah" berikut ini di dalam log SIEM:
+
+> **Data Input:**
+> `aHR0cHM6Ly9tYWx3YXJlLWRlcG90LmNvbS9zaGVsbC5wcmU=`
+
+---
+
+### Bagian 2: Analisis Per Bagian
+
+Sebagai analis, Anda harus membedah data tersebut menggunakan insting keamanan:
+
+1. **Identifikasi Format:** Teks di atas diakhiri dengan tanda sama dengan (`=`) dan terdiri dari karakter alfanumerik acak. Ini adalah ciri khas **Base64**. Penyerang menggunakan ini agar sistem keamanan (seperti Antivirus) tidak langsung mengenali kata-kata berbahaya seperti "malware" atau "download".
+2. **Konteks Eksekusi:** Jika kode ini muncul di log PowerShell, kemungkinan besar ini adalah perintah untuk mengunduh sesuatu dari internet secara diam-diam.
+3. **Tujuan Penyerang:** Menyembunyikan URL asli agar tidak diblokir oleh *Firewall* atau *Web Filter*.
+
+---
+
+### Bagian 3: Langkah Praktek di CyberChef
+
+Sekarang, silakan buka **CyberChef** di Kali Linux atau browser Anda, lalu ikuti langkah-langkah ini untuk belajar:
+
+1. **Input:** Copy dan Paste kode `aHR0cHM6Ly9tYWx3YXJlLWRlcG90LmNvbS9zaGVsbC5wcmU=` ke kolom **Input** (kanan atas).
+2. **Cari Operasi:** Di kolom pencarian (kiri), ketik **"From Base64"**.
+3. **Masak Resep:** Tarik operasi **"From Base64"** tersebut ke kolom **Recipe** (tengah).
+4. **Lihat Hasil:** Perhatikan kolom **Output** (kanan bawah).
+
+---
+
+### Bagian 4: Apa yang Harus Anda Lakukan untuk Belajar?
+
+Setelah Anda berhasil membongkar teks tersebut, jangan berhenti di sana. Lakukan langkah-langkah pendalaman ini:
+
+* **Lakukan Reverse Engineering:** Coba balikkan prosesnya. Ketik nama Anda di Input, gunakan operasi **"To Base64"**, dan lihat perubahannya. Ini melatih Anda mengenali pola data yang terenkripsi.
+* **Gunakan Operasi Berantai:** Penyerang sering melakukan enkripsi dua kali. Coba gunakan fitur **"Magic"** di CyberChef. Fitur ini akan mencoba menebak secara otomatis jenis enkripsi apa yang digunakan jika Anda bingung itu format apa.
+* **Identifikasi IOC (Indicator of Compromise):** Setelah teks terbongkar (menjadi sebuah URL), tanyakan pada diri sendiri:
+* *"Apakah URL ini aman?"*
+* *"Apakah saya harus memblokir domain ini di Firewall?"*
+
+
+* **Cari Tahu "Why":** Kenapa penyerang menggunakan Base64? Kenapa bukan Hex? (Base64 lebih efisien dalam mengirim data biner lewat protokol teks seperti HTTP).
+
+---
+
+**Tantangan Kecil untuk Anda:**
+Jika Anda sudah mencoba langkah di atas, Anda akan melihat sebuah URL. Di ujung URL tersebut ada file bernama `shell.pre`.
+
+* Cobalah cari operasi **"URL Decode"** di CyberChef.
+* Atau coba masukkan teks **Hex** berikut ini ke Input: `53 4f 43 20 41 6e 61 6c 79 73 74` lalu gunakan operasi **"From Hex"**. Apa bacaannya?
+
+Dengan membiasakan diri bongkar-pasang data di CyberChef, Anda sedang mengasah kemampuan mata Anda untuk mengenali ancaman meskipun sedang "menyamar".
+
+
