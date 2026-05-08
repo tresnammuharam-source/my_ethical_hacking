@@ -50,3 +50,6 @@ pada terimnal 2:
 
 dengan adanya ping, maka di terminal 1 akan mendeteksi loocbak ping sesuai aturan yang tadi sudah dimasukan pada `sudo nano local.rules`
 
+untuk melakukan investigasi file pcap atau melakukan bedah forensic bisa menggunakan contoh command di bawha ini jika file .pcap sudah ada
+> sudo snort -q -l /var/log/snort -r Task.pcap -A console -c /etc/snort/snort.conf
+
