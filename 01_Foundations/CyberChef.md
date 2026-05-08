@@ -132,4 +132,7 @@ Jika Anda sudah mencoba langkah di atas, Anda akan melihat sebuah URL. Di ujung 
 
 Dengan membiasakan diri bongkar-pasang data di CyberChef, Anda sedang mengasah kemampuan mata Anda untuk mengenali ancaman meskipun sedang "menyamar".
 
+---
+
+<img width="1239" height="613" alt="image" src="https://github.com/user-attachments/assets/3fafbd3b-2bcd-4079-9f46-96ed5946a428" />
 
