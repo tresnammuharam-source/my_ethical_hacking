@@ -607,3 +607,12 @@ ROOM 69 IDS Fundamental
 ## Penyelesaian
 - Room ini kamu akan memperdalam tentang IDS dimana kamu mempelajari protocol pengamana yang mana kamu bisa mengecek apa yang berjalan dan tools untuk mengecek jalannya masuk seperti ping dll
 
+<img width="1232" height="754" alt="image" src="https://github.com/user-attachments/assets/304010d7-9804-49d7-8df2-616809509b7b" />
+
+ROOM 70 Vulnerability ScannerOverview
+## Penyelesaian
+- Room ini kamu akan memperdalam tentang bagaimana cara melakukan scanning, seperti halnya kita melihat rumah ada celah ditap diaman ini bisa berpotensi bocor dan lainnya, itulah disebut dengan vulnerability
+- di sini kamu benjalankan pola dari vulnerability dan bagaimana cara menanganinya dengan tools yang ada seperti nessus atau openvas dimana fungsinya melakukan scanning untuk mencari celah kerentanan
+- setelah menemukan celah kerentanan kita bisa melakukan perbaikan "patching" dan memperbaiki kerentanan
+- kerentanan yang umum dan terdaftar dalam kode serta nilainya ada di CVE dengan nilainya di CVES
+
