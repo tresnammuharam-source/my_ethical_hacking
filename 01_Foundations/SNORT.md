@@ -37,3 +37,16 @@ Log yang dihasilkan Snort akan dikirim menggunakan protokol Syslog atau bantuan 
 
 <img width="1272" height="458" alt="image" src="https://github.com/user-attachments/assets/6cb910f2-0bbf-4e8d-aa98-41c0cdd108c0" />
 
+jika kamu ingin melakukan pengeditan pada aturan snort di linux kamu bisa masuk ke directory di `/etc/snort` dan melakukan pengeditan di text cd rules seperti dibawah ini
+<img width="1252" height="115" alt="image" src="https://github.com/user-attachments/assets/3c3600a2-be96-4d4d-a8bb-35722d6470ea" />
+
+> alert icmp any any -> 127.0.0.1 any (msg:"Loopback Ping Detected"; sid:10003; rev:1;)
+
+cara pengetesan pada terminal 1:
+> sudo snort -q -l /var/log/snort -i lo -A console -c /etc/snort/snort.conf
+
+pada terimnal 2:
+> ping 127.0.0.1
+
+dengan adanya ping, maka di terminal 1 akan mendeteksi loocbak ping sesuai aturan yang tadi sudah dimasukan pada `sudo nano local.rules`
+
