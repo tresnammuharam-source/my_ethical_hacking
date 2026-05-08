@@ -601,3 +601,9 @@ ROOM 68 Firewall Fundamental
 - system firewall adalah membuat aturan untuk mencegah proses yang tidak diinginkan yang masuk ke jaringan (inbound) atau pun yg keluar jaringan (outbound)
 - sistem firewall ini secara type aturannya bisa diatur di firewall divender jika di windows, jika di linux ada di nftables dengan memakai `sudo ufw` jika untuk default contoh `sudo ufw default deny outcoming`
 
+<img width="1225" height="742" alt="image" src="https://github.com/user-attachments/assets/6a372f32-6fb3-4f81-8f09-5058b388dcdb" />
+
+ROOM 69 IDS Fundamental
+## Penyelesaian
+- Room ini kamu akan memperdalam tentang IDS dimana kamu mempelajari protocol pengamana yang mana kamu bisa mengecek apa yang berjalan dan tools untuk mengecek jalannya masuk seperti ping dll
+
