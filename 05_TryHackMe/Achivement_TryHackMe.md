@@ -593,3 +593,11 @@ ROOM 67 SIEM Fundamental
 - dengan adanya SIEM kita tidak perlu maunal satu2 melibat LOG yang mencurigakan, dari aturan yang kita configurasi di SIEM, SIEM dalam memberikan alert sesuai yg kita mau
 - dari alert itulah baru kita investigasi dan katergorikan lebih dalam, ke dalam bagian mana dan tingkata seperti apa, setelah itu baru eksekusi actionnnya
 
+<img width="1199" height="742" alt="image" src="https://github.com/user-attachments/assets/39034f68-ba1a-4e47-b232-0ac88452e0ad" />
+
+ROOM 68 Firewall Fundamental
+## Penyelesaian
+- Room ini kamu akan memperdalam tentang firewall diaman kamu melihat type penjagaan dari firewall
+- system firewall adalah membuat aturan untuk mencegah proses yang tidak diinginkan yang masuk ke jaringan (inbound) atau pun yg keluar jaringan (outbound)
+- sistem firewall ini secara type aturannya bisa diatur di firewall divender jika di windows, jika di linux ada di nftables dengan memakai `sudo ufw` jika untuk default contoh `sudo ufw default deny outcoming`
+
