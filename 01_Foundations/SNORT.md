@@ -35,3 +35,5 @@ Integrasi Snort ke dalam Lab atau lingkungan kerja memberikan beberapa keuntunga
 Biasanya, Snort dipasang pada titik strategis di jaringan (misalnya di belakang firewall).
 Log yang dihasilkan Snort akan dikirim menggunakan protokol Syslog atau bantuan agen pengirim log (seperti Filebeat atau Splunk Forwarder) menuju server SIEM.
 
+<img width="1272" height="458" alt="image" src="https://github.com/user-attachments/assets/6cb910f2-0bbf-4e8d-aa98-41c0cdd108c0" />
+
