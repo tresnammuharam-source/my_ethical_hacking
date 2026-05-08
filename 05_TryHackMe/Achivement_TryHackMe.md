@@ -616,3 +616,12 @@ ROOM 70 Vulnerability ScannerOverview
 - setelah menemukan celah kerentanan kita bisa melakukan perbaikan "patching" dan memperbaiki kerentanan
 - kerentanan yang umum dan terdaftar dalam kode serta nilainya ada di CVE dengan nilainya di CVES
 
+<img width="1186" height="765" alt="image" src="https://github.com/user-attachments/assets/f1fea6cb-7baa-4d3c-a758-cbb8e8b73415" />
+
+ROOM 71 CyberChef overview
+## Penyelesaian
+- Room ini kamu akan mempelajari tentang mengolah informasi yang di dapat dari informasi SIEM / LOGS diaman informasi ini kamu analisa kamu bedah dengan skema COOKING
+- dalam hal ini kamu seperti sedang memasak di web `https://gchq.github.io/CyberChef/` dimana kamu dipandi dari input (data mentah) menjadi output (hasil atau serve)
+- dalam hal ini recipe adalah tools yang digunakan untuk melakukan rekayasa pada input yang diberikan seperti mencari email mencari URL tersembunyi, membedah kata tersembunyi dan lainnya
+- semua ini ada di operasional yang digunakan untuk nantinya dimakukian ke recipe.
+- di recipe ini kamu bisa mengabungkan beberapa operational, seperti kamu ingin melakukan extrasi dari binary ke decimal dan lainnya
