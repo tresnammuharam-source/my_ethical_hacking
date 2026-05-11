@@ -625,3 +625,12 @@ ROOM 71 CyberChef overview
 - dalam hal ini recipe adalah tools yang digunakan untuk melakukan rekayasa pada input yang diberikan seperti mencari email mencari URL tersembunyi, membedah kata tersembunyi dan lainnya
 - semua ini ada di operasional yang digunakan untuk nantinya dimakukian ke recipe.
 - di recipe ini kamu bisa mengabungkan beberapa operational, seperti kamu ingin melakukan extrasi dari binary ke decimal dan lainnya
+
+<img width="1251" height="835" alt="image" src="https://github.com/user-attachments/assets/a7dbb5e5-0a6a-4137-a3b7-256927875025" />
+
+ROOM 72 Cyber Kill Chain
+## Penyelesaian
+- Room ini kamu akan mempelajari tentang tahapan melakukan peretasan, jadi ada 7 tahap melakukan peretasan
+- dari tahapan peretasan ini dijelasakan juga cara menangani peretasan tersebut dan apa type peretasan yg terjadi
+
+
