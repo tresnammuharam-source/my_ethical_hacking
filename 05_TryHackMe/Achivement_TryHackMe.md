@@ -641,4 +641,12 @@ ROOM 73 MITRE ATT&CK
 - kumpulan modus2 operandi ini bukan hanya mendata apa saja modusnya, tapi juga menjelasakan tujuan dari modus tersebut (taktik), bagaimana cara melakukannya (teknik) dan prosedur atau detail cara2 dan step dari tindakan penyerangannya
 - selain itu MITRE ada juga bebrapa web untuk mealkukan pencarian, seperti MITRE Navigasi untuk mencari dan menbghubungkan modus yg terjadi saat kita melakukan review laporan intelejen ancaman
 
+<img width="1208" height="767" alt="image" src="https://github.com/user-attachments/assets/d269651f-2017-4404-bce6-90066207b73b" />
+
+ROOM 74 CAPA Basic
+## Penyelesaian
+- Room ini kamu akan mempelajari tentang sistem CAPA (Common Analysis Platform for Artifacts) ini adalah tools development untuk melakukan identivikasi berdasarkan MITRE ATT&CK
+- didalam capa.exe atau dalam terminal `capa.exe .\cryptbot.bin` akan menjalankan analisa capa dan melakukan identifikasai berdasarkan capability suatu identifikasi
+- CAPA memetakan berdasarkan laporan taktik, teknik, behaviour dan sub-teknik untuk memetahan suatu kejadian dan terintegrasi denagn code identified MITRE ATT&CK
+
 
