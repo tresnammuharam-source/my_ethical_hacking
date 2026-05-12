@@ -19,4 +19,5 @@
 | **CAPA MBC** | https://github.com/MBCProject/capa-rules-1/blob/master/anti-analysis/anti-vm/vm-detection/check-for-windows-sandbox-via-registry.yml | untuk melihat contoh sandbox untuk memetakan berdasarkan CAPA |
 | **adversari emulator liblary** | https://github.com/center-for-threat-informed-defense/adversary_emulation_library | collaboration with Center Participants, the MITRE Center for Threat-Informed Defense (Center) |
 | **CAPA Explorer** | https://mandiant.github.io/capa/explorer/#/ | untuk menilai data capa dalam bentuk .txt atau .json dan lainnya dan mengidentifikasi langsung di sistem ini |
+| **D3FEND** | https://d3fend.mitre.org/ | untuk melihat defend atau melihat counter dari keterangan MITRE atau daftar modus operandi |
 
