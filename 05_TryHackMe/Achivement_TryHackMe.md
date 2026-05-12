@@ -633,4 +633,12 @@ ROOM 72 Cyber Kill Chain
 - Room ini kamu akan mempelajari tentang tahapan melakukan peretasan, jadi ada 7 tahap melakukan peretasan
 - dari tahapan peretasan ini dijelasakan juga cara menangani peretasan tersebut dan apa type peretasan yg terjadi
 
+<img width="1203" height="814" alt="image" src="https://github.com/user-attachments/assets/92a6a3bd-7109-4754-9bdb-afd26b39fd85" />
+
+ROOM 73 MITRE ATT&CK
+## Penyelesaian
+- Room ini kamu akan mempelajari tentang libraly atau daftar taktik, teknik dan prosedur diamana ini merupakan daftar modus operandi peretasan
+- kumpulan modus2 operandi ini bukan hanya mendata apa saja modusnya, tapi juga menjelasakan tujuan dari modus tersebut (taktik), bagaimana cara melakukannya (teknik) dan prosedur atau detail cara2 dan step dari tindakan penyerangannya
+- selain itu MITRE ada juga bebrapa web untuk mealkukan pencarian, seperti MITRE Navigasi untuk mencari dan menbghubungkan modus yg terjadi saat kita melakukan review laporan intelejen ancaman
+
 
