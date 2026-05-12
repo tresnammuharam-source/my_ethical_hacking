@@ -20,4 +20,6 @@
 | **adversari emulator liblary** | https://github.com/center-for-threat-informed-defense/adversary_emulation_library | collaboration with Center Participants, the MITRE Center for Threat-Informed Defense (Center) |
 | **CAPA Explorer** | https://mandiant.github.io/capa/explorer/#/ | untuk menilai data capa dalam bentuk .txt atau .json dan lainnya dan mengidentifikasi langsung di sistem ini |
 | **D3FEND** | https://d3fend.mitre.org/ | untuk melihat defend atau melihat counter dari keterangan MITRE atau daftar modus operandi |
+| **Obfuscator dan Deobfuscator** | https://obf-io.deobfuscate.io/ | untuk melakukan pengkaburan data pada code JavaScrip pada pembuatan website dan pengiriman code2 di web |
+| **Java Scrip Code Obf** | https://codebeautify.org/javascript-obfuscator | untuk mealkukan manipulasi script code javascript agar tidak lansgung teridentifikasi tujuan dari code JS dan mengurangi SQL Injection |
 
