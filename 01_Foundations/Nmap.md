@@ -134,4 +134,75 @@ nmap -p- -sV -sC -O -v 192.168.1.50
 
 *Perintah di atas akan memeriksa semua port (`-p-`), mencari versinya (`-sV`), menjalankan script skan dasar (`-sC`), mendeteksi OS (`-O`), dan menampilkan prosesnya secara mendetail (`-v`).*
 
-```
+---
+
+Selain untuk memetakan IP, melihat port, dan menebak Sistem Operasi (OS), Nmap adalah *tools* yang sangat serbaguna. Di dalam dunia keamanan siber, Nmap sering disebut sebagai "Pisau Swiss Army" karena kemampuannya yang sangat luas melalui fitur yang bernama **NSE (Nmap Scripting Engine)**.
+
+Berikut adalah kemampuan luar biasa Nmap lainnya beserta informasi penting yang bisa kamu dapatkan:
+
+---
+
+## 1. Menemukan Celah Keamanan Secara Otomatis (*Vulnerability Scanning*)
+
+Nmap tidak hanya mendeteksi versi aplikasi yang berjalan, tetapi bisa langsung mencocokkannya dengan database kerentanan (CVE) untuk melihat apakah aplikasi tersebut bisa di-*hack*.
+
+* **Contoh Perintah:** `sudo nmap --script vuln [IP_Target]`
+* **Informasi yang didapat:** Nmap akan mengeluarkan laporan jika target rentan terhadap serangan fatal (seperti *Remote Code Execution*, celah SMB seperti *EternalBlue*, atau bug SSL seperti *Heartbleed*). Kamu akan diberikan link referensi CVE untuk mempelajari cara mengeksploitasinya.
+
+---
+
+## 2. Melakukan *Brute Force* (Uji Coba Password)
+
+Nmap memiliki skrip bawaan untuk menguji apakah sebuah layanan (seperti SSH, FTP, Telnet, atau database MySQL) menggunakan password yang lemah atau bawaan pabrik (*default credentials*).
+
+* **Contoh Perintah:** `sudo nmap --script ssh-brute --script-args userdb=users.txt,passdb=passwords.txt [IP_Target]`
+* **Informasi yang didapat:** Jika sukses, Nmap akan langsung menampilkan kombinasi *username* dan *password* yang valid untuk masuk ke sistem tersebut (misal: `admin : admin` atau `root : toor`).
+
+---
+
+## 3. Audit Keamanan Server Web (HTTP/HTTPS)
+
+Jika target memiliki port 80 atau 443 yang terbuka, Nmap bisa menggali informasi mendalam tentang struktur situs web tersebut tanpa kamu harus membuka browser.
+
+* **Contoh Perintah:** `sudo nmap --script http-enum,http-title [IP_Target]`
+* **Informasi yang didapat:**
+* **`http-enum`**: Menemukan folder rahasia di dalam website yang sering kali lupa disembunyikan admin (seperti folder `/admin/`, `/backup/`, atau `/config.php`).
+* **`http-methods`**: Mengetahui metode HTTP apa saja yang diizinkan (GET, POST, PUT, DELETE). Jika metode `PUT` atau `DELETE` terbuka, itu adalah celah keamanan berbahaya.
+
+
+
+---
+
+## 4. Melihat Rute Perjalanan Paket Data (*Traceroute*)
+
+Nmap bisa memetakan jalur atau lompatan (*hops*) jaringan dari Kali Linux kamu sampai ke perangkat target melalui fitur *Traceroute* yang dikombinasikan dengan visualisasi.
+
+* **Contoh Perintah:** `sudo nmap --traceroute [IP_Target]`
+* **Informasi yang didapat:** Kamu bisa melihat berapa banyak router atau *firewall* yang harus dilewati paket datamu sebelum sampai ke target. Ini sangat berguna untuk memetakan topologi jaringan yang kompleks.
+
+---
+
+## 5. Memeriksa Keamanan Jaringan Wi-Fi/Router Lebih Dalam
+
+Untuk perangkat seperti Router ZTE atau TP-Link yang kamu temukan sebelumnya, Nmap bisa memeriksa apakah protokol perutean atau manajemen jaringannya aman.
+
+* **Contoh Perintah:** `sudo nmap --script snmp-brute,dns-recursion [IP_Router]`
+* **Informasi yang didapat:**
+* **DNS Recursion:** Mengecek apakah router tersebut bisa dimanfaatkan oleh penjahat siber untuk melakukan serangan *DNS Amplification DDoS*.
+* **UPnP (Universal Plug and Play):** Melihat apakah ada port yang otomatis terbuka ke internet luar karena fitur UPnP yang kurang aman pada router.
+
+
+
+---
+
+## Ringkasan Kategori Informasi yang Bisa Kamu Dapatkan:
+
+| Kemampuan Nmap | Informasi yang Kamu Dapatkan | Tujuan Utama |
+| --- | --- | --- |
+| **Vulnerability Scanning** | Daftar celah keamanan (CVE ID) pada target | Mengetahui titik lemah sistem |
+| **Brute Forcing** | Kredensial (*Username & Password*) yang jebol | Menguji kekuatan *password* |
+| **Web Enumeration** | Folder tersembunyi, versi CMS (WordPress, dll) | Pemetaan struktur *website* |
+| **Network Topology** | Jumlah *hop* (lompatan) router menuju target | Memetakan arsitektur jaringan |
+| **SSL/TLS Auditing** | Masa berlaku sertifikat, algoritma enkripsi lemah | Memastikan enkripsi web aman |
+
+Dengan memanfaatkan fitur-fitur di atas, kamu bisa meningkatkan kemampuan dari yang awalnya hanya "melihat siapa yang ada di jaringan" menjadi "menganalisis seberapa aman perangkat di jaringan tersebut".
