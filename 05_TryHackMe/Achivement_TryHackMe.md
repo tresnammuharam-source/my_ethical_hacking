@@ -649,4 +649,10 @@ ROOM 74 CAPA Basic
 - didalam capa.exe atau dalam terminal `capa.exe .\cryptbot.bin` akan menjalankan analisa capa dan melakukan identifikasai berdasarkan capability suatu identifikasi
 - CAPA memetakan berdasarkan laporan taktik, teknik, behaviour dan sub-teknik untuk memetahan suatu kejadian dan terintegrasi denagn code identified MITRE ATT&CK
 
+<img width="1232" height="717" alt="image" src="https://github.com/user-attachments/assets/e03c603b-90c0-431c-82bb-ea09c948fc2b" />
+
+ROOM 75 REMnux Basic
+## Penyelesaian
+- Room ini kamu akan mempelajari tenatng tools defensif, jika di offensif ada Kali Linux, maka di Devensif ada REMnux dengan berbagai tools di dalamnya
+
 
