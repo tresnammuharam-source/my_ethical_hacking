@@ -655,4 +655,12 @@ ROOM 75 REMnux Basic
 ## Penyelesaian
 - Room ini kamu akan mempelajari tenatng tools defensif, jika di offensif ada Kali Linux, maka di Devensif ada REMnux dengan berbagai tools di dalamnya
 
+<img width="1215" height="762" alt="image" src="https://github.com/user-attachments/assets/d94bf5a0-b8df-4e75-846d-ca34d2028d0c" />
+
+ROOM 76 FlareVM : Arsenal of Tools
+## Penyelesaian
+- Room ini kamu akan mempelajari tenatang Tools Divences yang canggih, untuk membedah dan mendeteksi malware.
+- di tools ini di sematkan pada windows kenapa? karena malware dan virus lainya sering mendatangai pengguna windows
+- dalam tools ini kamu seperti profesor yang sedang membedah virus di laboratorium, kamu akan bedan dengan berbagai tools seperti PEStudio, Process Explorer, Wireshark, Procmon, FLOSS, HxD dan lainnya
+
 
