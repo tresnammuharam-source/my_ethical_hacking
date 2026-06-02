@@ -663,4 +663,11 @@ ROOM 76 FlareVM : Arsenal of Tools
 - di tools ini di sematkan pada windows kenapa? karena malware dan virus lainya sering mendatangai pengguna windows
 - dalam tools ini kamu seperti profesor yang sedang membedah virus di laboratorium, kamu akan bedan dengan berbagai tools seperti PEStudio, Process Explorer, Wireshark, Procmon, FLOSS, HxD dan lainnya
 
+<img width="1215" height="768" alt="image" src="https://github.com/user-attachments/assets/875e42a3-f843-4f6a-9261-49761afebb26" />
+
+ROOM 77 CVE-2026-31431: Copy-Fail
+## Penyelesaian
+- Room ini kamu akan mempelajari tentang kerentanan copy-fail dari peretasan pada page cache
+- dimana peretasan dilakukan pada dokumen /bin/su dan melakukan tembusan splice() ke AF_ALG
+
 
