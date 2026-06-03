@@ -1,8 +1,8 @@
-# PRINSIP-PRINSIP CYBER SECURITY
+# PRINSIP-PRINSIP CYBERSECURITY
 
 ---
 
-# 2 PRINSIP CYBER SECURITY
+# 2 PRINSIP CYBERSECURITY
 
 Kita akan membahas salah satu fondasi paling krusial dalam dunia keamanan siber (*cybersecurity*), yaitu **bagaimana kita mengelola rasa percaya (trust) terhadap pengguna, perangkat, dan sistem di dalam sebuah organisasi.**
 
@@ -137,6 +137,68 @@ Sebagai seorang profesional, Anda tidak bisa memperbaiki semua *vulnerability* d
 
 * Jika ada **Vulnerability** (celah), tapi tidak ada **Threat** (belum ada yang tahu cara eksploitasinya), maka **Risk**-nya **Rendah/Sedang**. Anda bisa memperbaikinya nanti saat jadwal maintenance bulanan.
 * Jika ada **Vulnerability**, lalu muncul **Threat** nyata (seperti contoh database rumah sakit di atas di mana kode exploit-nya sudah tersebar luas), maka **Risk**-nya melompat menjadi **Critical/High**. Anda harus melakukan *patching* atau mitigasi darurat **detik itu juga** sebelum sistem Anda dieksploitasi oleh hacker.
+
+---
+
+# IMPACT of Cybersecurity Training
+
+Dibagian ini kita akan membahas tentang **pentingnya pelatihan (*training*) dan simulasi laboratorium dalam dunia keamanan siber (*cybersecurity*)**, baik dari sudut pandang individu (Anda sebagai pembelajar) maupun dari sudut pandang organisasi/perusahaan.
+
+Maksud utama dari teks ini adalah menjelaskan **mengapa platform seperti TryHackMe sangat krusial** dan mengapa belajar *cybersecurity* tidak bisa hanya dengan membaca teori, melainkan harus dipraktikkan di lingkungan yang aman.
+
+Berikut adalah penjelasan detail mengenai poin-poin penting dari teks tersebut:
+
+---
+
+## 1. Belajar *Cybersecurity* Butuh Tempat Praktik yang Aman
+
+> *“...practising what you learn in cyber security has certain requirements. Example: it usually involves setting up a computer lab environment...”*
+
+**Maksudnya:** Untuk menguasai keahlian *hacking* atau pertahanan jaringan, Anda harus mempraktikkannya. Namun, Anda tidak boleh sembarangan mempraktikkan ilmu *hacking* di internet publik atau di jaringan kantor/sekolah karena bisa merusak sistem nyata (produksi) dan berurusan dengan hukum.
+
+Oleh karena itu, Anda butuh **Platform Pelatihan (seperti TryHackMe)**. Platform ini menyediakan laboratorium virtual (lab komputer tiruan) yang terisolasi. Anda bisa bebas mencoba mengeksploitasi celah keamanan atau bertahan tanpa takut merusak apa pun.
+
+---
+
+## 2. Lebih Baik Gagal di Lab daripada Gagal saat Diserang Sungguhan
+
+> *“An ounce of prevention is worth a pound of cure... it is better to learn in a training environment than during a live incident.”*
+
+**Maksudnya:** Pepatah tersebut berarti *"Mencegah lebih baik daripada mengobati"*.
+Dalam dunia nyata, sangat berbahaya jika tim IT baru belajar cara menangani *malware* atau serangan *hacker* **di tengah-tengah peristiwa serangan asli** yang sedang melanda perusahaan. Hal itu akan memicu kepanikan dan kerugian besar. Melalui lab pelatihan, tim bisa melakukan kesalahan, belajar dari kesalahan tersebut, dan siap ketika serangan asli benar-benar terjadi.
+
+---
+
+## 3. Manfaat bagi Perusahaan (Efisiensi & Rekrutmen)
+
+Teks tersebut menjelaskan keuntungan besar bagi perusahaan yang menyediakan pelatihan terpusat bagi karyawannya:
+
+* **Meningkatkan Kapasitas Tanpa Menambah Karyawan:** Karyawan yang terlatih akan bekerja lebih cepat dan efisien. Mereka tahu alat (*tools*) apa yang harus digunakan, sehingga perusahaan tidak perlu merekrut orang baru hanya untuk menyelesaikan satu masalah.
+* **Mempermudah Perekrutan Tenaga Junior:** Perusahaan tidak perlu selalu mencari tenaga senior yang mahal. Mereka bisa merekrut orang baru (*junior*), lalu memanfaatkan platform pelatihan untuk mendidik mereka dengan cepat (*ramp up*). Ini juga menghemat waktu staf senior agar tidak perlu mengajarkan hal dasar yang sama berulang-ulang.
+
+---
+
+## 4. Standarisasi Kemampuan Karyawan (Common Baseline)
+
+> *“Instead of vague terms like “junior” or “senior,” employees’ skills can be described more specifically.”*
+
+**Maksudnya:** Di banyak perusahaan, istilah "Junior" atau "Senior" itu sangat abu-abu (vague). Orang yang dianggap senior di perusahaan A belum tentu senior di perusahaan B.
+
+Dengan adanya platform pelatihan yang terpusat, perusahaan memiliki **tolok ukur (baseline) yang jelas**. Contohnya: *"Karyawan A sudah menyelesaikan modul Pentesting Web di TryHackMe, sedangkan Karyawan B baru menyelesaikan modul Dasar Jaringan."* Dengan data spesifik ini, manajer bisa lebih tepat membagikan tugas sesuai keahlian nyata karyawannya.
+
+---
+
+## 5. Membangun Kerja Sama Tim Lewat CTF (Capture The Flag)
+
+> *“...the experience of being part of a team playing a CTF (Capture the Flag) challenge builds incredible friendships...”*
+
+**Maksudnya:** Pelatihan *cybersecurity* tidak harus selalu membosankan. Salah satu metodenya adalah dengan kompetisi **CTF (Capture The Flag)**, yaitu permainan simulasi di mana tim Anda harus berlomba mencari celah keamanan untuk mendapatkan "bendera" (kode rahasia). Kompetisi seperti ini melatih kerja sama tim, komunikasi, dan membangun ikatan pertemanan yang kuat. Hubungan baik ini akan sangat membantu saat mereka harus bahu-membahu mengatasi insiden keamanan yang penuh tekanan di dunia nyata.
+
+---
+
+## Kesimpulan / Rangkuman:
+
+Tujuan dari teks ini di dalam room TryHackMe adalah untuk **memotivasi Anda**. Teks ini meyakinkan Anda bahwa tidak ada orang yang langsung lahir sebagai ahli *cybersecurity*. Kuncinya adalah latihan yang tekun di lingkungan lab yang tepat, dan investasi waktu Anda untuk belajar di platform ini akan sangat dihargai tinggi oleh industri dan perusahaan di masa depan.
 
 ---
 
