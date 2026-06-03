@@ -672,7 +672,7 @@ ROOM 77 CVE-2026-31431: Copy-Fail
 
 <img width="1219" height="766" alt="image" src="https://github.com/user-attachments/assets/66904fc7-fce8-415d-aad1-f8e3f5bf6f42" />
 
-ROOM 77 CVE-2026-31431: Copy-Fail
+ROOM 78 Security Principles
 ## Penyelesaian
 - Room ini kamu akan mempelajari tentang Prinsip dan Pondasi dari cyber security dari mulai CIA Triad, Trust and Verify or Never Trust, Vulnerability, Threat, Risk
 - dari Pondasi-pondasi ini akan menjadi pemikiran untuk menjalankan kinerja sebagai cyber security
