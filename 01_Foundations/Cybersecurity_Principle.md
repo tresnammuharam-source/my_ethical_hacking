@@ -201,4 +201,118 @@ Dengan adanya platform pelatihan yang terpusat, perusahaan memiliki **tolok ukur
 Tujuan dari teks ini di dalam room TryHackMe adalah untuk **memotivasi Anda**. Teks ini meyakinkan Anda bahwa tidak ada orang yang langsung lahir sebagai ahli *cybersecurity*. Kuncinya adalah latihan yang tekun di lingkungan lab yang tepat, dan investasi waktu Anda untuk belajar di platform ini akan sangat dihargai tinggi oleh industri dan perusahaan di masa depan.
 
 ---
+## on company scale
+
+**bagaimana perusahaan dengan skala yang berbeda memilih dan mengintegrasikan platform pelatihan *cybersecurity* (seperti TryHackMe)** agar sesuai dengan kebutuhan operasional mereka.
+
+Teks ini membagi solusinya ke dalam dua fokus utama: **Kustomisasi Materi** (berdasarkan ukuran tim) dan **Integrasi Sistem** (untuk perusahaan skala besar/korporasi).
+
+Berikut adalah penjelasan detail mengenai maksud dan tujuan dari masing-masing poin tersebut:
+
+---
+
+## 1. Pemilihan Pelatihan Berdasarkan Ukuran Tim
+
+Teks ini memberikan panduan logis bagi perusahaan dalam memilih metode pelatihan:
+
+* **Tim Kecil (Di bawah 20 orang):** Disarankan menggunakan **"Off-the-shelf training"** (pelatihan siap pakai). Maksudnya adalah materi, modul, dan *room* standar yang sudah disediakan langsung oleh TryHackMe tanpa perlu diubah-ubah. Ini lebih hemat waktu dan biaya untuk tim berskala kecil.
+* **Tim Besar (Di atas 20 orang atau Kebutuhan Khusus):** Disarankan untuk melakukan **Kustomisasi (Penyesuaian)**. Mengapa? Karena setiap perusahaan memiliki infrastruktur teknologi dan ancaman yang berbeda.
+
+### Solusi TryHackMe: "Content Studio"
+
+Untuk memfasilitasi tim besar tersebut, TryHackMe menyediakan fitur bernama **Content Studio**.
+
+* **Maksudnya:** Fitur ini memungkinkan tim internal perusahaan (misalnya manajer IT atau Security Lead) untuk mengubah *room* yang sudah ada atau bahkan **membuat modul/soal simulasi sendiri dari nol** yang mirip dengan sistem asli perusahaan mereka.
+* **Tujuannya:** Meningkatkan efektivitas (*efficacy*) pelatihan. Karyawan tidak lagi belajar teori umum, melainkan langsung berlatih menghadapi simulasi sistem yang benar-benar akan mereka pegang di tempat kerja.
+
+---
+
+## 2. Kebutuhan Integrasi Teknologi untuk Korporasi Besar (Large Corporations)
+
+Bagi perusahaan raksasa (Korporasi), membeli lisensi pelatihan saja tidak cukup. Mereka tidak ingin platform pelatihan tersebut berdiri sendiri (*standalone*) dan merepotkan tim IT dalam mengelolanya. Mereka butuh dua teknologi utama:
+
+### A. Dukungan SSO (Single Sign-On)
+
+* **Maksudnya:** SSO adalah teknologi yang memungkinkan karyawan masuk ke banyak aplikasi hanya dengan **satu akun dan satu password** (misalnya menggunakan akun Google Workspace Perusahaan, Microsoft Azure AD, atau Okta).
+* **Tujuannya:** Karyawan tidak perlu membuat akun dan menghafal password baru lagi khusus untuk TryHackMe. Ketika mereka *login* menggunakan email kantor, mereka langsung otomatis masuk ke platform pelatihan. Ini sangat mempermudah manajemen akun bagi tim IT.
+
+### B. Dokumentasi API (Application Programming Interface) yang Baik
+
+* **Maksudnya:** API adalah "jembatan" yang menghubungkan dua aplikasi berbeda agar bisa saling mengobrol dan bertukar data secara otomatis.
+* **Tujuannya:** Dengan API, tim HRD atau Direktur Keamanan bisa menarik data nilai, progres latihan, dan sertifikat karyawan dari TryHackMe secara otomatis untuk dimasukkan ke dalam dasbor internal perusahaan atau sistem penilaian kinerja karyawan (LMS - *Learning Management System*).
+
+---
+
+## Kesimpulan / Rangkuman:
+
+Maksud dari tulisan ini adalah menunjukkan bahwa **TryHackMe tidak hanya dirancang untuk individu yang belajar mandiri, tetapi juga memiliki fitur tingkat tinggi (Enterprise)**.
+
+Platform ini bisa fleksibel: menjadi tempat belajar siap pakai yang instan untuk tim kecil, menjadi wadah pembuat modul kustom (*Content Studio*) untuk tim besar, dan bisa menyatu secara otomatis dengan sistem keamanan IT perusahaan melalui SSO dan API.
+
+---
+
+# CARA MENGHITUNG KEUNTUNGAN DARI PELATIHAN
+
+Tulisan yang Anda bagikan membahas tentang **bagaimana cara menghitung dampak finansial dari pelatihan karyawan (Return on Investment - ROI)** agar Anda bisa meyakinkan manajemen atau perusahaan tempat Anda bekerja untuk memberikan anggaran (*budget*) pelatihan.
+
+Perusahaan yang pintar akan melihat karyawan sebagai aset. Namun, untuk meminta anggaran pelatihan kepada atasan, Anda tidak bisa hanya bilang *"Pelatihan ini bagus"*. Anda harus berbicara menggunakan angka (data finansial) agar mereka tertarik.
+
+Berikut adalah penjelasan logika perhitungan dari teks tersebut, diikuti dengan jawaban langsung untuk soal skenario di bagian bawah:
+
+---
+
+## 1. Memahami Logika Perhitungan Rumus
+
+Teks tersebut memberikan contoh matematika sederhana untuk menghitung **Penghematan/Keuntungan (Savings/Gains)** yang didapat perusahaan dari peningkatan produktivitas kerja setelah karyawan dilatih.
+
+* **Rumus Keuntungan Produktivitas:**
+
+$$\text{Jumlah Karyawan} \times \text{Persentase Peningkatan Produktivitas} \times \text{Gaji Tahunan per Karyawan}$$
+
+
+* **Return on Investment (ROI):**
+
+$$\frac{\text{Total Keuntungan}}{\text{Total Biaya Pelatihan}} \times 100\%$$
+
+
+
+Di contoh pertama teks tersebut:
+
+* 10 karyawan $\times$ 4% produktivitas $\times$ $\$80.000$ gaji = **$\$32.000$ keuntungan perusahaan**.
+* Biaya pelatihan cuma $\$5.000$.
+* Maka ROI-nya sangat tinggi yaitu **640%**. Angka inilah yang dipakai untuk meyakinkan bos.
+
+---
+
+## 2. Jawaban untuk Pertanyaan Skenario di Akhir Teks
+
+Mari kita hitung pertanyaan di bagian bawah sesuai dengan data skenario baru yang diberikan:
+
+* **Jumlah Karyawan (Employees):** 20 orang
+* **Gaji Tahunan per Karyawan (Cost):** $\$50.000$
+* **Peningkatan Produktivitas (Assumption):** 4% (atau 0,04 dalam desimal)
+
+### Jalur Perhitungannya:
+
+1. Hitung total biaya gaji seluruh tim dalam setahun:
+$$20 \times \$50.000 = \$1.000.000$$
+
+
+2. Hitung nilai penghematan dari peningkatan produktivitas 4% tersebut:
+$$\$1.000.000 \times 4\% = \$40.000$$
+
+
+
+Atau menggunakan rumus langsung:
+
+
+$$\text{Savings} = 20 \times 0.04 \times \$50.000 = \$40.000$$
+
+---
+
+### Jawaban untuk diinput ke kolom TryHackMe:
+
+**40000** (atau jika meminta format mata uang: **$40,000**)
+
+---
 
