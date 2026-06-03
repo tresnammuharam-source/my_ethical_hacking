@@ -677,5 +677,12 @@ ROOM 78 Security Principles
 - Room ini kamu akan mempelajari tentang Prinsip dan Pondasi dari cyber security dari mulai CIA Triad, Trust and Verify or Never Trust, Vulnerability, Threat, Risk
 - dari Pondasi-pondasi ini akan menjadi pemikiran untuk menjalankan kinerja sebagai cyber security
 
+<img width="1212" height="728" alt="image" src="https://github.com/user-attachments/assets/42dbbaba-1fba-4ce8-bf97-007054d8e215" />
+
+ROOM 79 Training Cybersecurity
+## Penyelesaian
+- Room ini kamu akan mempelajari tentang pentingnya Training dan Lab untuk mendalami cybersecurity
+- dimana kapasitan dan sekala untuk mendalami dari sisi individu dan perusahaan
+
 
 
