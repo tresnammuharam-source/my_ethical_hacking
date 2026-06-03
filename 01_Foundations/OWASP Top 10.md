@@ -113,3 +113,43 @@ Sebagai senior, saya sering melihat pemula terjebak langsung belajar *exploit to
 
 ---
 
+# kerentanan paling mematikan di dunia web security
+
+Teks tersebut membahas salah satu kerentanan paling mematikan di dunia web security: **Broken Access Control**, yang dimanifestasikan dalam bentuk **IDOR (Insecure Direct Object Reference)**.
+
+Sebagai *cybersecurity specialist*, berikut adalah breakdown teknis mengenai apa yang terjadi di balik layar dari teks tersebut:
+
+### 1. Masalah Utama: Eksploitasi IDOR
+
+Kalimat pertama menyoroti akar masalahnya: **Server terlalu percaya pada input dari client (user)** dan tidak melakukan validasi ulang di setiap *request*.
+
+Ketika aplikasi menggunakan pengenal mentah (seperti angka berurutan `?id=7`) untuk merepresentasikan data pengguna, *attacker* hanya perlu melakukan teknik bernama **Parameter Tampering** (mengubah nilai parameter).
+
+Jika Anda mengubah `id=7` menjadi `id=6` dan server langsung menyajikan data milik user 6 tanpa memeriksa apakah Anda *berhak* melihatnya, maka sistem kontrol akses aplikasi tersebut dinyatakan hancur (*broken*).
+
+### 2. Dampak Serangan: Horizontal vs Vertical Escalation
+
+Teks tersebut membagi dampak eksploitasi ini menjadi dua skenario:
+
+* **Horizontal Privilege Escalation:** Anda berada di level hak akses yang sama (sama-sama user biasa), tetapi Anda bisa mengintip atau memodifikasi data milik user lain. Contoh: Mengubah ID di URL untuk melihat isi rekening orang lain.
+* **Vertical Privilege Escalation:** Anda naik kasta dari user biasa menjadi administrator. Contoh: Mengubah parameter atau URL menuju fungsi sensitif seperti `/admin/delete-user` yang seharusnya terisolasi di sisi server.
+
+### 3. Instruksi Lab Praktis (Misi Anda)
+
+Bagian tengah teks adalah instruksi taktis untuk menyelesaikan tantangan di TryHackMe:
+
+1. **Nyalakan Target:** Klik tombol untuk memulai *static site* (aplikasi web simulasi) yang menempel pada task tersebut.
+2. **Manipulasi Parameter:** Amati URL pada web tersebut, cari parameter bernama `accountID`.
+3. **Temukan Target:** Lakukan *fuzzing* manual (mengubah angka `accountID` satu per satu, misalnya dari 1, 2, 3, dst.) untuk memeriksa saldo akun dari masing-masing ID tersebut.
+4. **Goal:** Temukan ID milik pengguna yang memiliki saldo di atas **$1.000.000**. Di akun itulah bendera (*flag*) atau jawaban untuk menyelesaikan task ini berada.
+
+### 4. Rekomendasi Lanjutan
+
+Di akhir paragraf, penulis room mengingatkan bahwa di dunia nyata, IDOR tidak selalu sejelas `?id=7`. Developer sering kali menyembunyikan ID menggunakan *encoding* (seperti Base64) atau *hashing* (MD5/SHA256).
+
+Oleh karena itu, Anda disarankan untuk menyelesaikan dua room spesifik setelah ini: **Broken Access Control** dan **Insecure Direct Object References**, untuk mempelajari variasi IDOR yang lebih kompleks yang biasa ditemukan saat melakukan *penetration testing* sesungguhnya.
+
+---
+
+
+
