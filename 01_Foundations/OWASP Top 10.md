@@ -151,5 +151,48 @@ Oleh karena itu, Anda disarankan untuk menyelesaikan dua room spesifik setelah i
 
 ---
 
+## Authentication Failures
+
+Teks ini membahas tentang **Authentication Failures**, yaitu kegagalan aplikasi dalam memvalidasi dan mengikat (*binding*) identitas pengguna dengan benar. Di sini Anda diajak memahami bagaimana celah pada proses login dan registrasi bisa dimanfaatkan untuk membobol akun.
+
+Berikut adalah *breakdown* teknis dari sudut pandang *security engineer*:
+
+### 1. Akar Masalah: Celah Sisi Autentikasi
+
+Teks tersebut menyebutkan 4 kelemahan klasik yang sering dieksploitasi:
+
+* **Username Enumeration:** Aplikasi memberikan respons berbeda untuk *user* yang terdaftar dan yang tidak (misal: "User tidak ditemukan" vs "Password salah"). Ini membocorkan informasi *username* valid ke penyerang.
+* **Weak Passwords & No Rate Limits:** Aplikasi membiarkan pengguna memakai password lemah (seperti `password123`) tanpa ada pembatasan jumlah percobaan login (*rate limiting*) atau pemblokiran akun otomatis (*account lockout*). Ini adalah lampu hijau untuk serangan *brute force*.
+* **Logic Flaws:** Cacat logika pada alur registrasi atau reset password yang bisa dilewati dengan trik tertentu.
+* **Insecure Session/Cookie Handling:** Kegagalan mengamankan token sesi (seperti JWT atau Cookie), sehingga penyerang bisa mencuri atau memanipulasi *session* orang lain.
+
+---
+
+### 2. Trik Eksploitasi pada Lab: Case Sensitivity Flaw (Cacat Logika Registrasi)
+
+Bagian tengah teks memberikan instruksi langsung untuk menyelesaikan tantangan di lab. Menariknya, teknik yang digunakan di sini adalah **Authentication Bypass melalui Logic Flaw saat registrasi**, memanfaatkan bagaimana database atau aplikasi menangani huruf besar/kecil (*case sensitivity*).
+
+* **Skenario:** Anda tahu ada akun target dengan username `admin`.
+* **Triknya:** Anda diminta mendaftarkan akun baru dengan nama `aDmiN` (mengubah variasi huruf besar-kecil).
+* **Mengapa ini bisa merusak sistem?**
+Pada aplikasi yang cacat logikanya, saat registrasi, aplikasi mengecek secara *case-sensitive* ("admin" tidak sama dengan "aDmiN"), sehingga pendaftaran Anda **diterima**. Namun, saat data disimpan ke database atau saat proses login, sistem melakukan query secara *case-insensitive* (menganggap "admin" dan "aDmiN" adalah entitas yang sama).
+Akibatnya, password baru yang Anda buat untuk `aDmiN` justru menimpa (*overwrite*) atau mengizinkan Anda masuk ke sesi milik `admin` asli.
+
+---
+
+### 3. Langkah Taktis Eksekusi di Lab
+
+1. **Jalankan Target:** Klik tombol untuk memulai *static site* pada task tersebut.
+2. **Registrasi Akun Baru:** Pergi ke halaman *Register*, lalu daftar menggunakan username `aDmiN` dan buat password acak yang Anda tentukan sendiri.
+3. **Login:** Gunakan akun `aDmiN` tersebut untuk login.
+4. **Ambil Flag:** Jika berhasil masuk, aplikasi akan mengarahkan Anda ke dasbor milik `admin` asli, dan Anda akan mendapatkan *flag* (kode jawaban) di sana.
+
+---
+
+### 4. Rekomendasi Modul Lanjutan
+
+Penulis mengingatkan bahwa ini hanyalah satu variasi kecil dari kegagalan autentikasi. Untuk menguasai teknik yang lebih kompleks seperti manipulasi JSON Web Tokens (JWT), *OAuth bypass*, serangan *brute force* yang matang, hingga membobol Multi-Factor Authentication (MFA), Anda disarankan menyelesaikan tiga room lanjutan: **Authentication Bypass**, **Multi-Factor Authentication**, dan **Authentication Module**.
+
+---
 
 
