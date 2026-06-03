@@ -316,3 +316,80 @@ $$\text{Savings} = 20 \times 0.04 \times \$50.000 = \$40.000$$
 
 ---
 
+### Assuming that training costs $500 per employee, what is the Return on Investment?
+
+Untuk menjawab kelanjutan pertanyaan tersebut, kita perlu menghitung **Return on Investment (ROI)** menggunakan data dari skenario sebelumnya.
+
+Mari kita kumpulkan data yang kita miliki:
+
+* **Total Penghematan (Savings)** dari pertanyaan sebelumnya = **$\$40.000$**
+* **Jumlah Karyawan** = 20 orang
+* **Biaya Pelatihan per Karyawan** = $\$500$
+
+---
+
+### Langkah Perhitungan:
+
+1. **Hitung Total Biaya Pelatihan (Total Training Cost):**
+
+$$\text{Total Biaya} = 20\text{ karyawan} \times \$500 = \$10.000$$
+
+
+2. **Hitung Return on Investment (ROI):**
+Rumus ROI adalah Total Penghematan dibagi dengan Total Biaya Pelatihan (dalam bentuk persentase).
+
+$$\text{ROI} = \frac{\text{Total Penghematan}}{\text{Total Biaya}} \times 100\%$$
+
+
+$$\text{ROI} = \frac{\$40.000}{\$10.000} \times 100\% = 4 \times 100\% = 400\%$$
+
+
+
+---
+
+### Jawaban untuk diinput ke kolom TryHackMe:
+
+**400%** (atau cukup masukkan angka **400** jika kolom input hanya meminta angka saja).
+
+---
+
+# Need The Vendor for Training
+
+Tulisan yang Anda bagikan membahas tentang **bagaimana sebuah perusahaan harus memilih vendor atau penyedia platform pelatihan (*training vendor*)** yang paling tepat setelah mereka memutuskan untuk berinvestasi dalam pelatihan karyawan.
+
+Maksud dan tujuan utama dari teks ini adalah memberikan **panduan berupa daftar pertanyaan penting** bagi manajer IT, Kepala Keamanan (*CISO*), atau tim HRD dalam mengevaluasi vendor pelatihan (seperti membandingkan TryHackMe dengan platform lain).
+
+Berikut adalah penjelasan detail mengenai maksud dari poin-poin pertanyaan tersebut:
+
+---
+
+## 1. Bedah Pertanyaan untuk Memilih Vendor
+
+Teks tersebut menyebutkan beberapa aspek krusial yang harus dipertimbangkan sebelum membeli lisensi pelatihan:
+
+* **Who are you buying the training for?** *(Untuk siapa Anda membeli pelatihan ini?)*
+**Maksudnya:** Apakah pelatihan ini untuk tim Security Analyst (Blue Team), Penetration Tester (Red Team), tim IT Support umum, atau developer aplikasi? Beda target audiens, beda pula jenis materi yang dibutuhkan.
+* **What are the experience, background, role, and topics relevant to your employees?** *(Apa pengalaman, latar belakang, peran, dan topik yang relevan bagi karyawan Anda?)*
+**Maksudnya:** Vendor harus bisa menyediakan materi yang sesuai dengan tingkat kemampuan karyawan saat ini—apakah mereka masih pemula (*junior*) atau sudah mahir (*senior*)—serta relevan dengan teknologi yang dipakai perusahaan sehari-hari.
+* **Has the vendor experience with similar organisations?** *(Apakah vendor memiliki pengalaman dengan organisasi sejenis?)*
+**Maksudnya:** Jika perusahaan Anda bergerak di bidang perbankan/fintech, akan jauh lebih baik jika vendor tersebut sudah sering melatih tim keamanan di bank lain, karena mereka pasti paham regulasi dan pola ancaman di industri keuangan.
+* **What is the content’s breadth, depth, and quality for the topics you care about?** *(Bagaimana keluasan, kedalaman, dan kualitas konten untuk topik yang Anda pedulikan?)*
+**Maksudnya:** Seberapa lengkap (*breadth*) materi yang mereka punya? Seberapa mendalam (*depth*) pembahasan teknisnya? Dan apakah kualitas laboratrium/modulnya bagus dan up-to-date?
+* **Can users learn, train, and practice on a single platform?** *(Apakah pengguna bisa belajar, berlatih, dan praktik di dalam satu platform tunggal?)*
+**Maksudnya:** Ini adalah poin keunggulan platform seperti TryHackMe. Sangat melelahkan jika karyawan harus membaca teori di web A, lalu membuka modul di sistem B, dan menyalakan VPN ke lab di sistem C. Jauh lebih efektif jika teori, petunjuk, dan lab praktiknya menyatu di satu layar browser yang sama.
+
+---
+
+## 2. Perspektif Finansial (Pesan untuk CFO)
+
+> *“The cost of training is important for the CFO... the cost of training is typically dwarfed by the benefits of making the team more productive.”*
+
+**Maksudnya:** Biaya atau harga pelatihan tentu menjadi perhatian utama bagi seorang Direktur Keuangan (CFO). Namun, teks ini menegaskan bahwa jika dibandingkan dengan mahalnya gaji para profesional *cybersecurity* serta besarnya risiko kerugian akibat serangan *hacker*, **biaya berlangganan platform pelatihan itu sebenarnya sangat kecil (*dwarfed*)** jika dibandingkan dengan keuntungan besar yang didapat perusahaan saat timnya menjadi jauh lebih produktif dan sigap menjaga sistem.
+
+---
+
+## Kesimpulan / Rangkuman:
+
+Maksud dari tulisan ini di dalam room TryHackMe adalah mengedukasi Anda bahwa memilih tempat pelatihan untuk korporasi tidak boleh asal pilih yang paling murah.
+
+Perusahaan harus mencocokkan antara profil karyawan mereka dengan fitur yang ditawarkan vendor. Platform yang ideal adalah platform serbada ada (*all-in-one*) yang mencakup teori dan praktik langsung di satu tempat, sehingga investasi yang dikeluarkan sebanding dengan peningkatan kemampuan tim.
