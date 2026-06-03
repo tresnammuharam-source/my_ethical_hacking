@@ -74,3 +74,66 @@ Dengan *Microsegmentation*, jaringan dipecah menjadi bagian-bagian yang sangat k
 > *“There is a limit to how much we can apply zero trust without negatively impacting a business...”*
 
 Maksudnya adalah, keamanan siber yang terlalu ketat bisa membuat proses bisnis menjadi lambat dan membuat karyawan frustrasi (misalnya jika setiap klik harus memasukkan kode OTP/MFA). Oleh karena itu, praktisi keamanan harus pandai menyeimbangkannya: **Terapkan Zero Trust seketat mungkin, selama hal itu masih masuk akal (feasible) dan tidak membuat roda bisnis perusahaan berhenti berputar.**
+
+---
+
+# 3 ISTILAH PENTING
+
+Tulisan yang Anda bagikan membahas tiga pilar paling mendasar dalam manajemen risiko keamanan informasi, yaitu **Vulnerability (Kerentanan)**, **Threat (Ancaman)**, dan **Risk (Risiko)**.
+
+Maksud dan tujuan utama dari teks ini adalah **agar Anda tidak tertukar atau salah memahami ketiga istilah ini**, karena di dunia nyata (termasuk saat Anda menganalisis sistem atau membangun portofolio cybersecurity), ketiga kata ini sering dianggap sama, padahal artinya sangat berbeda namun saling berkaitan.
+
+Berikut adalah penjelasan detail, maksud, tujuan, serta pembedahan contoh dari teks tersebut:
+
+---
+
+## 1. Maksud dari 3 Istilah Utama
+
+Teks tersebut memecah ketiga istilah dengan formula hubungan seperti ini:
+
+> **Risk (Risiko) terjadi jika ada Threat (Ancaman) yang berhasil memanfaatkan Vulnerability (Kerentanan).**
+
+Berikut adalah rinciannya:
+
+* **Vulnerability (Kerentanan / Kelemahan):** Ini adalah cacat, celah, atau kelemahan murni yang ada pada sistem, kode, prosedur, atau fisik. Kerentanan ini sifatnya pasif (belum diapa-apain).
+* **Threat (Ancaman):** Ini adalah bahaya potensial yang bisa mengeksploitasi kelemahan tersebut. Ancaman bisa berupa manusia (hacker, kompetitor), alam (gempa bumi), atau program (malware). Sifatnya aktif atau berpotensi aktif.
+* **Risk (Risiko):** Ini adalah kalkulasi atau dampak nyata terhadap bisnis. Risiko menghitung **seberapa besar kemungkinan (likelihood)** ancaman itu terjadi dan **seberapa parah dampak kerugiannya (impact)** bagi organisasi jika celah tersebut benar-benar dijebol.
+
+---
+
+## 2. Pembedahan Contoh 1: Showroom Mobil (Skenario Fisik)
+
+Teks memberikan contoh non-teknis agar Anda mudah membayangkan logikanya:
+
+* **Vulnerability:** Showroom mobil menggunakan pintu dan jendela dari **kaca biasa (standar)**. Sifat kaca biasa adalah rapuh dan mudah pecah. Ini adalah kelemahannya.
+* **Threat:** Ada ancaman bahwa **kaca tersebut bisa dilempar batu atau dipalu oleh pencuri** hingga hancur.
+* **Risk:** Pemilik showroom harus menghitung risikonya.
+* *Likelihood (Kemungkinan):* Apakah showroom berada di area rawan kejahatan? Jika ya, kemungkinannya tinggi.
+* *Impact (Dampak):* Jika kaca pecah, pencuri bisa masuk dan mobil mewah di dalamnya bisa hilang. Dampak finansialnya sangat besar.
+
+
+
+---
+
+## 3. Pembedahan Contoh 2: Database Rumah Sakit (Skenario IT / Cyber)
+
+Ini adalah contoh yang sangat relevan dengan pekerjaan seorang analis keamanan:
+
+* **Vulnerability:** Rumah sakit menggunakan sistem database tertentu untuk menyimpan rekam medis pasien. Suatu hari ditemukan bahwa **database tersebut memiliki celah keamanan (bug pada kode)**.
+* **Threat:** Ancaman menjadi sangat nyata ketika di internet dirilis sebuah **Proof-of-Concept (PoC) exploit code** (skrip siap pakai untuk menjebol celah tersebut). Artinya, semua hacker di luar sana sekarang tahu cara memanfaatkan celah itu.
+* **Risk:** Sebagai tim IT/Security rumah sakit, Anda harus menghitung risikonya untuk mengambil keputusan:
+* *Likelihood:* Karena kodenya sudah disebar di publik, kemungkinan rumah sakit Anda dipindai dan diserang oleh hacker menjadi **sangat tinggi**.
+* *Impact:* Jika database dijebol, data rekam medis pasien bisa bocor, rumah sakit bisa dituntut hukum, didenda miliaran, dan reputasinya hancur.
+
+
+
+---
+
+## 4. Tujuan dari Memahami Konsep Ini
+
+Tujuan akhir dari memahami tiga istilah ini di dalam room TryHackMe (dan di dunia profesional) adalah untuk **Prioritisasi dan Pengambilan Keputusan (Risk-Based Decision Making)**.
+
+Sebagai seorang profesional, Anda tidak bisa memperbaiki semua *vulnerability* dalam satu malam karena keterbatasan waktu dan biaya. Dengan memahami konsep ini, Anda bisa menghitung skala prioritas:
+
+* Jika ada **Vulnerability** (celah), tapi tidak ada **Threat** (belum ada yang tahu cara eksploitasinya), maka **Risk**-nya **Rendah/Sedang**. Anda bisa memperbaikinya nanti saat jadwal maintenance bulanan.
+* Jika ada **Vulnerability**, lalu muncul **Threat** nyata (seperti contoh database rumah sakit di atas di mana kode exploit-nya sudah tersebar luas), maka **Risk**-nya melompat menjadi **Critical/High**. Anda harus melakukan *patching* atau mitigasi darurat **detik itu juga** sebelum sistem Anda dieksploitasi oleh hacker.
