@@ -195,4 +195,54 @@ Penulis mengingatkan bahwa ini hanyalah satu variasi kecil dari kegagalan autent
 
 ---
 
+# Logging & Alerting Failures (Pencatatan)
 
+Teks ini membahas tentang **Logging & Alerting Failures**, yaitu kebutaan sistem akibat tidak adanya catatan aktivitas keamanan yang memadai. Dari sudut pandang **Blue Team** atau **SOC (Security Operations Center) Analyst**, celah ini adalah salah satu kendala terbesar dalam mendeteksi dan merespons insiden siber.
+
+Berikut adalah pembedahan teknis mengenai apa yang dimaksud oleh teks tersebut:
+
+### 1. Fondasi Utama: Akuntabilitas (Accountability)
+
+Kalimat pertama menegaskan bahwa fungsi utama dari *logging* (pencatatan) yang baik adalah untuk mendukung **Akuntabilitas**. Artinya, ketika insiden terjadi, tim kemaanan harus bisa membuktikan secara forensik:
+
+* **Who:** Siapa aktor di balik serangan tersebut? (User ID, Username).
+* **What:** Apa saja yang mereka lakukan atau modifikasi? (Eksekusi perintah, unduh data).
+* **When:** Kapan serangan itu terjadi? (Timestamp yang akurat).
+* **Where:** Dari mana asal serangan tersebut? (IP Address, User-Agent).
+
+Tanpa ini, sistem tidak memiliki visibilitas, dan *attacker* bisa menyusup tanpa terdeteksi.
+
+---
+
+### 2. Bentuk-Bentuk Kegagalan di Lapangan
+
+Teks tersebut merinci beberapa kesalahan fatal yang sering dilakukan oleh pengembang atau administrator sistem:
+
+* **Missing Authentication Events:** Tidak mencatat kapan seseorang berhasil login, atau yang lebih parah, gagal login.
+* **Vague Error Logs:** Log yang terlalu abstrak (misal hanya mencatat `Error 500`) tanpa menyertakan detail *stack trace* atau *payload* yang memicu error tersebut.
+* **No Alerting:** Log mencatat adanya serangan *brute-force* (ribuan kali gagal login dalam 1 menit), tetapi sistem tidak memiliki mekanisme alarm (*alerting*) untuk menembak notifikasi ke tim keamanan.
+* **Short Retention:** Masa penyimpanan log yang terlalu singkat (misal hanya disimpan selama 3 hari). Padahal, rata-rata serangan baru terdeteksi setelah berminggu-minggu atau berbulan-bulan.
+* **Tamper-able Logs:** Log disimpan secara lokal di server yang sama dengan aplikasi. Jika server tersebut berhasil di-*compromise*, *attacker* tinggal menghapus file log (`rm -rf /var/log/*`) untuk menghilangkan jejak mereka.
+
+---
+
+### 3. Panduan Lab Praktis (Misi Investigasi Anda)
+
+Pada bagian ini, Anda diminta bertindak sebagai seorang **Digital Forensics / Incident Responder**:
+
+1. **Mulai Simulasi:** Klik tombol untuk menyalakan *static site* yang berisi dasbor log atau catatan aktivitas dari sebuah aplikasi yang baru saja diserang.
+2. **Lakukan Analisis:** Anda harus membaca baris demi baris log tersebut untuk merekonstruksi kronologi serangan. Cari pola anomali seperti:
+* Alamat IP asing yang melakukan request tidak wajar.
+* Rentetan kode status HTTP `401 Unauthorized` atau `403 Forbidden` yang menandakan percobaan paksa masuk.
+* Upaya pengubahan hak akses secara tiba-tiba.
+
+
+3. **Jawab Pertanyaan:** Gunakan temuan dari analisis log tersebut untuk menjawab pertanyaan-pertanyaan yang ada di bawah task TryHackMe.
+
+### 4. Introspeksi Defensif
+
+Di akhir instruksi, Anda diajak merenungkan sebuah pertanyaan krusial: *Seberapa sulit investigasi ini jika beberapa bagian penting dari log tersebut sengaja dihapus atau memang tidak pernah dicatat oleh sistem?*
+
+Ini adalah latihan mental untuk menyadari bahwa secanggih apa pun *tools* pertahanan yang dimiliki, tim keamanan akan lumpuh tanpa adanya data log yang utuh, terpusat (*centralized off-host logging*), dan dilindungi dari manipulasi.
+
+---
