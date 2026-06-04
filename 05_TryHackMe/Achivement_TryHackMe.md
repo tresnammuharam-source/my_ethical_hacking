@@ -686,7 +686,7 @@ ROOM 79 Training Cybersecurity
 
 <img width="1212" height="766" alt="image" src="https://github.com/user-attachments/assets/4f926ac8-b7d5-46a5-81bf-2a1adf91a39b" />
 
-ROOM 80 OWASP Top 10
+ROOM 80 OWASP Top 10 2025: IAAA Failures
 ## Penyelesaian
 - Room ini kamu akan mempelajari tentang vulnerability yang ada pada top 10 OWASP
 - dimana kita bejalar kombinasi tools yang digunakan oleh blue team untuk mendeteksi serangan dengan prinsipnya
