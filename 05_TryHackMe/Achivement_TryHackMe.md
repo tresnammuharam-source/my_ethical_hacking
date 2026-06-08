@@ -691,3 +691,10 @@ ROOM 80 OWASP Top 10 2025: IAAA Failures
 - Room ini kamu akan mempelajari tentang vulnerability yang ada pada top 10 OWASP
 - dimana kita bejalar kombinasi tools yang digunakan oleh blue team untuk mendeteksi serangan dengan prinsipnya
 
+<img width="1177" height="711" alt="image" src="https://github.com/user-attachments/assets/e1433c01-1f59-42e4-9036-5d7a1ee7cb66" />
+
+ROOM OWASP Top 10 2025: IAAA Failures
+## Penyelesaian
+- Room ini kamu akan mempelajari jenis2 ikan oplahan
+
+
