@@ -693,9 +693,9 @@ ROOM 80 OWASP Top 10 2025: IAAA Failures
 
 <img width="1177" height="711" alt="image" src="https://github.com/user-attachments/assets/e1433c01-1f59-42e4-9036-5d7a1ee7cb66" />
 
-ROOM 81 OWASP Top 10 2025:
+ROOM 81 OWASP Top 10 2025: Design Failures
 ## Penyelesaian
-- Room ini kamu akan mempelajari jenis2 
+- Room ini kamu akan mempelajari jenis2 Desain yang membuka celah keamanan
 
-<img width="1193" height="713" alt="image" src="https://github.com/user-attachments/assets/e97b6604-01e6-4c9a-a754-2fec82265a26" />
+
 
