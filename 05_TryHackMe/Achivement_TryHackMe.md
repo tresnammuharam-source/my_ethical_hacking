@@ -697,5 +697,10 @@ ROOM 81 OWASP Top 10 2025: Design Failures
 ## Penyelesaian
 - Room ini kamu akan mempelajari jenis2 Desain yang membuka celah keamanan
 
+<img width="1251" height="755" alt="image" src="https://github.com/user-attachments/assets/57906796-fd78-4a4f-b56d-0fbfe8949342" />
 
-
+ROOM 82 OWASP Top 10 2025: Insecure Data Handling
+## Penyelesaian
+- Room ini kamu akan mempelajari jenis2 Kerentanan terhadap kesalahan configurasi data
+- kamu mengenal SQL Injection yang akan berpengaruh terhadap data berubah atau hilang
+- Soal data ini sangat penting didunia luar sana, karena semua akan membahas data saat mereka harus membutuhkannya
